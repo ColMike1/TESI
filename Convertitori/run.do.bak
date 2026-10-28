@@ -1,0 +1,35 @@
+if {[file exists work]} {
+    vdel -lib work -all
+}
+
+
+vlib work
+
+# compilazione
+vlog src/HiFloat8_to_FP_converter.v
+vlog src/FP_to_HiFloat8_converter.v
+
+
+vlog tb/tb_HF8_FP.sv
+vlog tb/tb_FP_HF8.sv
+vlog tb/tb_FP_HF8_FP.sv
+vlog tb/tb_HF8_FP_HF8.sv
+
+
+# avvia simulazione 
+# vsim -voptargs="+acc" work.tb_FP_HF8_FP
+# vsim -voptargs="+acc" work.tb_HF8_FP_HF8
+vsim -voptargs="+acc" work.tb_HF8_FP
+#vsim -voptargs="+acc" work.tb_FP_HF8
+
+
+
+# segnali
+# add wave -position insertpoint sim:/tb_FP_to_HF8_to_FP/*
+# add wave -position insertpoint sim:/tb_HF8_to_FP_to_HF8/*
+
+# esegui simulazione
+run -all
+
+# adatta zoom sui segnali
+# wave zoom full
