@@ -125,9 +125,9 @@ module tb_HF8_FP;
 
     initial begin
         
-        file_handle = $fopen("results/results_HF8_to_FP.txt", "w");
+        file_handle = $fopen("results/results_HF_to_FP.txt", "w");
         if (file_handle == 0) begin
-            $display("ERRORE: impossibile creare il file results/results_HF8_to_FP.txt");
+            $display("ERRORE: impossibile creare il file results/results_HF_to_FP.txt");
             $finish;
         end
 

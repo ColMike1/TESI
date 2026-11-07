@@ -1,4 +1,6 @@
 import re
+
+# pip install plotly se l'interprete non riconosce plotly
 import plotly.graph_objects as go
 
 # Pattern per trovare E ed M 

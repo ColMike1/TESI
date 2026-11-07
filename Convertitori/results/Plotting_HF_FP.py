@@ -1,10 +1,11 @@
 import re
+# pip install plotly se l'interprete non riconosce plotly
 import plotly.graph_objects as go
 
 # Pattern per trovare E ed M 
 pattern = r"E:(-?\d+),\s*M:([\d.]+)"
 
-nome_file = "results_HF8_to_FP.txt"
+nome_file = "results_HF_to_FP.txt"
 
 # Liste per i numeri positivi
 HF8_0EM_in = []

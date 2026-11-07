@@ -1,0 +1,85 @@
+Operazioni preliminari:
+	. Aver configurato WSL (Windows Subsystem for Linux)
+	. Aver installato Docker Desktop
+	. All'interno di WSL, clonare la repository OpenROAD-flow-scripts:
+   	  https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts.git
+
+
+
+
+
+1. Da Desktop:
+	. aprire il terminale WSL
+	. aprire Docker Desktop
+
+
+
+
+
+
+
+2. Dal terminale WSL:
+	. posizionarsi nella directory in cui è stato clonato OpenROAD-flow-scripts
+	. Eseguire i comandi: 
+		- cd ./OpenROAD-flow-scripts/flow
+		- ./util/docker_shell bash 		# Questa istruzione scarica l'immagine, se non è presente, di openroad/orfs:latest su Docker.
+							# Fa partire il conteiner relativo all'immagine.
+							# Mostra un nuovo terminale. Tale terminale è il container in esecuzione.
+							# Il container ha tutto l'ambiente di OpenRoad già configurato, non bisogna installare nulla (ne Yosys per la sintesi, ne altro).		
+
+
+
+
+
+
+3. Dal nuovo terminale (container openroad)
+	. Eseguire i comandi:
+		- cd /work				# La cartella '/work' del container è un link con la cartella './OpenROAD-flow-scripts/flow' del terminale WSL. 
+							# Significa che ogni modifica fatta su '/work' (./OpenROAD-flow-scripts/flow), sarà fatta anche su './OpenROAD-flow-scripts/flow' 							  (/work).
+
+
+
+
+
+
+
+NB: La scelta fatta al 4. è coerente con la convenzione usata da OpenRoad Flow-Script.
+    è da verificare se è possibile inserire i file in altre cartelle senza 'dare fastidio' al file Makefile.mk che eseguirà il flusso di progettazione.
+
+4. Creare un nuovo progetto
+	. Dal container openroad o da WSL, Eseguire i comandi:
+		- creare la cartella ./designs/(tecnologia)/mio_design			# in questa cartella va inserito il file di configurazione config.mk ed il file 													  constraint.sdc 
+		- creare la cartella ./designs/src/mio_design				# qui va inserito il codice verilog .v
+
+
+Esempio: In ./designs/nangate45/mio_design/ -> config.mk, constraint.sdc
+	 In ./designs/src/mio_design/       -> codice_verilog.v
+
+
+
+
+
+
+
+
+
+
+5. Flusso di Progettazione
+	. Da WSL, Eseguire i comandi:
+		- Modificare il Makefile.mk inserendo: 
+				DESIGN_CONFIG=./designs/(tecnologia)/mio_design/config.mk
+
+	. Dal Container, Eseguire i comandi:
+		- cd /work
+		- make
+
+
+
+
+
+
+
+
+6. Visualizzare i risultati
+	. I risultati vengono salvati nelle cartelle Results e Report. Accedere ad essi tramite il terminale WSL
+	

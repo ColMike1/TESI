@@ -8,8 +8,6 @@ vlib work
 # compilazione
 vlog src/HiFloat8_to_FP_converter.v
 vlog src/FP_to_HiFloat8_converter.v
-
-
 vlog tb/tb_HF8_FP.sv
 vlog tb/tb_FP_HF8.sv
 vlog tb/tb_FP_HF8_FP.sv
@@ -17,11 +15,10 @@ vlog tb/tb_HF8_FP_HF8.sv
 
 
 # avvia simulazione 
-# vsim -voptargs="+acc" work.tb_FP_HF8_FP
+vsim -voptargs="+acc" work.tb_FP_HF8_FP
 # vsim -voptargs="+acc" work.tb_HF8_FP_HF8
-#vsim -voptargs="+acc" work.tb_FP_HF8
-vsim -voptargs="+acc" work.tb_HF8_FP
-
+# vsim -voptargs="+acc" work.tb_FP_HF8
+# vsim -voptargs="+acc" work.tb_HF8_FP
 
 
 # segnali
@@ -31,5 +28,5 @@ vsim -voptargs="+acc" work.tb_HF8_FP
 # esegui simulazione
 run -all
 
-# adatta zoom sui segnali
+# zoom sui segnali
 # wave zoom full

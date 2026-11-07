@@ -1,4 +1,6 @@
 import re
+
+# pip install plotly se l'interprete non riconosce plotly
 import plotly.graph_objects as go
 
 # Pattern per trovare E ed M (gestisce già i segni negativi su E)
@@ -33,7 +35,7 @@ try:
             zf_hf2fp = int(zf_hf2fp_m.group(1)) if zf_hf2fp_m else 0
             
             if len(occorrenze) >= 4:
-                # Supponiamo che riga[0] determini il segno (0 = positivo, 1 = negativo)
+                # riga[0] determini il segno (0 = positivo, 1 = negativo)
                 if riga[0] == '0':
                     FP_0EM_in.append((int(occorrenze[0][0]), float(occorrenze[0][1])))
                     HF8_0EM_mid.append((int(occorrenze[1][0]), float(occorrenze[1][1])))
