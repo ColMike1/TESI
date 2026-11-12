@@ -40,23 +40,28 @@ D=4     (S, 11, Exp[4:1], M[0])             -> Exp= +-[8,15]
 
 _________Numeri Denormali________ X = (-1)^(S) x 2^(Exp - 23) x 1.0
 
-D=DML   (S, 0000, M[2:0])                 -> Exp = M = [-22, -16]
+D=DML   (S, 0000, M[2:0])                 -> Exp = M = [1, 7]. M = 0 indica che il numero HiFloat8 è Zero
 
 */
 
 module HiFloat8_to_FP_converter (
 
     input  wire [7:0] hif8_in,    // In: HiFloat8 (8 bit)
-    output wire        sign_out,   // Out: S (1 bit)
-    output wire [5:0]  exp_out_2s, // Out: Exp_2'scomp (6 bit)
-    output reg [2:0]  mant_out,    // Out: M (3 bit)
+    output wire [9:0] fp_out,     // Out: FP [S (1 bit), Exp_2scomp (6 bit), M (3 bit)] 
 
-    output wire zero_flag_out
+    output wire zero_flag_out	  // Flag zero
 
 );
 
 
-// Il flag = 1 se tutti gli 8 bit dell'HiFloat8 a zeor
+wire       sign_out;	// S (1 bit)
+wire [5:0] exp_out_2s;  // Exp_2scomp (6 bit)
+reg  [2:0] mant_out;    // M (3 bit)
+
+
+
+
+// Il flag = 1 se tutti gli 8 bit dell'HiFloat8 a zero
 assign zero_flag_out = (hif8_in == 8'b0_0000_000 || hif8_in == 8'b1_0000_000 );
 
 assign sign_out = hif8_in[7]; // Segno direttamente fuori dai blocchi procedurali
@@ -89,8 +94,9 @@ always @(hif8_in[6:0]) begin
 end
 
 
-// Blocco procedurale per controllo del complemento a 2. Qui nel caso Denormale (0000) do_complement vale 1
-// perchè nel blocco procedurale precedente, viene estratto il valore assoluto dell'esponente X in 2^(X).
+// Blocco procedurale per controllo del complemento a 2 dell'esponente di HiFloat8.
+// Qui nel caso Denormale (0000) do_complement vale 1 perchè nel blocco procedurale precedente, 
+// viene estratto il valore assoluto dell'esponente X in 2^(X).
 // Nel caso 0000, X = 23-M e non M-23. Dato che si vuole calcolare M-23, si mette
 // do_complement = 1
 always @(hif8_in[6:3]) begin
@@ -149,5 +155,9 @@ always @(hif8_in[6:0]) begin
             end
         endcase
     end
+
+
+
+assign fp_out = {sign_out, exp_out_2s, mant_out};
 
 endmodule
