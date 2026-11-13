@@ -7,24 +7,30 @@ module tb_adder_HiF8();
     reg [7:0] hif8_b_in;
 
     // Uscite del modulo sotto test
-    wire [9:0] fp_a_out;
-    wire       zero_flag_a;
+    wire [9:0] fp_a_out;  
     wire [9:0] fp_b_out;
-    wire       zero_flag_b;
     wire [9:0] fp_res_out;
-    wire       zero_flag_res;
+    wire [5:0] exp_diff;
+    wire [2:0] shift_amt;
+    wire [5:0] res_mant_temp;
+    wire [4:0] full_mant_a_shifted;
+    wire [4:0] full_mant_b_shifted;
     wire [7:0] hif8_res_out;
 
     // Istanziazione dell'Addizionatore HiFloat8
     adder_HiF8 uut (
         .hif8_a_in(hif8_a_in),
         .hif8_b_in(hif8_b_in),
+
         .fp_a_out(fp_a_out),
-        .zero_flag_a(zero_flag_a),
         .fp_b_out(fp_b_out),
-        .zero_flag_b(zero_flag_b),
         .fp_res_out(fp_res_out),
-        .zero_flag_res(zero_flag_res),
+	.exp_diff_out(exp_diff),
+	.shift_amt_out(shift_amt),
+        .full_mant_a_shifted_out(full_mant_a_shifted),
+	.full_mant_b_shifted_out(full_mant_b_shifted),
+	.result_mant_temp_out(res_mant_temp),
+        
         .hif8_res_out(hif8_res_out)
     );
 
@@ -41,25 +47,26 @@ module tb_adder_HiF8();
 
         $display("Inizio della simulazione per tutte le 65.536 combinazioni...");
 
-        // Cicli annidati per coprire tutte le combinazioni (256 * 256)
+        // Cicli  (256 * 256)
         for (i = 0; i < 256; i = i + 1) begin
             for (j = 0; j < 256; j = j + 1) begin
                 hif8_a_in = i[7:0];
                 hif8_b_in = j[7:0];
                 
-                // Breve ritardo per permettere alla logica combinatoria di propagarsi
+                // Breve ritardo 
                 #10;
                 
-                // Scrittura nel file con il formato esatto richiesto
-                $fdisplay(file_handle, "| FP1 = %b | ZERO_FP1 = %b | FP2 = %b | ZERO_FP2 = %b | FP_RES = %b | ZERO_RES = %b |",
-                          fp_a_out, zero_flag_a, fp_b_out, zero_flag_b, fp_res_out, zero_flag_res);
+                // Scrittura nel file 
+		$fdisplay(file_handle, "\n| FP1        | FP2       |");
+                $fdisplay(file_handle, "| %b + %b  = %b | ----- | EXP_DIFF = %b | SHIFT_AMT = %b | MANT_A_SHF = %b | MANT_B_SHF = %b  | RES_MANT_TMP = %b",
+                          fp_a_out, fp_b_out, fp_res_out, exp_diff, shift_amt, full_mant_a_shifted, full_mant_b_shifted, res_mant_temp);
             end
         end
 
-        // Chiusura del file e termine della simulazione
+        // Chiusura del file 
         $fclose(file_handle);
-        $display("Simulazione completata con successo. Risultati salvati in 'hif8_results.txt'.");
-        $finish;
+        
+       
     end
 
 endmodule

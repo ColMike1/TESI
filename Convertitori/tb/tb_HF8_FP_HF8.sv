@@ -5,14 +5,8 @@ module tb_HF8_FP_HF8;
     // Ingressi e segnali intermedi
     reg  [7:0] hif8_in;
     
-    // Uscite del primo modulo (HiFloat8 -> FP)
-    wire       sign_fp;
-    wire [5:0] exp_fp_2s;
-    wire [2:0] mant_fp;
-    
-    // Ricostruzione dell'uscita del primo modulo in formato 10-bit FP
+    // Uscita aggregata a 10-bit del primo modulo (HiFloat8 -> FP)
     wire [9:0] fp_intermediate;
-    assign fp_intermediate = {sign_fp, exp_fp_2s, mant_fp};
 
     // Uscite del secondo modulo (FP -> HiFloat8)
     wire [7:0] hif8_out;
@@ -32,12 +26,10 @@ module tb_HF8_FP_HF8;
     integer fail_count  = 0;
     integer file_handle; 
 
-    // 1° Modulo: HiFloat8 -> FP
+    // 1° Modulo: HiFloat8 -> FP (collegato correttamente al bus fp_out)
     HiFloat8_to_FP_converter u_HiFloat8_to_FP (
         .hif8_in       (hif8_in),
-        .sign_out      (sign_fp),
-        .exp_out_2s    (exp_fp_2s),
-        .mant_out      (mant_fp),
+        .fp_out        (fp_intermediate),
         .zero_flag_out (zero_flag_hif8_to_fp)
     );
 
@@ -156,13 +148,13 @@ module tb_HF8_FP_HF8;
             
             // Scrittura dei risultati sul file 
             $fdisplay(file_handle, "%-45s | %-45s | %-18s | %-45s | %-45s | %-18s | %s",
-                      format_hif8_details(hif8_in),
-                      format_fp_details(fp_intermediate),
-                      $sformatf("ZF_HF2FP: %0d", zero_flag_hif8_to_fp),
-                      format_fp_details(fp_intermediate),
-                      format_hif8_details(hif8_out),
-                      $sformatf("ZF_FP2HF: %0d", zero_flag_fp_to_hif8),
-                      match ? "OK (1)" : "MISMATCH (0)");
+                    format_hif8_details(hif8_in),
+                    format_fp_details(fp_intermediate),
+                    $sformatf("ZF_HF2FP: %0d", zero_flag_hif8_to_fp),
+                    format_fp_details(fp_intermediate),
+                    format_hif8_details(hif8_out),
+                    $sformatf("ZF_FP2HF: %0d", zero_flag_fp_to_hif8),
+                    match ? "OK (1)" : "MISMATCH (0)");
             
             // Statistiche
             total_tests = total_tests + 1;

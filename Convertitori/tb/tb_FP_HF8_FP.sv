@@ -2,23 +2,20 @@
 
 module tb_FP_HF8_FP;
 
-  
     reg  [9:0] fp_in;
     wire [7:0] hif8_intermediate;
     
     wire zero_flag_fp_to_hif8;
     wire zero_flag_hif8_to_fp;
     
- 
-    wire         sign_out;
-    wire [5:0] exp_out_2s;
-    wire [2:0] mant_out;
-    
-    // Ricostruzione dell'uscita del secondo modulo in formato 10-bit FP
+    // Uscita a 10-bit del secondo modulo (gestita come intero bus aggregato)
     wire [9:0] fp_out;
-    assign fp_out = {sign_out, exp_out_2s, mant_out};
-    
 
+    // Istanza del modulo HiFloat8 -> FP per ricavare fp_out dai singoli campi interni
+    // Supponendo che il modulo HiFloat8_to_FP_converter esponga i campi o fp_out. 
+    // Se il tuo modulo espone direttamente fp_out, usiamo direttamente quello:
+    // (Nel tuo modulo precedente l'uscita Ã¨ direttamente `fp_out` a 10-bit).
+    
     wire match;
     assign match = (fp_in == fp_out);
     
@@ -36,12 +33,10 @@ module tb_FP_HF8_FP;
         .zero_flag_out (zero_flag_fp_to_hif8)
     );
 
-    // HiFloat8 -> FP
+    // HiFloat8 -> FP (collegato correttamente al bus fp_out a 10 bit)
     HiFloat8_to_FP_converter u_HiFloat8_to_FP (
         .hif8_in       (hif8_intermediate),
-        .sign_out      (sign_out),
-        .exp_out_2s    (exp_out_2s),
-        .mant_out      (mant_out),
+        .fp_out        (fp_out),
         .zero_flag_out (zero_flag_hif8_to_fp)
     );
 
@@ -139,13 +134,6 @@ module tb_FP_HF8_FP;
         end
     endfunction
 
-
-
-
-
-
-
-
     initial begin
         
         file_handle = $fopen("results/results_FP_HF_FP.txt", "w");
@@ -154,12 +142,6 @@ module tb_FP_HF8_FP;
             $finish;
         end
 
-    
-        /*
-        $fdisplay(file_handle, "%-45s | %-45s | %-18s | %-45s | %-45s | %-18s | %-10s", 
-                 "Input 1° (FP)", "Output 1° (HiF8)", "ZeroFlag_FP_HF", "Input 2° (HiF8)", "Output 2° (FP)", "ZeroFlag_HF_FP", "Uguale?");
-        
-	*/
         // Ciclo su tutte le 1024 combinazioni (2^10) di FP
         for (i = 0; i < 1024; i = i + 1) begin
             fp_in = i[9:0];
@@ -167,13 +149,13 @@ module tb_FP_HF8_FP;
             
             // Scrittura dei risultati sul file 
             $fdisplay(file_handle, "%-45s | %-45s | %-18s | %-45s | %-45s | %-18s | %s",
-                      format_fp_details(fp_in),
-                      format_hif8_details(hif8_intermediate),
-                      $sformatf("ZF_FP2HF: %0d", zero_flag_fp_to_hif8),
-                      format_hif8_details(hif8_intermediate),
-                      format_fp_details(fp_out),
-                      $sformatf("ZF_HF2FP: %0d", zero_flag_hif8_to_fp),
-                      match ? "OK (1)" : "MISMATCH (0)");
+                    format_fp_details(fp_in),
+                    format_hif8_details(hif8_intermediate),
+                    $sformatf("ZF_FP2HF: %0d", zero_flag_fp_to_hif8),
+                    format_hif8_details(hif8_intermediate),
+                    format_fp_details(fp_out),
+                    $sformatf("ZF_HF2FP: %0d", zero_flag_hif8_to_fp),
+                    match ? "OK (1)" : "MISMATCH (0)");
             
             // Statistiche
             total_tests = total_tests + 1;
@@ -185,10 +167,9 @@ module tb_FP_HF8_FP;
 
         // Scrittura del riepilogo finale sul file
         $fdisplay(file_handle, "RIEPILOGO TESTBENCH:");
-        $fdisplay(file_handle, "   Totale combinazioni testate : %0d", total_tests);
-        $fdisplay(file_handle, "   Confronti MATCH (OK)        : %0d", pass_count);
-        $fdisplay(file_handle, "   Confronti MISMATCH          : %0d", fail_count);
-        
+        $fdisplay(file_handle, "    Totale combinazioni testate : %0d", total_tests);
+        $fdisplay(file_handle, "    Confronti MATCH (OK)        : %0d", pass_count);
+        $fdisplay(file_handle, "    Confronti MISMATCH          : %0d", fail_count);
         
         $fclose(file_handle);
         

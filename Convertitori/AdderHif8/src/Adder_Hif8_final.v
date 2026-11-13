@@ -26,7 +26,6 @@ module adder_HiF8(
 
 
 
-
 wire [9:0] fp_from_hif8_a;
 wire	  a_is_zero;
 wire [9:0] fp_from_hif8_b;
@@ -34,11 +33,11 @@ wire 	  b_is_zero;
 
 reg sign_a;
 reg [5:0] exp_a;
-reg [2:0] full_mant_a;
+reg [3:0] full_mant_a;
 
 reg sign_b;
 reg [5:0] exp_b;
-reg [2:0] full_mant_b;
+reg [3:0] full_mant_b;
 
 
 
@@ -59,6 +58,7 @@ HiFloat8_to_FP_converter HF8b_to_FP(
 	.fp_out(fp_from_hif8_b),
 	.zero_flag_out(b_is_zero)
 );
+
 
 
 
@@ -114,6 +114,7 @@ end
 
 
 
+
 reg [4:0] full_mant_a_shifted;
 reg [4:0] full_mant_b_shifted;
 /* 3.2 Quarto blocco procedurale: Effettuo lo shift */
@@ -123,6 +124,8 @@ always @(shift_amount, exp_a_ge_exp_b, full_mant_a, full_mant_b) begin
 	full_mant_b_shifted = exp_a_ge_exp_b ? ({full_mant_b, 1'b0} >> shift_amount) : {full_mant_b, 1'b0};
 
 end
+
+
 
 
 /* 4. Calcola il segno del risultato finale*/
@@ -166,6 +169,7 @@ end
 
 
 
+
 /* 6. Leading One Detector*/
 
 
@@ -196,11 +200,11 @@ always @(result_mant_temp[5:1]) begin
 		end
 		5'b0001_x: begin
 			lod_shift_amt = 2'b10; /*Spostati di due...*/
-			direction = 1'b0;      /*... a destra*/
+			direction = 1'b0;      /*... a sinistra*/
 		end
 		5'b00001: begin
 			lod_shift_amt = 2'b11; /*Spostati di tre...*/
-			direction = 1'b0;      /*... a destra*/
+			direction = 1'b0;      /*... a sinistra*/
 		end
 		default:
 			lod_zero = 1'b1;
@@ -211,7 +215,6 @@ end
 
 
 /* 7. Ricostruzione del risultato in FP, considerando gli eventuali shift tenuti in considerazione dal LOD*/
-
 
 
 reg [5:0] result_exp;
@@ -226,7 +229,7 @@ always @(direction, result_exp_tmp, lod_shift_amt, result_mant_temp) begin
            direction == 1'b0 (a sinistra) -> decrementa l'esponente
            direction == 1'b1 (a destra)   -> incrementa l'esponente
 	*/
-        result_exp = direction ? ($signed(result_exp_tmp) + lod_shift_amt) : ($signed(result_exp_tmp) - lod_shift_amt);
+        result_exp = direction ? ($signed(result_exp_tmp) + lod_shift_amt) : ($signed(result_exp_tmp) - $signed(lod_shift_amt));
       
 	/* Shifta di lod_shift_amt la mantissa*/  
         shifted_mant_temp = direction ? (result_mant_temp >> lod_shift_amt) : (result_mant_temp << lod_shift_amt) ; 
@@ -234,8 +237,6 @@ always @(direction, result_exp_tmp, lod_shift_amt, result_mant_temp) begin
 end
 
 assign sum_result_in_FP = lod_zero ? {result_sign, 6'b100_000, 3'b000} : {result_sign, result_exp, result_mant};
-
-
 
 
 /* 8. Conversione del risultato in HiFloat8*/
@@ -263,8 +264,9 @@ assign hif8_res_out = (a_is_zero || b_is_zero)? (a_is_zero ? hif8_b_in : hif8_a_
 
 
 
-endmodule
 
+
+endmodule
 
 
 

@@ -2,31 +2,20 @@
 
 module tb_HF8_FP;
 
- 
     reg  [7:0] hif8_in;
     
-
-    wire       sign_out;
-    wire [5:0] exp_out_2s;
-    wire [2:0] mant_out;
-    
-    // Ricostruzione dell'uscita in formato 10-bit FP
+    // Uscite del modulo HiFloat8_to_FP_converter
     wire [9:0] fp_out;
-    assign fp_out = {sign_out, exp_out_2s, mant_out};
-
-    
-    wire zero_flag_hif8_to_fp;
+    wire       zero_flag_hif8_to_fp;
  
     integer i;
     integer total_tests = 0;
     integer file_handle; 
 
-    // Istanza del modulo HiFloat8 -> FP
+    // Istanza del modulo HiFloat8 -> FP (collegamento corretto alle sole 2 uscite del modulo)
     HiFloat8_to_FP_converter u_HiFloat8_to_FP (
         .hif8_in       (hif8_in),
-        .sign_out      (sign_out),
-        .exp_out_2s    (exp_out_2s),
-        .mant_out      (mant_out),
+        .fp_out        (fp_out),
         .zero_flag_out (zero_flag_hif8_to_fp)
     );
 
@@ -78,32 +67,32 @@ module tb_HF8_FP;
                     dot_display_str = $sformatf("%04b", hif[6:3]);
                     bin_str         = $sformatf("%b_%4b_----_%3b", s, hif[6:3], hif[2:0]);
                 end
-                4'b001?: begin // Exp = 1 (Dot = 001)
+                4'b001?: begin // Exp = 1 (Dot = 001x)
                     abs_exp         = {5'b0, 1'b1};
                     do_comp         = hif[3];
                     m_out           = hif[2:0];
-                    dot_display_str = $sformatf("%03b", hif[6:4]);
+                    dot_display_str = $sformatf("%04b", hif[6:3]);
                     bin_str         = $sformatf("%b_%3b_%1b_%3b", s, hif[6:4], hif[3], hif[2:0]);
                 end
-                4'b01??: begin // Exp = [2,3] (Dot = 01)
+                4'b01??: begin // Exp = [2,3] (Dot = 01xx)
                     abs_exp         = {4'b0, 1'b1, hif[3]};
                     do_comp         = hif[4];
                     m_out           = hif[2:0];
-                    dot_display_str = $sformatf("%02b", hif[6:5]);
+                    dot_display_str = $sformatf("%04b", hif[6:3]);
                     bin_str         = $sformatf("%b_%2b_%2b_%3b", s, hif[6:5], hif[4:3], hif[2:0]);
                 end
-                4'b10??: begin // Exp = [4,7] (Dot = 10)
+                4'b10??: begin // Exp = [4,7] (Dot = 10xx)
                     abs_exp         = {3'b0, 1'b1, hif[3:2]};
                     do_comp         = hif[4];
                     m_out           = {hif[1:0], 1'b0};
-                    dot_display_str = $sformatf("%02b", hif[6:5]);
+                    dot_display_str = $sformatf("%04b", hif[6:3]);
                     bin_str         = $sformatf("%b_%2b_%3b_%2b", s, hif[6:5], hif[4:2], hif[1:0]);
                 end
-                4'b11??: begin // Exp = [8,15] (Dot = 11)
+                4'b11??: begin // Exp = [8,15] (Dot = 11xx)
                     abs_exp         = {2'b0, 1'b1, hif[3:1]};
                     do_comp         = hif[4];
                     m_out           = {hif[0], 2'b0};
-                    dot_display_str = $sformatf("%02b", hif[6:5]); 
+                    dot_display_str = $sformatf("%04b", hif[6:3]); 
                     bin_str         = $sformatf("%b_%2b_%4b_%1b", s, hif[6:5], hif[4:1], hif[0]);
                 end
                 default: begin
@@ -138,9 +127,9 @@ module tb_HF8_FP;
             
             // Scrittura dei risultati sul file 
             $fdisplay(file_handle, "%-45s | %-45s | %-18s",
-                      format_hif8_details(hif8_in),
-                      format_fp_details(fp_out),
-                      $sformatf("ZF_HF2FP: %0d", zero_flag_hif8_to_fp));
+                    format_hif8_details(hif8_in),
+                    format_fp_details(fp_out),
+                    $sformatf("ZF_HF2FP: %0d", zero_flag_hif8_to_fp));
             
             total_tests = total_tests + 1;
         end
@@ -150,7 +139,6 @@ module tb_HF8_FP;
         $fdisplay(file_handle, "    Totale combinazioni testate : %0d", total_tests);
         
         $fclose(file_handle);
-
     end
 
 endmodule

@@ -1023,6 +1023,6 @@
 1_111111_110 (Dec:1022 | E:-1, M:0.750)       | 1_001_1_110 (Dot:001 | E:-1, M:0.750)         | ZF_FP2HF: 0        | 1_001_1_110 (Dot:001 | E:-1, M:0.750)         | 1_111111_110 (Dec:1022 | E:-1, M:0.750)       | ZF_HF2FP: 0        |       OK (1)
 1_111111_111 (Dec:1023 | E:-1, M:0.875)       | 1_001_1_111 (Dot:001 | E:-1, M:0.875)         | ZF_FP2HF: 0        | 1_001_1_111 (Dot:001 | E:-1, M:0.875)         | 1_111111_111 (Dec:1023 | E:-1, M:0.875)       | ZF_HF2FP: 0        |       OK (1)
 RIEPILOGO TESTBENCH:
-   Totale combinazioni testate : 1024
-   Confronti MATCH (OK)        : 256
-   Confronti MISMATCH          : 768
+    Totale combinazioni testate : 1024
+    Confronti MATCH (OK)        : 256
+    Confronti MISMATCH          : 768

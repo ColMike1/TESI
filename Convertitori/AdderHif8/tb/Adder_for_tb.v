@@ -1,4 +1,6 @@
 /*
+Questo codice è un estensione del codice sorgente 'Adder_Hif8_final.v', ed è usato per il testbench
+
 --- Addizionatore di numeri HiFloat8 ---
 
 Cosa fa questo modulo: 
@@ -21,12 +23,16 @@ module adder_HiF8(
 	input wire [7:0] hif8_a_in,
 	input wire [7:0] hif8_b_in,
 	
-	/* Questi 5 segnali servono solo per il testbench. Tenerli commentati*/
+	/* Questi 3 segnali servono solo per il testbench. */
 	output wire [9:0] fp_a_out,
-	output wire zero_flag_a,
 	output wire [9:0] fp_b_out,
-	output wire zero_flag_b,
 	output wire [9:0] fp_res_out,
+
+	output wire [5:0] exp_diff_out,
+	output wire [2:0] shift_amt_out,
+	output wire [4:0] full_mant_a_shifted_out,
+	output wire [4:0] full_mant_b_shifted_out,
+	output wire [5:0] result_mant_temp_out,
 	/*---------------------------*/
 
 	output wire [7:0] hif8_res_out
@@ -42,11 +48,11 @@ wire 	  b_is_zero;
 
 reg sign_a;
 reg [5:0] exp_a;
-reg [2:0] full_mant_a;
+reg [3:0] full_mant_a;
 
 reg sign_b;
 reg [5:0] exp_b;
-reg [2:0] full_mant_b;
+reg [3:0] full_mant_b;
 
 
 
@@ -59,10 +65,10 @@ HiFloat8_to_FP_converter HF8a_to_FP(
 	.zero_flag_out(a_is_zero)
 );
 
-/*COMMENTARE*/
-assign fp_a_out = fp_from_hif8_a;
-assign zero_flag_a = a_is_zero;
 /*------------*/
+assign fp_a_out = fp_from_hif8_a;
+/*------------*/
+
 
 /*Conversione: hif8_b_in -> FP*/
 HiFloat8_to_FP_converter HF8b_to_FP(
@@ -70,10 +76,12 @@ HiFloat8_to_FP_converter HF8b_to_FP(
 	.fp_out(fp_from_hif8_b),
 	.zero_flag_out(b_is_zero)
 );
-/*COMMENTARE*/
+
+
+/*-------------*/
 assign fp_b_out = fp_from_hif8_b;
-assign zero_flag_b = b_is_zero;
-/*------------*/
+/*-------------*/
+
 
 
 
@@ -127,6 +135,11 @@ always @(exp_a, exp_b, exp_a_ge_exp_b) begin
 
 end
 
+/*------------*/
+assign exp_diff_out = exp_diff;
+assign shift_amt_out = shift_amount;
+/*------------*/
+
 
 
 reg [4:0] full_mant_a_shifted;
@@ -138,6 +151,11 @@ always @(shift_amount, exp_a_ge_exp_b, full_mant_a, full_mant_b) begin
 	full_mant_b_shifted = exp_a_ge_exp_b ? ({full_mant_b, 1'b0} >> shift_amount) : {full_mant_b, 1'b0};
 
 end
+
+/*----------*/
+assign full_mant_a_shifted_out = full_mant_a_shifted;
+assign full_mant_b_shifted_out = full_mant_b_shifted;
+/*----------*/
 
 
 /* 4. Calcola il segno del risultato finale*/
@@ -180,6 +198,10 @@ always @(full_mant_a_shifted, full_mant_b_shifted, sign_a, sign_b, mant_a_ge_man
 end
 
 
+/*---------*/
+assign result_mant_temp_out = result_mant_temp;
+/*---------*/
+
 
 /* 6. Leading One Detector*/
 
@@ -211,11 +233,11 @@ always @(result_mant_temp[5:1]) begin
 		end
 		5'b0001_x: begin
 			lod_shift_amt = 2'b10; /*Spostati di due...*/
-			direction = 1'b0;      /*... a destra*/
+			direction = 1'b0;      /*... a sinistra*/
 		end
 		5'b00001: begin
 			lod_shift_amt = 2'b11; /*Spostati di tre...*/
-			direction = 1'b0;      /*... a destra*/
+			direction = 1'b0;      /*... a sinistra*/
 		end
 		default:
 			lod_zero = 1'b1;
@@ -241,7 +263,7 @@ always @(direction, result_exp_tmp, lod_shift_amt, result_mant_temp) begin
            direction == 1'b0 (a sinistra) -> decrementa l'esponente
            direction == 1'b1 (a destra)   -> incrementa l'esponente
 	*/
-        result_exp = direction ? ($signed(result_exp_tmp) + lod_shift_amt) : ($signed(result_exp_tmp) - lod_shift_amt);
+        result_exp = direction ? ($signed(result_exp_tmp) + lod_shift_amt) : ($signed(result_exp_tmp) - $signed(lod_shift_amt));
       
 	/* Shifta di lod_shift_amt la mantissa*/  
         shifted_mant_temp = direction ? (result_mant_temp >> lod_shift_amt) : (result_mant_temp << lod_shift_amt) ; 
@@ -250,7 +272,7 @@ end
 
 assign sum_result_in_FP = lod_zero ? {result_sign, 6'b100_000, 3'b000} : {result_sign, result_exp, result_mant};
 
-
+assign fp_res_out = sum_result_in_FP;
 
 
 /* 8. Conversione del risultato in HiFloat8*/
@@ -278,8 +300,9 @@ assign hif8_res_out = (a_is_zero || b_is_zero)? (a_is_zero ? hif8_b_in : hif8_a_
 
 
 
-endmodule
 
+
+endmodule
 
 
 
