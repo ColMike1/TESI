@@ -270,7 +270,7 @@ always @(direction, result_exp_tmp, lod_shift_amt, result_mant_temp) begin
 	result_mant = shifted_mant_temp[3:1];
 end
 
-assign sum_result_in_FP = lod_zero ? {result_sign, 6'b100_000, 3'b000} : {result_sign, result_exp, result_mant};
+assign sum_result_in_FP = lod_zero ? {1'b0, 6'b100_000, 3'b000} : {result_sign, result_exp, result_mant};
 
 assign fp_res_out = sum_result_in_FP;
 
