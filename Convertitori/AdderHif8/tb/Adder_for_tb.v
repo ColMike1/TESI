@@ -1,5 +1,5 @@
 /*
-Questo codice è un estensione del codice sorgente 'Adder_Hif8_final.v', ed è usato per il testbench
+Questo codice ï¿½ un estensione del codice sorgente 'Adder_Hif8_final.v', ed ï¿½ usato per il testbench
 
 --- Addizionatore di numeri HiFloat8 ---
 
@@ -7,14 +7,14 @@ Cosa fa questo modulo:
 
 1) prende in ingresso due HiFloat8;
 2) converte i due numeri HiFloat8 nei formati FP in complemento a 2;
-3) effettua uno shift della mantissa del numero FP più piccolo, allineando l'esponente di tale numero con l'FP più grande;
+3) effettua uno shift della mantissa del numero FP piï¿½ piccolo, allineando l'esponente di tale numero con l'FP piï¿½ grande;
 4) calcola il segno del risultato finale confrontando le due mantisse: quella non shiftata e quella shiftata. Il segno
-   del risultato finale è quello della mantissa shiftata più grande;
+   del risultato finale ï¿½ quello della mantissa shiftata piï¿½ grande;
 5) effettua la somma (o sottrazione) delle mantisse. 
 6) il risultato viene passato ad un Leading One Detector per effettuare eventuali shift da overflow/underflow e aumentare/diminuire l'esponente;
 7) ricostruisce il risultato in FP: (segno, Exp, mant) in 10 bit;
 8) passa il risultato al convertitore FP_to_HiFloat8;
-9) L'output è l'uscita di quest'ultimo convertitore;
+9) L'output ï¿½ l'uscita di quest'ultimo convertitore;
 
 */
 
@@ -102,20 +102,20 @@ end
 
 
 
-/* 3. Calcolo dello shift del numero FP più piccolo*/
+/* 3. Calcolo dello shift del numero FP piï¿½ piccolo*/
 
 
 wire exp_a_ge_exp_b = $signed(exp_a) >= $signed(exp_b);
-wire [5:0] result_exp_tmp = exp_a_ge_exp_b ? exp_a : exp_b;     /*Per il momento, il risultato ha come esponente quello più grande tra i due FP. Dopo ci possono essere degli shift
-						   	    e magari cambia di nuovo. Per il momento è tmp=temporaneo*/
+wire [5:0] result_exp_tmp = exp_a_ge_exp_b ? exp_a : exp_b;     /*Per il momento, il risultato ha come esponente quello piï¿½ grande tra i due FP. Dopo ci possono essere degli shift
+						   	    e magari cambia di nuovo. Per il momento ï¿½ tmp=temporaneo*/
 
 reg [2:0] shift_amount;
 reg [5:0] exp_diff;
 /* 3.1 Terzo blocco procedurale: Calcolo lo shift
-Shift di massimo 5 posizioni, non oltre. Questo perchè uno shift >= 5 renderebbe inutile l'intervento del numero più piccolo nella somma.
+Shift di massimo 5 posizioni, non oltre. Questo perchï¿½ uno shift >= 5 renderebbe inutile l'intervento del numero piï¿½ piccolo nella somma.
 
    Ad esempio: 	A = 2^(0)*1.011, 	B = 2^(5)*1.111.
-  		exp_diff = 5, ciò implica che per allineare gli esponenti, dobbiamo shiftare la mantissa del numero più piccolo a destra di 5 posizioni 
+  		exp_diff = 5, ciï¿½ implica che per allineare gli esponenti, dobbiamo shiftare la mantissa del numero piï¿½ piccolo a destra di 5 posizioni 
 
 		Quindi dovremmo sommare :
 		A+B = 2^(5)*0.000_01011 + 2^(5)* 1.111_00000.
@@ -125,8 +125,8 @@ Shift di massimo 5 posizioni, non oltre. Questo perchè uno shift >= 5 renderebbe
  			 -----------
                          1.111_01011
 
-		Sommando add_0000_1 per il round away, notiamo che non c'è alcun contibuto del numero più piccolo sulla mantissa finale.
-		Se exp_diff fosse stato =4, allora la mantissa del numero più piccolo avrebbe influito sul risultato finale.
+		Sommando add_0000_1 per il round away, notiamo che non c'ï¿½ alcun contibuto del numero piï¿½ piccolo sulla mantissa finale.
+		Se exp_diff fosse stato =4, allora la mantissa del numero piï¿½ piccolo avrebbe influito sul risultato finale.
 */
 always @(exp_a, exp_b, exp_a_ge_exp_b) begin
 	
@@ -163,9 +163,9 @@ assign full_mant_b_shifted_out = full_mant_b_shifted;
 reg result_sign;
 wire mant_a_ge_mant_b = (full_mant_a_shifted >= full_mant_b_shifted);
 /* 4.1: Quinto blocco procedurale*/
-/*Il segno del risultato res_sign è:
-	- se i segni dei due numeri sono uguali, il segno finale sarà uguale a tale segno (Pos + Pos = Pos, Neg + Neg = Neg)
-	- se i segni dei due numeri sono diversi, il segno finale è quello del numero con mantissa shiftata più grande
+/*Il segno del risultato res_sign ï¿½:
+	- se i segni dei due numeri sono uguali, il segno finale sarï¿½ uguale a tale segno (Pos + Pos = Pos, Neg + Neg = Neg)
+	- se i segni dei due numeri sono diversi, il segno finale ï¿½ quello del numero con mantissa shiftata piï¿½ grande
 */
 always @(sign_a, sign_b, mant_a_ge_mant_b) begin
 
@@ -184,11 +184,11 @@ always @(full_mant_a_shifted, full_mant_b_shifted, sign_a, sign_b, mant_a_ge_man
 
 	case ({sign_a, sign_b}) 
 		2'b00, 2'b11: begin
-			result_mant_temp = {1'b0, full_mant_a_shifted} + {1'b0, full_mant_b_shifted} + add_000_001;
+			result_mant_temp = {1'b0, full_mant_a_shifted} + {1'b0, full_mant_b_shifted};
 		end
 		2'b01, 2'b10: begin
-			result_mant_temp = mant_a_ge_mant_b ? {1'b0, full_mant_a_shifted} - {1'b0, full_mant_b_shifted} + add_000_001 : 
-                                           		      {1'b0, full_mant_b_shifted} - {1'b0, full_mant_a_shifted} + add_000_001; 
+			result_mant_temp = mant_a_ge_mant_b ? {1'b0, full_mant_a_shifted} - {1'b0, full_mant_b_shifted} : 
+                                           		      {1'b0, full_mant_b_shifted} - {1'b0, full_mant_a_shifted}; 
 		end
 
 		default:
@@ -208,35 +208,39 @@ assign result_mant_temp_out = result_mant_temp;
 
 reg direction; /* 0 = sinistra, 1 = destra*/
 reg lod_zero;
-reg [1:0] lod_shift_amt;
+reg [2:0] lod_shift_amt;
 
 /* 6.1 settimo blocco procedurale */
-always @(result_mant_temp[5:1]) begin
+always @(result_mant_temp) begin
 	
 	lod_zero = 1'b0;
-	lod_shift_amt = 2'b00;
+	lod_shift_amt = 3'b000;
 	direction = 1'b0;
 
-	casex(result_mant_temp[5:1])
+	casex(result_mant_temp)
 
-		5'b1_xxxx: begin
-			lod_shift_amt = 2'b01; /*Shift di uno...*/
+		6'b1_xxxxx: begin
+			lod_shift_amt = 3'b001; /*Shift di uno...*/
 			direction = 1'b1;      /*... a destra*/
 		end
-		5'b01_xxx: begin
-			lod_shift_amt = 2'b00; /*Shift di 0...*/
-			direction = 1'b0;      /*indifferente, può essere anche 1'b1*/
+		6'b01_xxxx: begin
+			lod_shift_amt = 3'b000; /*Shift di 0...*/
+			direction = 1'b0;      /*indifferente, puï¿½ essere anche 1'b1*/
 		end
-		5'b001_xx: begin
-			lod_shift_amt = 2'b01; /*Shift di uno...*/
+		6'b001_xxx: begin
+			lod_shift_amt = 3'b001; /*Shift di uno...*/
 			direction = 1'b0;      /*... a sinistra*/
 		end
-		5'b0001_x: begin
-			lod_shift_amt = 2'b10; /*Spostati di due...*/
+		6'b0001_xx: begin
+			lod_shift_amt = 3'b010; /*Shift di due...*/
 			direction = 1'b0;      /*... a sinistra*/
 		end
-		5'b00001: begin
-			lod_shift_amt = 2'b11; /*Spostati di tre...*/
+		6'b00001x: begin
+			lod_shift_amt = 3'b011; /*Shift di tre...*/
+			direction = 1'b0;      /*... a sinistra*/
+		end
+		6'b000001: begin
+			lod_shift_amt = 3'b100; /*Shift di quattro...*/
 			direction = 1'b0;      /*... a sinistra*/
 		end
 		default:
@@ -251,10 +255,12 @@ end
 
 
 
+reg [5:0] result_exp_aprx;
 reg [5:0] result_exp;
 reg [2:0] result_mant;
 wire [9:0] sum_result_in_FP; 
-reg [5:0] shifted_mant_temp;
+reg [5:0] shifted_result_mant_temp;
+
 /* 7.1 */
 always @(direction, result_exp_tmp, lod_shift_amt, result_mant_temp) begin
 
@@ -263,11 +269,17 @@ always @(direction, result_exp_tmp, lod_shift_amt, result_mant_temp) begin
            direction == 1'b0 (a sinistra) -> decrementa l'esponente
            direction == 1'b1 (a destra)   -> incrementa l'esponente
 	*/
-        result_exp = direction ? ($signed(result_exp_tmp) + lod_shift_amt) : ($signed(result_exp_tmp) - $signed(lod_shift_amt));
+        result_exp_aprx = direction ? ($signed(result_exp_tmp) + lod_shift_amt) : ($signed(result_exp_tmp) - $signed(lod_shift_amt));
       
-	/* Shifta di lod_shift_amt la mantissa*/  
-        shifted_mant_temp = direction ? (result_mant_temp >> lod_shift_amt) : (result_mant_temp << lod_shift_amt) ; 
-	result_mant = shifted_mant_temp[3:1];
+	/* Shifta di lod_shift_amt la mantissa. Al termine dello shift il risultato Ã¨ normalizzato, quindi espresso nella forma
+		+/- 2^(exp)(1.xxx), ma bisogna ancora aggiungere add_000_001 per il round away from zero. Questo puÃ² causare un riporto, e se avviene lo gestisco
+		incrementando l'esponente di uno e prendendo i bit shifted_result_mant_temp[4:2] piuttosto che [3:1]*/  
+        shifted_result_mant_temp = direction ? (result_mant_temp >> lod_shift_amt) + add_000_001 : (result_mant_temp << lod_shift_amt) + add_000_001;
+		
+		result_mant = shifted_result_mant_temp[5] == 1'b1 ? shifted_result_mant_temp[4:2] : shifted_result_mant_temp[3:1];
+		result_exp  = shifted_result_mant_temp[5] == 1'b1 ? result_exp_aprx + 6'b000_0001 : result_exp_aprx;
+
+
 end
 
 assign sum_result_in_FP = lod_zero ? {1'b0, 6'b100_000, 3'b000} : {result_sign, result_exp, result_mant};
@@ -287,12 +299,12 @@ FP_to_HiFloat8_converter FP_to_HF8(
 
 
 
-/*Se uno dei due HiFloat8 in Input all'adder è Zero, assegna l'altro Input. Altrimenti assegna il risultato della somma.
+/*Se uno dei due HiFloat8 in Input all'adder ï¿½ Zero, assegna l'altro Input. Altrimenti assegna il risultato della somma.
 
 (a_is_zero = 0, b_is_zero = 0) -> sum_result
 (a_is_zero = 0, b_is_zero = 1) -> hif8_a_in
 (a_is_zero = 1, b_is_zero = 0) -> hif8_b_in
-(a_is_zero = 1, b_is_zero = 1) -> hif8_b_in (che è sempre 0)
+(a_is_zero = 1, b_is_zero = 1) -> hif8_b_in (che ï¿½ sempre 0)
 
  */
 assign hif8_res_out = (a_is_zero || b_is_zero)? (a_is_zero ? hif8_b_in : hif8_a_in): sum_result_in_HF8;
