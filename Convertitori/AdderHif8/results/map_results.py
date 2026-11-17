@@ -94,7 +94,6 @@ def on_add(sel):
     
    
     sel.annotation.set_text(
-        f"Indice: {index}\n"
         f"FP1 (bin): {b1}\n"
         f"FP2 (bin): {b2}\n"
         f"Err. Relativo: {err:.4e}"

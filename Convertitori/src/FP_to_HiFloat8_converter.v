@@ -36,8 +36,8 @@ module FP_to_HiFloat8_converter(
     output wire zero_flag_out
     );
     
-    wire [5:0]  exp_in;                  // exp_in può essere sia positivo che negativo. Varia nel range [-32, 31].
-    reg  [5:0]  exp_mod_in;              // exp_mod_in è il valore assoluto dell'esponente exp_in    
+    wire [5:0]  exp_in;                  // exp_in puÃ² essere sia positivo che negativo. Varia nel range [-32, 31].
+    reg  [5:0]  exp_mod_in;              // exp_mod_in Ã¨ il valore assoluto dell'esponente exp_in    
     wire [2:0]  mant_in;      
     wire        sign_out;
     
@@ -115,7 +115,7 @@ module FP_to_HiFloat8_converter(
 		tmp = {1'b0, mant_in} + {1'b0, add_100};
 		exp_mod_adjusted = (tmp[3] && exp_mod_out <= 6'd22) ? exp_mod_out - 6'b000001 : exp_mod_out;
 		dot_adjusted = exp_mod_adjusted == 6'd15 ? {2'b11, 2'b00} : dot_out;
-		mant_out = (dot_out == {2'b11, 2'b00}) ? {tmp[2], 2'b00} :  6'd23 - exp_mod_adjusted;
+		mant_out = 6'd23 - exp_mod_adjusted
 		
 	    	end
 
@@ -170,19 +170,3 @@ module FP_to_HiFloat8_converter(
     end
 
 endmodule
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

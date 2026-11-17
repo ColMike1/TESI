@@ -30,9 +30,9 @@ module adder_HiF8(
 
 	output wire [5:0] exp_diff_out,
 	output wire [2:0] shift_amt_out,
-	output wire [4:0] full_mant_a_shifted_out,
-	output wire [4:0] full_mant_b_shifted_out,
-	output wire [5:0] result_mant_temp_out,
+	output wire [6:0] full_mant_a_shifted_out,
+	output wire [6:0] full_mant_b_shifted_out,
+	output wire [7:0] result_mant_temp_out,
 	/*---------------------------*/
 
 	output wire [7:0] hif8_res_out
@@ -112,26 +112,12 @@ wire [5:0] result_exp_tmp = exp_a_ge_exp_b ? exp_a : exp_b;     /*Per il momento
 reg [2:0] shift_amount;
 reg [5:0] exp_diff;
 /* 3.1 Terzo blocco procedurale: Calcolo lo shift
-Shift di massimo 5 posizioni, non oltre. Questo perch� uno shift >= 5 renderebbe inutile l'intervento del numero pi� piccolo nella somma.
-
-   Ad esempio: 	A = 2^(0)*1.011, 	B = 2^(5)*1.111.
-  		exp_diff = 5, ci� implica che per allineare gli esponenti, dobbiamo shiftare la mantissa del numero pi� piccolo a destra di 5 posizioni 
-
-		Quindi dovremmo sommare :
-		A+B = 2^(5)*0.000_01011 + 2^(5)* 1.111_00000.
-
-		Quindi : 0.000_01011+
-                         1.111_00000=
- 			 -----------
-                         1.111_01011
-
-		Sommando add_0000_1 per il round away, notiamo che non c'� alcun contibuto del numero pi� piccolo sulla mantissa finale.
-		Se exp_diff fosse stato =4, allora la mantissa del numero pi� piccolo avrebbe influito sul risultato finale.
+Shift di massimo 7 posizioni
 */
 always @(exp_a, exp_b, exp_a_ge_exp_b) begin
 	
 	exp_diff    = exp_a_ge_exp_b ? ($signed(exp_a) - $signed(exp_b)) : ($signed(exp_b) - $signed(exp_a));
-	shift_amount   = (exp_diff > 3'b101) ? 3'b101 : exp_diff[2:0]; /*Massimo 5*/ 
+	shift_amount   = (exp_diff > 3'b111) ? 3'b111 : exp_diff[2:0]; /*Massimo 7*/ 
 
 end
 
@@ -142,13 +128,13 @@ assign shift_amt_out = shift_amount;
 
 
 
-reg [4:0] full_mant_a_shifted;
-reg [4:0] full_mant_b_shifted;
+reg [6:0] full_mant_a_shifted;
+reg [6:0] full_mant_b_shifted;
 /* 3.2 Quarto blocco procedurale: Effettuo lo shift */
 always @(shift_amount, exp_a_ge_exp_b, full_mant_a, full_mant_b) begin
 
-	full_mant_a_shifted = exp_a_ge_exp_b ? {full_mant_a, 1'b0} : ({full_mant_a, 1'b0} >> shift_amount);
-	full_mant_b_shifted = exp_a_ge_exp_b ? ({full_mant_b, 1'b0} >> shift_amount) : {full_mant_b, 1'b0};
+	full_mant_a_shifted = exp_a_ge_exp_b ? {full_mant_a, 3'b000} : ({full_mant_a, 3'b000} >> shift_amount);
+	full_mant_b_shifted = exp_a_ge_exp_b ? ({full_mant_b, 3'b000} >> shift_amount) : {full_mant_b, 3'b000};
 
 end
 
@@ -176,8 +162,8 @@ end
 
 /* 5. Effettua la somma o la sottrazione delle mantisse */
 
-reg [5:0] result_mant_temp;
-localparam add_000_001 = 6'b000_001;
+reg [7:0] result_mant_temp;
+localparam add_0000_0100 = 8'b0000_0100;
 /* 5.1 Sesto blocco procedurale*/
 always @(full_mant_a_shifted, full_mant_b_shifted, sign_a, sign_b, mant_a_ge_mant_b) begin
 
@@ -192,7 +178,7 @@ always @(full_mant_a_shifted, full_mant_b_shifted, sign_a, sign_b, mant_a_ge_man
 		end
 
 		default:
-			result_mant_temp = 6'b000_000;
+			result_mant_temp = 8'b0000_0000;
 	endcase
 
 end
@@ -219,28 +205,36 @@ always @(result_mant_temp) begin
 
 	casex(result_mant_temp)
 
-		6'b1_xxxxx: begin
+		8'b1xxx_xxxx: begin
 			lod_shift_amt = 3'b001; /*Shift di uno...*/
 			direction = 1'b1;      /*... a destra*/
 		end
-		6'b01_xxxx: begin
+		8'b01xx_xxxx: begin
 			lod_shift_amt = 3'b000; /*Shift di 0...*/
 			direction = 1'b0;      /*indifferente, pu� essere anche 1'b1*/
 		end
-		6'b001_xxx: begin
+		8'b001x_xxxx: begin
 			lod_shift_amt = 3'b001; /*Shift di uno...*/
 			direction = 1'b0;      /*... a sinistra*/
 		end
-		6'b0001_xx: begin
+		8'b0001_xxxx: begin
 			lod_shift_amt = 3'b010; /*Shift di due...*/
 			direction = 1'b0;      /*... a sinistra*/
 		end
-		6'b00001x: begin
+		8'b0000_1xxx: begin
 			lod_shift_amt = 3'b011; /*Shift di tre...*/
 			direction = 1'b0;      /*... a sinistra*/
 		end
-		6'b000001: begin
+		8'b0000_01xx: begin
 			lod_shift_amt = 3'b100; /*Shift di quattro...*/
+			direction = 1'b0;      /*... a sinistra*/
+		end
+		8'b0000_001x: begin
+			lod_shift_amt = 3'b101; /*Shift di cinque...*/
+			direction = 1'b0;      /*... a sinistra*/
+		end
+		8'b0000_0001: begin
+			lod_shift_amt = 3'b110; /*Shift di sei...*/
 			direction = 1'b0;      /*... a sinistra*/
 		end
 		default:
@@ -259,7 +253,7 @@ reg [5:0] result_exp_aprx;
 reg [5:0] result_exp;
 reg [2:0] result_mant;
 wire [9:0] sum_result_in_FP; 
-reg [5:0] shifted_result_mant_temp;
+reg [7:0] shifted_result_mant_temp;
 
 /* 7.1 */
 always @(direction, result_exp_tmp, lod_shift_amt, result_mant_temp) begin
@@ -272,12 +266,12 @@ always @(direction, result_exp_tmp, lod_shift_amt, result_mant_temp) begin
         result_exp_aprx = direction ? ($signed(result_exp_tmp) + lod_shift_amt) : ($signed(result_exp_tmp) - $signed(lod_shift_amt));
       
 	/* Shifta di lod_shift_amt la mantissa. Al termine dello shift il risultato è normalizzato, quindi espresso nella forma
-		+/- 2^(exp)(1.xxx), ma bisogna ancora aggiungere add_000_001 per il round away from zero. Questo può causare un riporto, e se avviene lo gestisco
+		+/- 2^(exp)(1.xxx), ma bisogna ancora aggiungere add_0000_0100 per il round away from zero. Questo può causare un riporto, e se avviene lo gestisco
 		incrementando l'esponente di uno e prendendo i bit shifted_result_mant_temp[4:2] piuttosto che [3:1]*/  
-        shifted_result_mant_temp = direction ? (result_mant_temp >> lod_shift_amt) + add_000_001 : (result_mant_temp << lod_shift_amt) + add_000_001;
+        shifted_result_mant_temp = direction ? (result_mant_temp >> lod_shift_amt) + add_0000_0100 : (result_mant_temp << lod_shift_amt) + add_0000_0100;
 		
-		result_mant = shifted_result_mant_temp[5] == 1'b1 ? shifted_result_mant_temp[4:2] : shifted_result_mant_temp[3:1];
-		result_exp  = shifted_result_mant_temp[5] == 1'b1 ? result_exp_aprx + 6'b000_0001 : result_exp_aprx;
+		result_mant = shifted_result_mant_temp[7] == 1'b1 ? shifted_result_mant_temp[6:4] : shifted_result_mant_temp[5:3];
+		result_exp  = shifted_result_mant_temp[7] == 1'b1 ? result_exp_aprx + 6'b000_0001 : result_exp_aprx;
 
 
 end

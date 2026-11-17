@@ -80,10 +80,10 @@ with open(output_file_path, 'w', encoding='utf-8') as out_file:
                 
                 # Scrittura multilinea pulita per ogni operazione
                 out_file.write(f"--- Riga {line_num} ---\n")
-                out_file.write(f"  FP1 (Custom):   {val_fp1}\n")
-                out_file.write(f"  FP2 (Custom):   {val_fp2}\n")
+                out_file.write(f"  FP1 (10 bit):   {val_fp1}\n")
+                out_file.write(f"  FP2 (10 bit):   {val_fp2}\n")
                 out_file.write(f"  Atteso (f32):   {somma_attesa}\n")
-                out_file.write(f"  File (Custom):  {val_res}\n")
+                out_file.write(f"  Adder:  {val_res}\n")
                 out_file.write(f"  Errore Relativo: {err_rel:.6e}\n") 
                 out_file.write("\n")
                 
@@ -95,7 +95,7 @@ with open(output_file_path, 'w', encoding='utf-8') as out_file:
 plt.figure(figsize=(12, 6))
 plt.plot(indici_riga, errori_relativi, linewidth=0.5, color='#1f77b4', alpha=0.8)
 
-plt.title("Errore Relativo (risultato atteso : risultato dell'adderHif8)", fontsize=14)
+plt.title("Errore Relativo (risultato atteso - risultato dell'adderHif8)", fontsize=14)
 plt.xlabel("Indice della riga del file sum_results.txt", fontsize=12)
 plt.ylabel("Errore relativo", fontsize=12)
 plt.grid(True, linestyle='--', alpha=0.6)
