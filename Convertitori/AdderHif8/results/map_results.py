@@ -51,7 +51,7 @@ with open(file_path, 'r', encoding='utf-8') as f:
             if somma_attesa != 0:
                 err_rel = abs(somma_attesa - val_res) / abs(somma_attesa)
             else:
-                err_rel = 0.0 if val_res == 0 else float('inf')
+                err_rel = 0.0 if val_res == 2**(-32) else 1
             
             valori_fp1.append(float(val_fp1))
             valori_fp2.append(float(val_fp2))
@@ -74,7 +74,7 @@ scatter = ax.scatter(
 cbar = plt.colorbar(scatter, ax=ax)
 cbar.set_label('Errore Relativo (più scuro = errore maggiore)', fontsize=12)
 
-ax.set_title("Mappa dell'Errore Relativo", fontsize=14)
+ax.set_title("Errore Relativo (usato solo 2 bit di paddin: 1.xxx_00)", fontsize=14)
 ax.set_xlabel("Valore FP1 (scala logaritmica)", fontsize=12)
 ax.set_ylabel("Valore FP2 (scala logaritmica)", fontsize=12)
 

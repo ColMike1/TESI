@@ -39,7 +39,7 @@ module tb_adder_HiF8();
 
     initial begin
         // Apertura del file in modalità scrittura
-        file_handle = $fopen("AdderHif8/results/sum_results.txt", "w");
+        file_handle = $fopen("AdderHif8/results/sum_results_origin.txt", "w");
         if (file_handle == 0) begin
             $display("Errore: Impossibile aprire il file per la scrittura!");
             $finish;

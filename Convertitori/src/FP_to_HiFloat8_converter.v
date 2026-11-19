@@ -115,7 +115,7 @@ module FP_to_HiFloat8_converter(
 		tmp = {1'b0, mant_in} + {1'b0, add_100};
 		exp_mod_adjusted = (tmp[3] && exp_mod_out <= 6'd22) ? exp_mod_out - 6'b000001 : exp_mod_out;
 		dot_adjusted = exp_mod_adjusted == 6'd15 ? {2'b11, 2'b00} : dot_out;
-		mant_out = 6'd23 - exp_mod_adjusted
+		mant_out = 6'd23 - exp_mod_adjusted;
 		
 	    	end
 

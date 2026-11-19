@@ -248,7 +248,6 @@ end
 
 assign sum_result_in_FP = lod_zero ? {1'b0, 6'b100_000, 3'b000} : {result_sign, result_exp, result_mant};
 
-assign fp_res_out = sum_result_in_FP;
 
 
 /* 8. Conversione del risultato in HiFloat8*/

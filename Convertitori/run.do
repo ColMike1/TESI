@@ -6,21 +6,24 @@ if {[file exists work]} {
 vlib work
 
 # compilazione
-# vlog src/HiFloat8_to_FP_converter.v
+vlog src/HiFloat8_to_FP_converter.v
 vlog src/FP_to_HiFloat8_converter.v
 # vlog AdderHif8/tb/Adder_for_tb.v
 # vlog AdderHif8/tb/tb_adder_hif8.v
+vlog AdderHif8/tb/Adder_for_tb_10padd.v
+vlog AdderHif8/tb/tb_adder_hif8_10padd.v
+
 # vlog tb/tb_HF8_FP.sv
-vlog tb/tb_FP_HF8.sv
+# vlog tb/tb_FP_HF8.sv
 # vlog tb/tb_FP_HF8_FP.sv
 # vlog tb/tb_HF8_FP_HF8.sv
 
 
 # avvia simulazione 
-# vsim -voptargs="+acc" work.tb_adder_HiF8
+vsim -voptargs="+acc" work.tb_adder_HiF8
 # vsim -voptargs="+acc" work.tb_HF8_FP_HF8
 # vsim -voptargs="+acc" work.tb_FP_HF8_FP
-vsim -voptargs="+acc" work.tb_FP_HF8
+# vsim -voptargs="+acc" work.tb_FP_HF8
 # vsim -voptargs="+acc" work.tb_HF8_FP
 
 

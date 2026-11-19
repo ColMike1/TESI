@@ -1,0 +1,3238 @@
+--- check_results_padd10.txt	2026-11-19 17:55:44.751796100 +0100
++++ check_results_origin.txt	2026-11-19 17:56:56.992503500 +0100
+@@ -15843,10 +15843,10 @@
+ --- Riga 6786 ---
+   FP1 (10 bit):   1.0
+   FP2 (10 bit):   -0.0390625
+   Atteso (f32):   0.9609375
+-  Adder:  0.9375
+-  Errore Relativo: 2.439024e-02
++  Adder:  1.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 6789 ---
+   FP1 (10 bit):   1.0
+   FP2 (10 bit):   -0.046875
+@@ -17495,31 +17495,31 @@
+ --- Riga 7494 ---
+   FP1 (10 bit):   1.125
+   FP2 (10 bit):   -20.0
+   Atteso (f32):   -18.875
+-  Adder:  -18.0
+-  Errore Relativo: 4.635762e-02
++  Adder:  -20.0
++  Errore Relativo: 5.960265e-02
+ 
+ --- Riga 7497 ---
+   FP1 (10 bit):   1.125
+   FP2 (10 bit):   -24.0
+   Atteso (f32):   -22.875
+-  Adder:  -22.0
+-  Errore Relativo: 3.825137e-02
++  Adder:  -24.0
++  Errore Relativo: 4.918033e-02
+ 
+ --- Riga 7500 ---
+   FP1 (10 bit):   1.125
+   FP2 (10 bit):   -28.0
+   Atteso (f32):   -26.875
+-  Adder:  -26.0
+-  Errore Relativo: 3.255814e-02
++  Adder:  -28.0
++  Errore Relativo: 4.186046e-02
+ 
+ --- Riga 7503 ---
+   FP1 (10 bit):   1.125
+   FP2 (10 bit):   -32.0
+   Atteso (f32):   -30.875
+-  Adder:  -30.0
+-  Errore Relativo: 2.834008e-02
++  Adder:  -32.0
++  Errore Relativo: 3.643725e-02
+ 
+ --- Riga 7506 ---
+   FP1 (10 bit):   1.125
+   FP2 (10 bit):   -40.0
+@@ -19308,10 +19308,10 @@
+ --- Riga 8271 ---
+   FP1 (10 bit):   1.25
+   FP2 (10 bit):   -32.0
+   Atteso (f32):   -30.75
+-  Adder:  -30.0
+-  Errore Relativo: 2.439024e-02
++  Adder:  -32.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 8274 ---
+   FP1 (10 bit):   1.25
+   FP2 (10 bit):   -40.0
+@@ -21100,10 +21100,10 @@
+ --- Riga 9039 ---
+   FP1 (10 bit):   1.375
+   FP2 (10 bit):   -32.0
+   Atteso (f32):   -30.625
+-  Adder:  -30.0
+-  Errore Relativo: 2.040816e-02
++  Adder:  -32.0
++  Errore Relativo: 4.489796e-02
+ 
+ --- Riga 9042 ---
+   FP1 (10 bit):   1.375
+   FP2 (10 bit):   -40.0
+@@ -24656,10 +24656,10 @@
+ --- Riga 10563 ---
+   FP1 (10 bit):   1.625
+   FP2 (10 bit):   -16.0
+   Atteso (f32):   -14.375
+-  Adder:  -14.0
+-  Errore Relativo: 2.608696e-02
++  Adder:  -15.0
++  Errore Relativo: 4.347826e-02
+ 
+ --- Riga 10566 ---
+   FP1 (10 bit):   1.625
+   FP2 (10 bit):   -20.0
+@@ -30011,10 +30011,10 @@
+ --- Riga 12858 ---
+   FP1 (10 bit):   2.0
+   FP2 (10 bit):   -0.203125
+   Atteso (f32):   1.796875
+-  Adder:  1.75
+-  Errore Relativo: 2.608696e-02
++  Adder:  1.875
++  Errore Relativo: 4.347826e-02
+ 
+ --- Riga 12861 ---
+   FP1 (10 bit):   2.0
+   FP2 (10 bit):   -0.21875
+@@ -30151,10 +30151,10 @@
+ --- Riga 12918 ---
+   FP1 (10 bit):   2.0
+   FP2 (10 bit):   -0.078125
+   Atteso (f32):   1.921875
+-  Adder:  1.875
+-  Errore Relativo: 2.439024e-02
++  Adder:  2.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 12921 ---
+   FP1 (10 bit):   2.0
+   FP2 (10 bit):   -0.09375
+@@ -31775,10 +31775,10 @@
+ --- Riga 13614 ---
+   FP1 (10 bit):   2.25
+   FP2 (10 bit):   -0.140625
+   Atteso (f32):   2.109375
+-  Adder:  2.0
+-  Errore Relativo: 5.185185e-02
++  Adder:  2.25
++  Errore Relativo: 6.666667e-02
+ 
+ --- Riga 13617 ---
+   FP1 (10 bit):   2.25
+   FP2 (10 bit):   -0.15625
+@@ -31859,31 +31859,31 @@
+ --- Riga 13650 ---
+   FP1 (10 bit):   2.25
+   FP2 (10 bit):   -40.0
+   Atteso (f32):   -37.75
+-  Adder:  -36.0
+-  Errore Relativo: 4.635762e-02
++  Adder:  -40.0
++  Errore Relativo: 5.960265e-02
+ 
+ --- Riga 13653 ---
+   FP1 (10 bit):   2.25
+   FP2 (10 bit):   -48.0
+   Atteso (f32):   -45.75
+-  Adder:  -44.0
+-  Errore Relativo: 3.825137e-02
++  Adder:  -48.0
++  Errore Relativo: 4.918033e-02
+ 
+ --- Riga 13656 ---
+   FP1 (10 bit):   2.25
+   FP2 (10 bit):   -56.0
+   Atteso (f32):   -53.75
+-  Adder:  -52.0
+-  Errore Relativo: 3.255814e-02
++  Adder:  -56.0
++  Errore Relativo: 4.186046e-02
+ 
+ --- Riga 13659 ---
+   FP1 (10 bit):   2.25
+   FP2 (10 bit):   -64.0
+   Atteso (f32):   -61.75
+-  Adder:  -60.0
+-  Errore Relativo: 2.834008e-02
++  Adder:  -64.0
++  Errore Relativo: 3.643725e-02
+ 
+ --- Riga 13662 ---
+   FP1 (10 bit):   2.25
+   FP2 (10 bit):   -80.0
+@@ -33567,10 +33567,10 @@
+ --- Riga 14382 ---
+   FP1 (10 bit):   2.5
+   FP2 (10 bit):   -0.140625
+   Atteso (f32):   2.359375
+-  Adder:  2.25
+-  Errore Relativo: 4.635762e-02
++  Adder:  2.5
++  Errore Relativo: 5.960265e-02
+ 
+ --- Riga 14385 ---
+   FP1 (10 bit):   2.5
+   FP2 (10 bit):   -0.15625
+@@ -33672,10 +33672,10 @@
+ --- Riga 14427 ---
+   FP1 (10 bit):   2.5
+   FP2 (10 bit):   -64.0
+   Atteso (f32):   -61.5
+-  Adder:  -60.0
+-  Errore Relativo: 2.439024e-02
++  Adder:  -64.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 14430 ---
+   FP1 (10 bit):   2.5
+   FP2 (10 bit):   -80.0
+@@ -35359,10 +35359,10 @@
+ --- Riga 15150 ---
+   FP1 (10 bit):   2.75
+   FP2 (10 bit):   -0.140625
+   Atteso (f32):   2.609375
+-  Adder:  2.5
+-  Errore Relativo: 4.191617e-02
++  Adder:  2.75
++  Errore Relativo: 5.389221e-02
+ 
+ --- Riga 15153 ---
+   FP1 (10 bit):   2.75
+   FP2 (10 bit):   -0.15625
+@@ -35464,10 +35464,10 @@
+ --- Riga 15195 ---
+   FP1 (10 bit):   2.75
+   FP2 (10 bit):   -64.0
+   Atteso (f32):   -61.25
+-  Adder:  -60.0
+-  Errore Relativo: 2.040816e-02
++  Adder:  -64.0
++  Errore Relativo: 4.489796e-02
+ 
+ --- Riga 15198 ---
+   FP1 (10 bit):   2.75
+   FP2 (10 bit):   -80.0
+@@ -37151,10 +37151,10 @@
+ --- Riga 15918 ---
+   FP1 (10 bit):   3.0
+   FP2 (10 bit):   -0.140625
+   Atteso (f32):   2.859375
+-  Adder:  2.75
+-  Errore Relativo: 3.825137e-02
++  Adder:  3.0
++  Errore Relativo: 4.918033e-02
+ 
+ --- Riga 15921 ---
+   FP1 (10 bit):   3.0
+   FP2 (10 bit):   -0.15625
+@@ -38943,10 +38943,10 @@
+ --- Riga 16686 ---
+   FP1 (10 bit):   3.25
+   FP2 (10 bit):   -0.140625
+   Atteso (f32):   3.109375
+-  Adder:  3.0
+-  Errore Relativo: 3.517588e-02
++  Adder:  3.25
++  Errore Relativo: 4.522613e-02
+ 
+ --- Riga 16689 ---
+   FP1 (10 bit):   3.25
+   FP2 (10 bit):   -0.15625
+@@ -39020,10 +39020,10 @@
+ --- Riga 16719 ---
+   FP1 (10 bit):   3.25
+   FP2 (10 bit):   -32.0
+   Atteso (f32):   -28.75
+-  Adder:  -28.0
+-  Errore Relativo: 2.608696e-02
++  Adder:  -30.0
++  Errore Relativo: 4.347826e-02
+ 
+ --- Riga 16722 ---
+   FP1 (10 bit):   3.25
+   FP2 (10 bit):   -40.0
+@@ -40735,10 +40735,10 @@
+ --- Riga 17454 ---
+   FP1 (10 bit):   3.5
+   FP2 (10 bit):   -0.140625
+   Atteso (f32):   3.359375
+-  Adder:  3.25
+-  Errore Relativo: 3.255814e-02
++  Adder:  3.5
++  Errore Relativo: 4.186046e-02
+ 
+ --- Riga 17457 ---
+   FP1 (10 bit):   3.5
+   FP2 (10 bit):   -0.15625
+@@ -42527,10 +42527,10 @@
+ --- Riga 18222 ---
+   FP1 (10 bit):   3.75
+   FP2 (10 bit):   -0.140625
+   Atteso (f32):   3.609375
+-  Adder:  3.5
+-  Errore Relativo: 3.030303e-02
++  Adder:  3.75
++  Errore Relativo: 3.896104e-02
+ 
+ --- Riga 18225 ---
+   FP1 (10 bit):   3.75
+   FP2 (10 bit):   -0.15625
+@@ -44543,10 +44543,10 @@
+ --- Riga 19086 ---
+   FP1 (10 bit):   0.5
+   FP2 (10 bit):   -0.01953125
+   Atteso (f32):   0.48046875
+-  Adder:  0.46875
+-  Errore Relativo: 2.439024e-02
++  Adder:  0.5
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 19089 ---
+   FP1 (10 bit):   0.5
+   FP2 (10 bit):   -0.0234375
+@@ -45999,52 +45999,52 @@
+ --- Riga 19710 ---
+   FP1 (10 bit):   0.5625
+   FP2 (10 bit):   -9.0
+   Atteso (f32):   -8.4375
+-  Adder:  -8.0
+-  Errore Relativo: 5.185185e-02
++  Adder:  -9.0
++  Errore Relativo: 6.666667e-02
+ 
+ --- Riga 19713 ---
+   FP1 (10 bit):   0.5625
+   FP2 (10 bit):   -10.0
+   Atteso (f32):   -9.4375
+-  Adder:  -9.0
+-  Errore Relativo: 4.635762e-02
++  Adder:  -10.0
++  Errore Relativo: 5.960265e-02
+ 
+ --- Riga 19716 ---
+   FP1 (10 bit):   0.5625
+   FP2 (10 bit):   -11.0
+   Atteso (f32):   -10.4375
+-  Adder:  -10.0
+-  Errore Relativo: 4.191617e-02
++  Adder:  -11.0
++  Errore Relativo: 5.389221e-02
+ 
+ --- Riga 19719 ---
+   FP1 (10 bit):   0.5625
+   FP2 (10 bit):   -12.0
+   Atteso (f32):   -11.4375
+-  Adder:  -11.0
+-  Errore Relativo: 3.825137e-02
++  Adder:  -12.0
++  Errore Relativo: 4.918033e-02
+ 
+ --- Riga 19722 ---
+   FP1 (10 bit):   0.5625
+   FP2 (10 bit):   -13.0
+   Atteso (f32):   -12.4375
+-  Adder:  -12.0
+-  Errore Relativo: 3.517588e-02
++  Adder:  -13.0
++  Errore Relativo: 4.522613e-02
+ 
+ --- Riga 19725 ---
+   FP1 (10 bit):   0.5625
+   FP2 (10 bit):   -14.0
+   Atteso (f32):   -13.4375
+-  Adder:  -13.0
+-  Errore Relativo: 3.255814e-02
++  Adder:  -14.0
++  Errore Relativo: 4.186046e-02
+ 
+ --- Riga 19728 ---
+   FP1 (10 bit):   0.5625
+   FP2 (10 bit):   -15.0
+   Atteso (f32):   -14.4375
+-  Adder:  -14.0
+-  Errore Relativo: 3.030303e-02
++  Adder:  -15.0
++  Errore Relativo: 3.896104e-02
+ 
+ --- Riga 19731 ---
+   FP1 (10 bit):   0.5625
+   FP2 (10 bit):   -0.25
+@@ -46160,10 +46160,10 @@
+ --- Riga 19779 ---
+   FP1 (10 bit):   0.5625
+   FP2 (10 bit):   -16.0
+   Atteso (f32):   -15.4375
+-  Adder:  -15.0
+-  Errore Relativo: 2.834008e-02
++  Adder:  -16.0
++  Errore Relativo: 3.643725e-02
+ 
+ --- Riga 19782 ---
+   FP1 (10 bit):   0.5625
+   FP2 (10 bit):   -20.0
+@@ -47952,10 +47952,10 @@
+ --- Riga 20547 ---
+   FP1 (10 bit):   0.625
+   FP2 (10 bit):   -16.0
+   Atteso (f32):   -15.375
+-  Adder:  -15.0
+-  Errore Relativo: 2.439024e-02
++  Adder:  -16.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 20550 ---
+   FP1 (10 bit):   0.625
+   FP2 (10 bit):   -20.0
+@@ -49744,10 +49744,10 @@
+ --- Riga 21315 ---
+   FP1 (10 bit):   0.6875
+   FP2 (10 bit):   -16.0
+   Atteso (f32):   -15.3125
+-  Adder:  -15.0
+-  Errore Relativo: 2.040816e-02
++  Adder:  -16.0
++  Errore Relativo: 4.489796e-02
+ 
+ --- Riga 21318 ---
+   FP1 (10 bit):   0.6875
+   FP2 (10 bit):   -20.0
+@@ -53160,10 +53160,10 @@
+ --- Riga 22779 ---
+   FP1 (10 bit):   0.8125
+   FP2 (10 bit):   -8.0
+   Atteso (f32):   -7.1875
+-  Adder:  -7.0
+-  Errore Relativo: 2.608696e-02
++  Adder:  -7.5
++  Errore Relativo: 4.347826e-02
+ 
+ --- Riga 22782 ---
+   FP1 (10 bit):   0.8125
+   FP2 (10 bit):   -9.0
+@@ -58627,10 +58627,10 @@
+ --- Riga 25122 ---
+   FP1 (10 bit):   4.0
+   FP2 (10 bit):   -0.40625
+   Atteso (f32):   3.59375
+-  Adder:  3.5
+-  Errore Relativo: 2.608696e-02
++  Adder:  3.75
++  Errore Relativo: 4.347826e-02
+ 
+ --- Riga 25125 ---
+   FP1 (10 bit):   4.0
+   FP2 (10 bit):   -0.4375
+@@ -58655,24 +58655,24 @@
+ --- Riga 25134 ---
+   FP1 (10 bit):   4.0
+   FP2 (10 bit):   -0.140625
+   Atteso (f32):   3.859375
+-  Adder:  3.75
+-  Errore Relativo: 2.834008e-02
++  Adder:  4.0
++  Errore Relativo: 3.643725e-02
+ 
+ --- Riga 25137 ---
+   FP1 (10 bit):   4.0
+   FP2 (10 bit):   -0.15625
+   Atteso (f32):   3.84375
+-  Adder:  3.75
+-  Errore Relativo: 2.439024e-02
++  Adder:  4.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 25140 ---
+   FP1 (10 bit):   4.0
+   FP2 (10 bit):   -0.171875
+   Atteso (f32):   3.828125
+-  Adder:  3.75
+-  Errore Relativo: 2.040816e-02
++  Adder:  4.0
++  Errore Relativo: 4.489796e-02
+ 
+ --- Riga 25143 ---
+   FP1 (10 bit):   4.0
+   FP2 (10 bit):   -0.1875
+@@ -60391,10 +60391,10 @@
+ --- Riga 25878 ---
+   FP1 (10 bit):   4.5
+   FP2 (10 bit):   -0.28125
+   Atteso (f32):   4.21875
+-  Adder:  4.0
+-  Errore Relativo: 5.185185e-02
++  Adder:  4.5
++  Errore Relativo: 6.666667e-02
+ 
+ --- Riga 25881 ---
+   FP1 (10 bit):   4.5
+   FP2 (10 bit):   -0.3125
+@@ -60559,31 +60559,31 @@
+ --- Riga 25950 ---
+   FP1 (10 bit):   4.5
+   FP2 (10 bit):   -80.0
+   Atteso (f32):   -75.5
+-  Adder:  -72.0
+-  Errore Relativo: 4.635762e-02
++  Adder:  -80.0
++  Errore Relativo: 5.960265e-02
+ 
+ --- Riga 25953 ---
+   FP1 (10 bit):   4.5
+   FP2 (10 bit):   -96.0
+   Atteso (f32):   -91.5
+-  Adder:  -88.0
+-  Errore Relativo: 3.825137e-02
++  Adder:  -96.0
++  Errore Relativo: 4.918033e-02
+ 
+ --- Riga 25956 ---
+   FP1 (10 bit):   4.5
+   FP2 (10 bit):   -112.0
+   Atteso (f32):   -107.5
+-  Adder:  -104.0
+-  Errore Relativo: 3.255814e-02
++  Adder:  -112.0
++  Errore Relativo: 4.186046e-02
+ 
+ --- Riga 25959 ---
+   FP1 (10 bit):   4.5
+   FP2 (10 bit):   -128.0
+   Atteso (f32):   -123.5
+-  Adder:  -120.0
+-  Errore Relativo: 2.834008e-02
++  Adder:  -128.0
++  Errore Relativo: 3.643725e-02
+ 
+ --- Riga 25962 ---
+   FP1 (10 bit):   4.5
+   FP2 (10 bit):   -160.0
+@@ -62183,10 +62183,10 @@
+ --- Riga 26646 ---
+   FP1 (10 bit):   5.0
+   FP2 (10 bit):   -0.28125
+   Atteso (f32):   4.71875
+-  Adder:  4.5
+-  Errore Relativo: 4.635762e-02
++  Adder:  5.0
++  Errore Relativo: 5.960265e-02
+ 
+ --- Riga 26649 ---
+   FP1 (10 bit):   5.0
+   FP2 (10 bit):   -0.3125
+@@ -62372,10 +62372,10 @@
+ --- Riga 26727 ---
+   FP1 (10 bit):   5.0
+   FP2 (10 bit):   -128.0
+   Atteso (f32):   -123.0
+-  Adder:  -120.0
+-  Errore Relativo: 2.439024e-02
++  Adder:  -128.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 26730 ---
+   FP1 (10 bit):   5.0
+   FP2 (10 bit):   -160.0
+@@ -63975,10 +63975,10 @@
+ --- Riga 27414 ---
+   FP1 (10 bit):   5.5
+   FP2 (10 bit):   -0.28125
+   Atteso (f32):   5.21875
+-  Adder:  5.0
+-  Errore Relativo: 4.191617e-02
++  Adder:  5.5
++  Errore Relativo: 5.389221e-02
+ 
+ --- Riga 27417 ---
+   FP1 (10 bit):   5.5
+   FP2 (10 bit):   -0.3125
+@@ -64164,10 +64164,10 @@
+ --- Riga 27495 ---
+   FP1 (10 bit):   5.5
+   FP2 (10 bit):   -128.0
+   Atteso (f32):   -122.5
+-  Adder:  -120.0
+-  Errore Relativo: 2.040816e-02
++  Adder:  -128.0
++  Errore Relativo: 4.489796e-02
+ 
+ --- Riga 27498 ---
+   FP1 (10 bit):   5.5
+   FP2 (10 bit):   -160.0
+@@ -65767,10 +65767,10 @@
+ --- Riga 28182 ---
+   FP1 (10 bit):   6.0
+   FP2 (10 bit):   -0.28125
+   Atteso (f32):   5.71875
+-  Adder:  5.5
+-  Errore Relativo: 3.825137e-02
++  Adder:  6.0
++  Errore Relativo: 4.918033e-02
+ 
+ --- Riga 28185 ---
+   FP1 (10 bit):   6.0
+   FP2 (10 bit):   -0.3125
+@@ -67559,10 +67559,10 @@
+ --- Riga 28950 ---
+   FP1 (10 bit):   6.5
+   FP2 (10 bit):   -0.28125
+   Atteso (f32):   6.21875
+-  Adder:  6.0
+-  Errore Relativo: 3.517588e-02
++  Adder:  6.5
++  Errore Relativo: 4.522613e-02
+ 
+ --- Riga 28953 ---
+   FP1 (10 bit):   6.5
+   FP2 (10 bit):   -0.3125
+@@ -67720,10 +67720,10 @@
+ --- Riga 29019 ---
+   FP1 (10 bit):   6.5
+   FP2 (10 bit):   -64.0
+   Atteso (f32):   -57.5
+-  Adder:  -56.0
+-  Errore Relativo: 2.608696e-02
++  Adder:  -60.0
++  Errore Relativo: 4.347826e-02
+ 
+ --- Riga 29022 ---
+   FP1 (10 bit):   6.5
+   FP2 (10 bit):   -80.0
+@@ -69351,10 +69351,10 @@
+ --- Riga 29718 ---
+   FP1 (10 bit):   7.0
+   FP2 (10 bit):   -0.28125
+   Atteso (f32):   6.71875
+-  Adder:  6.5
+-  Errore Relativo: 3.255814e-02
++  Adder:  7.0
++  Errore Relativo: 4.186046e-02
+ 
+ --- Riga 29721 ---
+   FP1 (10 bit):   7.0
+   FP2 (10 bit):   -0.3125
+@@ -71143,10 +71143,10 @@
+ --- Riga 30486 ---
+   FP1 (10 bit):   7.5
+   FP2 (10 bit):   -0.28125
+   Atteso (f32):   7.21875
+-  Adder:  7.0
+-  Errore Relativo: 3.030303e-02
++  Adder:  7.5
++  Errore Relativo: 3.896104e-02
+ 
+ --- Riga 30489 ---
+   FP1 (10 bit):   7.5
+   FP2 (10 bit):   -0.3125
+@@ -72795,10 +72795,10 @@
+ --- Riga 31194 ---
+   FP1 (10 bit):   8.0
+   FP2 (10 bit):   -0.8125
+   Atteso (f32):   7.1875
+-  Adder:  7.0
+-  Errore Relativo: 2.608696e-02
++  Adder:  7.5
++  Errore Relativo: 4.347826e-02
+ 
+ --- Riga 31197 ---
+   FP1 (10 bit):   8.0
+   FP2 (10 bit):   -0.875
+@@ -72935,24 +72935,24 @@
+ --- Riga 31254 ---
+   FP1 (10 bit):   8.0
+   FP2 (10 bit):   -0.28125
+   Atteso (f32):   7.71875
+-  Adder:  7.5
+-  Errore Relativo: 2.834008e-02
++  Adder:  8.0
++  Errore Relativo: 3.643725e-02
+ 
+ --- Riga 31257 ---
+   FP1 (10 bit):   8.0
+   FP2 (10 bit):   -0.3125
+   Atteso (f32):   7.6875
+-  Adder:  7.5
+-  Errore Relativo: 2.439024e-02
++  Adder:  8.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 31260 ---
+   FP1 (10 bit):   8.0
+   FP2 (10 bit):   -0.34375
+   Atteso (f32):   7.65625
+-  Adder:  7.5
+-  Errore Relativo: 2.040816e-02
++  Adder:  8.0
++  Errore Relativo: 4.489796e-02
+ 
+ --- Riga 31263 ---
+   FP1 (10 bit):   8.0
+   FP2 (10 bit):   -0.375
+@@ -74559,10 +74559,10 @@
+ --- Riga 31950 ---
+   FP1 (10 bit):   9.0
+   FP2 (10 bit):   -0.5625
+   Atteso (f32):   8.4375
+-  Adder:  8.0
+-  Errore Relativo: 5.185185e-02
++  Adder:  9.0
++  Errore Relativo: 6.666667e-02
+ 
+ --- Riga 31953 ---
+   FP1 (10 bit):   9.0
+   FP2 (10 bit):   -0.625
+@@ -74923,24 +74923,24 @@
+ --- Riga 32106 ---
+   FP1 (10 bit):   9.0
+   FP2 (10 bit):   -160.0
+   Atteso (f32):   -151.0
+-  Adder:  -144.0
+-  Errore Relativo: 4.635762e-02
++  Adder:  -160.0
++  Errore Relativo: 5.960265e-02
+ 
+ --- Riga 32109 ---
+   FP1 (10 bit):   9.0
+   FP2 (10 bit):   -192.0
+   Atteso (f32):   -183.0
+-  Adder:  -176.0
+-  Errore Relativo: 3.825137e-02
++  Adder:  -192.0
++  Errore Relativo: 4.918033e-02
+ 
+ --- Riga 32112 ---
+   FP1 (10 bit):   9.0
+   FP2 (10 bit):   -224.0
+   Atteso (f32):   -215.0
+-  Adder:  -208.0
+-  Errore Relativo: 3.255814e-02
++  Adder:  -224.0
++  Errore Relativo: 4.186046e-02
+ 
+ --- Riga 32115 ---
+   FP1 (10 bit):   9.0
+   FP2 (10 bit):   -0.0625
+@@ -75056,10 +75056,10 @@
+ --- Riga 32163 ---
+   FP1 (10 bit):   9.0
+   FP2 (10 bit):   -256.0
+   Atteso (f32):   -247.0
+-  Adder:  -240.0
+-  Errore Relativo: 2.834008e-02
++  Adder:  -256.0
++  Errore Relativo: 3.643725e-02
+ 
+ --- Riga 32166 ---
+   FP1 (10 bit):   9.0
+   FP2 (10 bit):   -384.0
+@@ -76351,10 +76351,10 @@
+ --- Riga 32718 ---
+   FP1 (10 bit):   10.0
+   FP2 (10 bit):   -0.5625
+   Atteso (f32):   9.4375
+-  Adder:  9.0
+-  Errore Relativo: 4.635762e-02
++  Adder:  10.0
++  Errore Relativo: 5.960265e-02
+ 
+ --- Riga 32721 ---
+   FP1 (10 bit):   10.0
+   FP2 (10 bit):   -0.625
+@@ -76848,10 +76848,10 @@
+ --- Riga 32931 ---
+   FP1 (10 bit):   10.0
+   FP2 (10 bit):   -256.0
+   Atteso (f32):   -246.0
+-  Adder:  -240.0
+-  Errore Relativo: 2.439024e-02
++  Adder:  -256.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 32934 ---
+   FP1 (10 bit):   10.0
+   FP2 (10 bit):   -384.0
+@@ -78143,10 +78143,10 @@
+ --- Riga 33486 ---
+   FP1 (10 bit):   11.0
+   FP2 (10 bit):   -0.5625
+   Atteso (f32):   10.4375
+-  Adder:  10.0
+-  Errore Relativo: 4.191617e-02
++  Adder:  11.0
++  Errore Relativo: 5.389221e-02
+ 
+ --- Riga 33489 ---
+   FP1 (10 bit):   11.0
+   FP2 (10 bit):   -0.625
+@@ -78640,10 +78640,10 @@
+ --- Riga 33699 ---
+   FP1 (10 bit):   11.0
+   FP2 (10 bit):   -256.0
+   Atteso (f32):   -245.0
+-  Adder:  -240.0
+-  Errore Relativo: 2.040816e-02
++  Adder:  -256.0
++  Errore Relativo: 4.489796e-02
+ 
+ --- Riga 33702 ---
+   FP1 (10 bit):   11.0
+   FP2 (10 bit):   -384.0
+@@ -79935,10 +79935,10 @@
+ --- Riga 34254 ---
+   FP1 (10 bit):   12.0
+   FP2 (10 bit):   -0.5625
+   Atteso (f32):   11.4375
+-  Adder:  11.0
+-  Errore Relativo: 3.825137e-02
++  Adder:  12.0
++  Errore Relativo: 4.918033e-02
+ 
+ --- Riga 34257 ---
+   FP1 (10 bit):   12.0
+   FP2 (10 bit):   -0.625
+@@ -81727,10 +81727,10 @@
+ --- Riga 35022 ---
+   FP1 (10 bit):   13.0
+   FP2 (10 bit):   -0.5625
+   Atteso (f32):   12.4375
+-  Adder:  12.0
+-  Errore Relativo: 3.517588e-02
++  Adder:  13.0
++  Errore Relativo: 4.522613e-02
+ 
+ --- Riga 35025 ---
+   FP1 (10 bit):   13.0
+   FP2 (10 bit):   -0.625
+@@ -82084,10 +82084,10 @@
+ --- Riga 35175 ---
+   FP1 (10 bit):   13.0
+   FP2 (10 bit):   -128.0
+   Atteso (f32):   -115.0
+-  Adder:  -112.0
+-  Errore Relativo: 2.608696e-02
++  Adder:  -120.0
++  Errore Relativo: 4.347826e-02
+ 
+ --- Riga 35178 ---
+   FP1 (10 bit):   13.0
+   FP2 (10 bit):   -160.0
+@@ -83519,10 +83519,10 @@
+ --- Riga 35790 ---
+   FP1 (10 bit):   14.0
+   FP2 (10 bit):   -0.5625
+   Atteso (f32):   13.4375
+-  Adder:  13.0
+-  Errore Relativo: 3.255814e-02
++  Adder:  14.0
++  Errore Relativo: 4.186046e-02
+ 
+ --- Riga 35793 ---
+   FP1 (10 bit):   14.0
+   FP2 (10 bit):   -0.625
+@@ -85311,10 +85311,10 @@
+ --- Riga 36558 ---
+   FP1 (10 bit):   15.0
+   FP2 (10 bit):   -0.5625
+   Atteso (f32):   14.4375
+-  Adder:  14.0
+-  Errore Relativo: 3.030303e-02
++  Adder:  15.0
++  Errore Relativo: 3.896104e-02
+ 
+ --- Riga 36561 ---
+   FP1 (10 bit):   15.0
+   FP2 (10 bit):   -0.625
+@@ -87579,10 +87579,10 @@
+ --- Riga 37530 ---
+   FP1 (10 bit):   0.25
+   FP2 (10 bit):   -0.009765625
+   Atteso (f32):   0.240234375
+-  Adder:  0.234375
+-  Errore Relativo: 2.439024e-02
++  Adder:  0.25
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 37533 ---
+   FP1 (10 bit):   0.25
+   FP2 (10 bit):   -0.01171875
+@@ -88951,59 +88951,59 @@
+ --- Riga 38118 ---
+   FP1 (10 bit):   0.28125
+   FP2 (10 bit):   -4.5
+   Atteso (f32):   -4.21875
+-  Adder:  -4.0
+-  Errore Relativo: 5.185185e-02
++  Adder:  -4.5
++  Errore Relativo: 6.666667e-02
+ 
+ --- Riga 38121 ---
+   FP1 (10 bit):   0.28125
+   FP2 (10 bit):   -5.0
+   Atteso (f32):   -4.71875
+-  Adder:  -4.5
+-  Errore Relativo: 4.635762e-02
++  Adder:  -5.0
++  Errore Relativo: 5.960265e-02
+ 
+ --- Riga 38124 ---
+   FP1 (10 bit):   0.28125
+   FP2 (10 bit):   -5.5
+   Atteso (f32):   -5.21875
+-  Adder:  -5.0
+-  Errore Relativo: 4.191617e-02
++  Adder:  -5.5
++  Errore Relativo: 5.389221e-02
+ 
+ --- Riga 38127 ---
+   FP1 (10 bit):   0.28125
+   FP2 (10 bit):   -6.0
+   Atteso (f32):   -5.71875
+-  Adder:  -5.5
+-  Errore Relativo: 3.825137e-02
++  Adder:  -6.0
++  Errore Relativo: 4.918033e-02
+ 
+ --- Riga 38130 ---
+   FP1 (10 bit):   0.28125
+   FP2 (10 bit):   -6.5
+   Atteso (f32):   -6.21875
+-  Adder:  -6.0
+-  Errore Relativo: 3.517588e-02
++  Adder:  -6.5
++  Errore Relativo: 4.522613e-02
+ 
+ --- Riga 38133 ---
+   FP1 (10 bit):   0.28125
+   FP2 (10 bit):   -7.0
+   Atteso (f32):   -6.71875
+-  Adder:  -6.5
+-  Errore Relativo: 3.255814e-02
++  Adder:  -7.0
++  Errore Relativo: 4.186046e-02
+ 
+ --- Riga 38136 ---
+   FP1 (10 bit):   0.28125
+   FP2 (10 bit):   -7.5
+   Atteso (f32):   -7.21875
+-  Adder:  -7.0
+-  Errore Relativo: 3.030303e-02
++  Adder:  -7.5
++  Errore Relativo: 3.896104e-02
+ 
+ --- Riga 38139 ---
+   FP1 (10 bit):   0.28125
+   FP2 (10 bit):   -8.0
+   Atteso (f32):   -7.71875
+-  Adder:  -7.5
+-  Errore Relativo: 2.834008e-02
++  Adder:  -8.0
++  Errore Relativo: 3.643725e-02
+ 
+ --- Riga 38142 ---
+   FP1 (10 bit):   0.28125
+   FP2 (10 bit):   -9.0
+@@ -90792,10 +90792,10 @@
+ --- Riga 38907 ---
+   FP1 (10 bit):   0.3125
+   FP2 (10 bit):   -8.0
+   Atteso (f32):   -7.6875
+-  Adder:  -7.5
+-  Errore Relativo: 2.439024e-02
++  Adder:  -8.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 38910 ---
+   FP1 (10 bit):   0.3125
+   FP2 (10 bit):   -9.0
+@@ -92584,10 +92584,10 @@
+ --- Riga 39675 ---
+   FP1 (10 bit):   0.34375
+   FP2 (10 bit):   -8.0
+   Atteso (f32):   -7.65625
+-  Adder:  -7.5
+-  Errore Relativo: 2.040816e-02
++  Adder:  -8.0
++  Errore Relativo: 4.489796e-02
+ 
+ --- Riga 39678 ---
+   FP1 (10 bit):   0.34375
+   FP2 (10 bit):   -9.0
+@@ -96112,10 +96112,10 @@
+ --- Riga 41187 ---
+   FP1 (10 bit):   0.40625
+   FP2 (10 bit):   -4.0
+   Atteso (f32):   -3.59375
+-  Adder:  -3.5
+-  Errore Relativo: 2.608696e-02
++  Adder:  -3.75
++  Errore Relativo: 4.347826e-02
+ 
+ --- Riga 41190 ---
+   FP1 (10 bit):   0.40625
+   FP2 (10 bit):   -4.5
+@@ -103175,52 +103175,52 @@
+ --- Riga 44214 ---
+   FP1 (10 bit):   0.140625
+   FP2 (10 bit):   -2.25
+   Atteso (f32):   -2.109375
+-  Adder:  -2.0
+-  Errore Relativo: 5.185185e-02
++  Adder:  -2.25
++  Errore Relativo: 6.666667e-02
+ 
+ --- Riga 44217 ---
+   FP1 (10 bit):   0.140625
+   FP2 (10 bit):   -2.5
+   Atteso (f32):   -2.359375
+-  Adder:  -2.25
+-  Errore Relativo: 4.635762e-02
++  Adder:  -2.5
++  Errore Relativo: 5.960265e-02
+ 
+ --- Riga 44220 ---
+   FP1 (10 bit):   0.140625
+   FP2 (10 bit):   -2.75
+   Atteso (f32):   -2.609375
+-  Adder:  -2.5
+-  Errore Relativo: 4.191617e-02
++  Adder:  -2.75
++  Errore Relativo: 5.389221e-02
+ 
+ --- Riga 44223 ---
+   FP1 (10 bit):   0.140625
+   FP2 (10 bit):   -3.0
+   Atteso (f32):   -2.859375
+-  Adder:  -2.75
+-  Errore Relativo: 3.825137e-02
++  Adder:  -3.0
++  Errore Relativo: 4.918033e-02
+ 
+ --- Riga 44226 ---
+   FP1 (10 bit):   0.140625
+   FP2 (10 bit):   -3.25
+   Atteso (f32):   -3.109375
+-  Adder:  -3.0
+-  Errore Relativo: 3.517588e-02
++  Adder:  -3.25
++  Errore Relativo: 4.522613e-02
+ 
+ --- Riga 44229 ---
+   FP1 (10 bit):   0.140625
+   FP2 (10 bit):   -3.5
+   Atteso (f32):   -3.359375
+-  Adder:  -3.25
+-  Errore Relativo: 3.255814e-02
++  Adder:  -3.5
++  Errore Relativo: 4.186046e-02
+ 
+ --- Riga 44232 ---
+   FP1 (10 bit):   0.140625
+   FP2 (10 bit):   -3.75
+   Atteso (f32):   -3.609375
+-  Adder:  -3.5
+-  Errore Relativo: 3.030303e-02
++  Adder:  -3.75
++  Errore Relativo: 3.896104e-02
+ 
+ --- Riga 44235 ---
+   FP1 (10 bit):   0.140625
+   FP2 (10 bit):   -0.5
+@@ -103280,10 +103280,10 @@
+ --- Riga 44259 ---
+   FP1 (10 bit):   0.140625
+   FP2 (10 bit):   -4.0
+   Atteso (f32):   -3.859375
+-  Adder:  -3.75
+-  Errore Relativo: 2.834008e-02
++  Adder:  -4.0
++  Errore Relativo: 3.643725e-02
+ 
+ --- Riga 44262 ---
+   FP1 (10 bit):   0.140625
+   FP2 (10 bit):   -4.5
+@@ -105072,10 +105072,10 @@
+ --- Riga 45027 ---
+   FP1 (10 bit):   0.15625
+   FP2 (10 bit):   -4.0
+   Atteso (f32):   -3.84375
+-  Adder:  -3.75
+-  Errore Relativo: 2.439024e-02
++  Adder:  -4.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 45030 ---
+   FP1 (10 bit):   0.15625
+   FP2 (10 bit):   -4.5
+@@ -106864,10 +106864,10 @@
+ --- Riga 45795 ---
+   FP1 (10 bit):   0.171875
+   FP2 (10 bit):   -4.0
+   Atteso (f32):   -3.828125
+-  Adder:  -3.75
+-  Errore Relativo: 2.040816e-02
++  Adder:  -4.0
++  Errore Relativo: 4.489796e-02
+ 
+ --- Riga 45798 ---
+   FP1 (10 bit):   0.171875
+   FP2 (10 bit):   -4.5
+@@ -110336,10 +110336,10 @@
+ --- Riga 47283 ---
+   FP1 (10 bit):   0.203125
+   FP2 (10 bit):   -2.0
+   Atteso (f32):   -1.796875
+-  Adder:  -1.75
+-  Errore Relativo: 2.608696e-02
++  Adder:  -1.875
++  Errore Relativo: 4.347826e-02
+ 
+ --- Riga 47286 ---
+   FP1 (10 bit):   0.203125
+   FP2 (10 bit):   -2.25
+@@ -115691,10 +115691,10 @@
+ --- Riga 49578 ---
+   FP1 (10 bit):   16.0
+   FP2 (10 bit):   -1.625
+   Atteso (f32):   14.375
+-  Adder:  14.0
+-  Errore Relativo: 2.608696e-02
++  Adder:  15.0
++  Errore Relativo: 4.347826e-02
+ 
+ --- Riga 49581 ---
+   FP1 (10 bit):   16.0
+   FP2 (10 bit):   -1.75
+@@ -115775,24 +115775,24 @@
+ --- Riga 49614 ---
+   FP1 (10 bit):   16.0
+   FP2 (10 bit):   -0.5625
+   Atteso (f32):   15.4375
+-  Adder:  15.0
+-  Errore Relativo: 2.834008e-02
++  Adder:  16.0
++  Errore Relativo: 3.643725e-02
+ 
+ --- Riga 49617 ---
+   FP1 (10 bit):   16.0
+   FP2 (10 bit):   -0.625
+   Atteso (f32):   15.375
+-  Adder:  15.0
+-  Errore Relativo: 2.439024e-02
++  Adder:  16.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 49620 ---
+   FP1 (10 bit):   16.0
+   FP2 (10 bit):   -0.6875
+   Atteso (f32):   15.3125
+-  Adder:  15.0
+-  Errore Relativo: 2.040816e-02
++  Adder:  16.0
++  Errore Relativo: 4.489796e-02
+ 
+ --- Riga 49623 ---
+   FP1 (10 bit):   16.0
+   FP2 (10 bit):   -0.75
+@@ -117455,10 +117455,10 @@
+ --- Riga 50334 ---
+   FP1 (10 bit):   20.0
+   FP2 (10 bit):   -1.125
+   Atteso (f32):   18.875
+-  Adder:  18.0
+-  Errore Relativo: 4.635762e-02
++  Adder:  20.0
++  Errore Relativo: 5.960265e-02
+ 
+ --- Riga 50337 ---
+   FP1 (10 bit):   20.0
+   FP2 (10 bit):   -1.25
+@@ -118078,10 +118078,10 @@
+ --- Riga 50601 ---
+   FP1 (10 bit):   20.0
+   FP2 (10 bit):   -512.0
+   Atteso (f32):   -492.0
+-  Adder:  -480.0
+-  Errore Relativo: 2.439024e-02
++  Adder:  -512.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 50604 ---
+   FP1 (10 bit):   20.0
+   FP2 (10 bit):   -768.0
+@@ -119247,10 +119247,10 @@
+ --- Riga 51102 ---
+   FP1 (10 bit):   24.0
+   FP2 (10 bit):   -1.125
+   Atteso (f32):   22.875
+-  Adder:  22.0
+-  Errore Relativo: 3.825137e-02
++  Adder:  24.0
++  Errore Relativo: 4.918033e-02
+ 
+ --- Riga 51105 ---
+   FP1 (10 bit):   24.0
+   FP2 (10 bit):   -1.25
+@@ -121039,10 +121039,10 @@
+ --- Riga 51870 ---
+   FP1 (10 bit):   28.0
+   FP2 (10 bit):   -1.125
+   Atteso (f32):   26.875
+-  Adder:  26.0
+-  Errore Relativo: 3.255814e-02
++  Adder:  28.0
++  Errore Relativo: 4.186046e-02
+ 
+ --- Riga 51873 ---
+   FP1 (10 bit):   28.0
+   FP2 (10 bit):   -1.25
+@@ -122831,24 +122831,24 @@
+ --- Riga 52638 ---
+   FP1 (10 bit):   32.0
+   FP2 (10 bit):   -1.125
+   Atteso (f32):   30.875
+-  Adder:  30.0
+-  Errore Relativo: 2.834008e-02
++  Adder:  32.0
++  Errore Relativo: 3.643725e-02
+ 
+ --- Riga 52641 ---
+   FP1 (10 bit):   32.0
+   FP2 (10 bit):   -1.25
+   Atteso (f32):   30.75
+-  Adder:  30.0
+-  Errore Relativo: 2.439024e-02
++  Adder:  32.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 52644 ---
+   FP1 (10 bit):   32.0
+   FP2 (10 bit):   -1.375
+   Atteso (f32):   30.625
+-  Adder:  30.0
+-  Errore Relativo: 2.040816e-02
++  Adder:  32.0
++  Errore Relativo: 4.489796e-02
+ 
+ --- Riga 52647 ---
+   FP1 (10 bit):   32.0
+   FP2 (10 bit):   -1.5
+@@ -122915,10 +122915,10 @@
+ --- Riga 52674 ---
+   FP1 (10 bit):   32.0
+   FP2 (10 bit):   -3.25
+   Atteso (f32):   28.75
+-  Adder:  28.0
+-  Errore Relativo: 2.608696e-02
++  Adder:  30.0
++  Errore Relativo: 4.347826e-02
+ 
+ --- Riga 52677 ---
+   FP1 (10 bit):   32.0
+   FP2 (10 bit):   -3.5
+@@ -124679,10 +124679,10 @@
+ --- Riga 53430 ---
+   FP1 (10 bit):   40.0
+   FP2 (10 bit):   -2.25
+   Atteso (f32):   37.75
+-  Adder:  36.0
+-  Errore Relativo: 4.635762e-02
++  Adder:  40.0
++  Errore Relativo: 5.960265e-02
+ 
+ --- Riga 53433 ---
+   FP1 (10 bit):   40.0
+   FP2 (10 bit):   -2.5
+@@ -125260,10 +125260,10 @@
+ --- Riga 53679 ---
+   FP1 (10 bit):   40.0
+   FP2 (10 bit):   -1024.0
+   Atteso (f32):   -984.0
+-  Adder:  -960.0
+-  Errore Relativo: 2.439024e-02
++  Adder:  -1024.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 53682 ---
+   FP1 (10 bit):   40.0
+   FP2 (10 bit):   -1536.0
+@@ -126471,10 +126471,10 @@
+ --- Riga 54198 ---
+   FP1 (10 bit):   48.0
+   FP2 (10 bit):   -2.25
+   Atteso (f32):   45.75
+-  Adder:  44.0
+-  Errore Relativo: 3.825137e-02
++  Adder:  48.0
++  Errore Relativo: 4.918033e-02
+ 
+ --- Riga 54201 ---
+   FP1 (10 bit):   48.0
+   FP2 (10 bit):   -2.5
+@@ -128263,10 +128263,10 @@
+ --- Riga 54966 ---
+   FP1 (10 bit):   56.0
+   FP2 (10 bit):   -2.25
+   Atteso (f32):   53.75
+-  Adder:  52.0
+-  Errore Relativo: 3.255814e-02
++  Adder:  56.0
++  Errore Relativo: 4.186046e-02
+ 
+ --- Riga 54969 ---
+   FP1 (10 bit):   56.0
+   FP2 (10 bit):   -2.5
+@@ -130055,24 +130055,24 @@
+ --- Riga 55734 ---
+   FP1 (10 bit):   64.0
+   FP2 (10 bit):   -2.25
+   Atteso (f32):   61.75
+-  Adder:  60.0
+-  Errore Relativo: 2.834008e-02
++  Adder:  64.0
++  Errore Relativo: 3.643725e-02
+ 
+ --- Riga 55737 ---
+   FP1 (10 bit):   64.0
+   FP2 (10 bit):   -2.5
+   Atteso (f32):   61.5
+-  Adder:  60.0
+-  Errore Relativo: 2.439024e-02
++  Adder:  64.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 55740 ---
+   FP1 (10 bit):   64.0
+   FP2 (10 bit):   -2.75
+   Atteso (f32):   61.25
+-  Adder:  60.0
+-  Errore Relativo: 2.040816e-02
++  Adder:  64.0
++  Errore Relativo: 4.489796e-02
+ 
+ --- Riga 55743 ---
+   FP1 (10 bit):   64.0
+   FP2 (10 bit):   -3.0
+@@ -130195,10 +130195,10 @@
+ --- Riga 55794 ---
+   FP1 (10 bit):   64.0
+   FP2 (10 bit):   -6.5
+   Atteso (f32):   57.5
+-  Adder:  56.0
+-  Errore Relativo: 2.608696e-02
++  Adder:  60.0
++  Errore Relativo: 4.347826e-02
+ 
+ --- Riga 55797 ---
+   FP1 (10 bit):   64.0
+   FP2 (10 bit):   -7.0
+@@ -131959,10 +131959,10 @@
+ --- Riga 56550 ---
+   FP1 (10 bit):   80.0
+   FP2 (10 bit):   -4.5
+   Atteso (f32):   75.5
+-  Adder:  72.0
+-  Errore Relativo: 4.635762e-02
++  Adder:  80.0
++  Errore Relativo: 5.960265e-02
+ 
+ --- Riga 56553 ---
+   FP1 (10 bit):   80.0
+   FP2 (10 bit):   -5.0
+@@ -132442,10 +132442,10 @@
+ --- Riga 56757 ---
+   FP1 (10 bit):   80.0
+   FP2 (10 bit):   -2048.0
+   Atteso (f32):   -1968.0
+-  Adder:  -1920.0
+-  Errore Relativo: 2.439024e-02
++  Adder:  -2048.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 56760 ---
+   FP1 (10 bit):   80.0
+   FP2 (10 bit):   -3072.0
+@@ -133751,10 +133751,10 @@
+ --- Riga 57318 ---
+   FP1 (10 bit):   96.0
+   FP2 (10 bit):   -4.5
+   Atteso (f32):   91.5
+-  Adder:  88.0
+-  Errore Relativo: 3.825137e-02
++  Adder:  96.0
++  Errore Relativo: 4.918033e-02
+ 
+ --- Riga 57321 ---
+   FP1 (10 bit):   96.0
+   FP2 (10 bit):   -5.0
+@@ -135543,10 +135543,10 @@
+ --- Riga 58086 ---
+   FP1 (10 bit):   112.0
+   FP2 (10 bit):   -4.5
+   Atteso (f32):   107.5
+-  Adder:  104.0
+-  Errore Relativo: 3.255814e-02
++  Adder:  112.0
++  Errore Relativo: 4.186046e-02
+ 
+ --- Riga 58089 ---
+   FP1 (10 bit):   112.0
+   FP2 (10 bit):   -5.0
+@@ -137335,24 +137335,24 @@
+ --- Riga 58854 ---
+   FP1 (10 bit):   128.0
+   FP2 (10 bit):   -4.5
+   Atteso (f32):   123.5
+-  Adder:  120.0
+-  Errore Relativo: 2.834008e-02
++  Adder:  128.0
++  Errore Relativo: 3.643725e-02
+ 
+ --- Riga 58857 ---
+   FP1 (10 bit):   128.0
+   FP2 (10 bit):   -5.0
+   Atteso (f32):   123.0
+-  Adder:  120.0
+-  Errore Relativo: 2.439024e-02
++  Adder:  128.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 58860 ---
+   FP1 (10 bit):   128.0
+   FP2 (10 bit):   -5.5
+   Atteso (f32):   122.5
+-  Adder:  120.0
+-  Errore Relativo: 2.040816e-02
++  Adder:  128.0
++  Errore Relativo: 4.489796e-02
+ 
+ --- Riga 58863 ---
+   FP1 (10 bit):   128.0
+   FP2 (10 bit):   -6.0
+@@ -137419,10 +137419,10 @@
+ --- Riga 58890 ---
+   FP1 (10 bit):   128.0
+   FP2 (10 bit):   -13.0
+   Atteso (f32):   115.0
+-  Adder:  112.0
+-  Errore Relativo: 2.608696e-02
++  Adder:  120.0
++  Errore Relativo: 4.347826e-02
+ 
+ --- Riga 58893 ---
+   FP1 (10 bit):   128.0
+   FP2 (10 bit):   -14.0
+@@ -139183,10 +139183,10 @@
+ --- Riga 59646 ---
+   FP1 (10 bit):   160.0
+   FP2 (10 bit):   -9.0
+   Atteso (f32):   151.0
+-  Adder:  144.0
+-  Errore Relativo: 4.635762e-02
++  Adder:  160.0
++  Errore Relativo: 5.960265e-02
+ 
+ --- Riga 59649 ---
+   FP1 (10 bit):   160.0
+   FP2 (10 bit):   -10.0
+@@ -139624,10 +139624,10 @@
+ --- Riga 59835 ---
+   FP1 (10 bit):   160.0
+   FP2 (10 bit):   -4096.0
+   Atteso (f32):   -3936.0
+-  Adder:  -3840.0
+-  Errore Relativo: 2.439024e-02
++  Adder:  -4096.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 59838 ---
+   FP1 (10 bit):   160.0
+   FP2 (10 bit):   -6144.0
+@@ -140975,10 +140975,10 @@
+ --- Riga 60414 ---
+   FP1 (10 bit):   192.0
+   FP2 (10 bit):   -9.0
+   Atteso (f32):   183.0
+-  Adder:  176.0
+-  Errore Relativo: 3.825137e-02
++  Adder:  192.0
++  Errore Relativo: 4.918033e-02
+ 
+ --- Riga 60417 ---
+   FP1 (10 bit):   192.0
+   FP2 (10 bit):   -10.0
+@@ -142767,10 +142767,10 @@
+ --- Riga 61182 ---
+   FP1 (10 bit):   224.0
+   FP2 (10 bit):   -9.0
+   Atteso (f32):   215.0
+-  Adder:  208.0
+-  Errore Relativo: 3.255814e-02
++  Adder:  224.0
++  Errore Relativo: 4.186046e-02
+ 
+ --- Riga 61185 ---
+   FP1 (10 bit):   224.0
+   FP2 (10 bit):   -10.0
+@@ -146176,10 +146176,10 @@
+ --- Riga 62643 ---
+   FP1 (10 bit):   0.078125
+   FP2 (10 bit):   -2.0
+   Atteso (f32):   -1.921875
+-  Adder:  -1.875
+-  Errore Relativo: 2.439024e-02
++  Adder:  -2.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 62646 ---
+   FP1 (10 bit):   0.078125
+   FP2 (10 bit):   -2.25
+@@ -153288,10 +153288,10 @@
+ --- Riga 65691 ---
+   FP1 (10 bit):   0.0390625
+   FP2 (10 bit):   -1.0
+   Atteso (f32):   -0.9609375
+-  Adder:  -0.9375
+-  Errore Relativo: 2.439024e-02
++  Adder:  -1.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 65694 ---
+   FP1 (10 bit):   0.0390625
+   FP2 (10 bit):   -1.125
+@@ -160568,10 +160568,10 @@
+ --- Riga 68811 ---
+   FP1 (10 bit):   0.01953125
+   FP2 (10 bit):   -0.5
+   Atteso (f32):   -0.48046875
+-  Adder:  -0.46875
+-  Errore Relativo: 2.439024e-02
++  Adder:  -0.5
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 68814 ---
+   FP1 (10 bit):   0.01953125
+   FP2 (10 bit):   -0.5625
+@@ -167904,10 +167904,10 @@
+ --- Riga 71955 ---
+   FP1 (10 bit):   0.009765625
+   FP2 (10 bit):   -0.25
+   Atteso (f32):   -0.240234375
+-  Adder:  -0.234375
+-  Errore Relativo: 2.439024e-02
++  Adder:  -0.25
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 71958 ---
+   FP1 (10 bit):   0.009765625
+   FP2 (10 bit):   -0.28125
+@@ -173231,24 +173231,24 @@
+ --- Riga 74238 ---
+   FP1 (10 bit):   256.0
+   FP2 (10 bit):   -9.0
+   Atteso (f32):   247.0
+-  Adder:  240.0
+-  Errore Relativo: 2.834008e-02
++  Adder:  256.0
++  Errore Relativo: 3.643725e-02
+ 
+ --- Riga 74241 ---
+   FP1 (10 bit):   256.0
+   FP2 (10 bit):   -10.0
+   Atteso (f32):   246.0
+-  Adder:  240.0
+-  Errore Relativo: 2.439024e-02
++  Adder:  256.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 74244 ---
+   FP1 (10 bit):   256.0
+   FP2 (10 bit):   -11.0
+   Atteso (f32):   245.0
+-  Adder:  240.0
+-  Errore Relativo: 2.040816e-02
++  Adder:  256.0
++  Errore Relativo: 4.489796e-02
+ 
+ --- Riga 74247 ---
+   FP1 (10 bit):   256.0
+   FP2 (10 bit):   -12.0
+@@ -176983,10 +176983,10 @@
+ --- Riga 75846 ---
+   FP1 (10 bit):   512.0
+   FP2 (10 bit):   -20.0
+   Atteso (f32):   492.0
+-  Adder:  480.0
+-  Errore Relativo: 2.439024e-02
++  Adder:  512.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 75849 ---
+   FP1 (10 bit):   512.0
+   FP2 (10 bit):   -24.0
+@@ -180595,10 +180595,10 @@
+ --- Riga 77394 ---
+   FP1 (10 bit):   1024.0
+   FP2 (10 bit):   -40.0
+   Atteso (f32):   984.0
+-  Adder:  960.0
+-  Errore Relativo: 2.439024e-02
++  Adder:  1024.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 77397 ---
+   FP1 (10 bit):   1024.0
+   FP2 (10 bit):   -48.0
+@@ -184207,10 +184207,10 @@
+ --- Riga 78942 ---
+   FP1 (10 bit):   2048.0
+   FP2 (10 bit):   -80.0
+   Atteso (f32):   1968.0
+-  Adder:  1920.0
+-  Errore Relativo: 2.439024e-02
++  Adder:  2048.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 78945 ---
+   FP1 (10 bit):   2048.0
+   FP2 (10 bit):   -96.0
+@@ -187819,10 +187819,10 @@
+ --- Riga 80490 ---
+   FP1 (10 bit):   4096.0
+   FP2 (10 bit):   -160.0
+   Atteso (f32):   3936.0
+-  Adder:  3840.0
+-  Errore Relativo: 2.439024e-02
++  Adder:  4096.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 80493 ---
+   FP1 (10 bit):   4096.0
+   FP2 (10 bit):   -192.0
+@@ -244323,10 +244323,10 @@
+ --- Riga 104706 ---
+   FP1 (10 bit):   -1.0
+   FP2 (10 bit):   0.0390625
+   Atteso (f32):   -0.9609375
+-  Adder:  -0.9375
+-  Errore Relativo: 2.439024e-02
++  Adder:  -1.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 104709 ---
+   FP1 (10 bit):   -1.0
+   FP2 (10 bit):   0.046875
+@@ -245975,31 +245975,31 @@
+ --- Riga 105414 ---
+   FP1 (10 bit):   -1.125
+   FP2 (10 bit):   20.0
+   Atteso (f32):   18.875
+-  Adder:  18.0
+-  Errore Relativo: 4.635762e-02
++  Adder:  20.0
++  Errore Relativo: 5.960265e-02
+ 
+ --- Riga 105417 ---
+   FP1 (10 bit):   -1.125
+   FP2 (10 bit):   24.0
+   Atteso (f32):   22.875
+-  Adder:  22.0
+-  Errore Relativo: 3.825137e-02
++  Adder:  24.0
++  Errore Relativo: 4.918033e-02
+ 
+ --- Riga 105420 ---
+   FP1 (10 bit):   -1.125
+   FP2 (10 bit):   28.0
+   Atteso (f32):   26.875
+-  Adder:  26.0
+-  Errore Relativo: 3.255814e-02
++  Adder:  28.0
++  Errore Relativo: 4.186046e-02
+ 
+ --- Riga 105423 ---
+   FP1 (10 bit):   -1.125
+   FP2 (10 bit):   32.0
+   Atteso (f32):   30.875
+-  Adder:  30.0
+-  Errore Relativo: 2.834008e-02
++  Adder:  32.0
++  Errore Relativo: 3.643725e-02
+ 
+ --- Riga 105426 ---
+   FP1 (10 bit):   -1.125
+   FP2 (10 bit):   40.0
+@@ -247788,10 +247788,10 @@
+ --- Riga 106191 ---
+   FP1 (10 bit):   -1.25
+   FP2 (10 bit):   32.0
+   Atteso (f32):   30.75
+-  Adder:  30.0
+-  Errore Relativo: 2.439024e-02
++  Adder:  32.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 106194 ---
+   FP1 (10 bit):   -1.25
+   FP2 (10 bit):   40.0
+@@ -249580,10 +249580,10 @@
+ --- Riga 106959 ---
+   FP1 (10 bit):   -1.375
+   FP2 (10 bit):   32.0
+   Atteso (f32):   30.625
+-  Adder:  30.0
+-  Errore Relativo: 2.040816e-02
++  Adder:  32.0
++  Errore Relativo: 4.489796e-02
+ 
+ --- Riga 106962 ---
+   FP1 (10 bit):   -1.375
+   FP2 (10 bit):   40.0
+@@ -253136,10 +253136,10 @@
+ --- Riga 108483 ---
+   FP1 (10 bit):   -1.625
+   FP2 (10 bit):   16.0
+   Atteso (f32):   14.375
+-  Adder:  14.0
+-  Errore Relativo: 2.608696e-02
++  Adder:  15.0
++  Errore Relativo: 4.347826e-02
+ 
+ --- Riga 108486 ---
+   FP1 (10 bit):   -1.625
+   FP2 (10 bit):   20.0
+@@ -258491,10 +258491,10 @@
+ --- Riga 110778 ---
+   FP1 (10 bit):   -2.0
+   FP2 (10 bit):   0.203125
+   Atteso (f32):   -1.796875
+-  Adder:  -1.75
+-  Errore Relativo: 2.608696e-02
++  Adder:  -1.875
++  Errore Relativo: 4.347826e-02
+ 
+ --- Riga 110781 ---
+   FP1 (10 bit):   -2.0
+   FP2 (10 bit):   0.21875
+@@ -258631,10 +258631,10 @@
+ --- Riga 110838 ---
+   FP1 (10 bit):   -2.0
+   FP2 (10 bit):   0.078125
+   Atteso (f32):   -1.921875
+-  Adder:  -1.875
+-  Errore Relativo: 2.439024e-02
++  Adder:  -2.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 110841 ---
+   FP1 (10 bit):   -2.0
+   FP2 (10 bit):   0.09375
+@@ -260255,10 +260255,10 @@
+ --- Riga 111534 ---
+   FP1 (10 bit):   -2.25
+   FP2 (10 bit):   0.140625
+   Atteso (f32):   -2.109375
+-  Adder:  -2.0
+-  Errore Relativo: 5.185185e-02
++  Adder:  -2.25
++  Errore Relativo: 6.666667e-02
+ 
+ --- Riga 111537 ---
+   FP1 (10 bit):   -2.25
+   FP2 (10 bit):   0.15625
+@@ -260339,31 +260339,31 @@
+ --- Riga 111570 ---
+   FP1 (10 bit):   -2.25
+   FP2 (10 bit):   40.0
+   Atteso (f32):   37.75
+-  Adder:  36.0
+-  Errore Relativo: 4.635762e-02
++  Adder:  40.0
++  Errore Relativo: 5.960265e-02
+ 
+ --- Riga 111573 ---
+   FP1 (10 bit):   -2.25
+   FP2 (10 bit):   48.0
+   Atteso (f32):   45.75
+-  Adder:  44.0
+-  Errore Relativo: 3.825137e-02
++  Adder:  48.0
++  Errore Relativo: 4.918033e-02
+ 
+ --- Riga 111576 ---
+   FP1 (10 bit):   -2.25
+   FP2 (10 bit):   56.0
+   Atteso (f32):   53.75
+-  Adder:  52.0
+-  Errore Relativo: 3.255814e-02
++  Adder:  56.0
++  Errore Relativo: 4.186046e-02
+ 
+ --- Riga 111579 ---
+   FP1 (10 bit):   -2.25
+   FP2 (10 bit):   64.0
+   Atteso (f32):   61.75
+-  Adder:  60.0
+-  Errore Relativo: 2.834008e-02
++  Adder:  64.0
++  Errore Relativo: 3.643725e-02
+ 
+ --- Riga 111582 ---
+   FP1 (10 bit):   -2.25
+   FP2 (10 bit):   80.0
+@@ -262047,10 +262047,10 @@
+ --- Riga 112302 ---
+   FP1 (10 bit):   -2.5
+   FP2 (10 bit):   0.140625
+   Atteso (f32):   -2.359375
+-  Adder:  -2.25
+-  Errore Relativo: 4.635762e-02
++  Adder:  -2.5
++  Errore Relativo: 5.960265e-02
+ 
+ --- Riga 112305 ---
+   FP1 (10 bit):   -2.5
+   FP2 (10 bit):   0.15625
+@@ -262152,10 +262152,10 @@
+ --- Riga 112347 ---
+   FP1 (10 bit):   -2.5
+   FP2 (10 bit):   64.0
+   Atteso (f32):   61.5
+-  Adder:  60.0
+-  Errore Relativo: 2.439024e-02
++  Adder:  64.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 112350 ---
+   FP1 (10 bit):   -2.5
+   FP2 (10 bit):   80.0
+@@ -263839,10 +263839,10 @@
+ --- Riga 113070 ---
+   FP1 (10 bit):   -2.75
+   FP2 (10 bit):   0.140625
+   Atteso (f32):   -2.609375
+-  Adder:  -2.5
+-  Errore Relativo: 4.191617e-02
++  Adder:  -2.75
++  Errore Relativo: 5.389221e-02
+ 
+ --- Riga 113073 ---
+   FP1 (10 bit):   -2.75
+   FP2 (10 bit):   0.15625
+@@ -263944,10 +263944,10 @@
+ --- Riga 113115 ---
+   FP1 (10 bit):   -2.75
+   FP2 (10 bit):   64.0
+   Atteso (f32):   61.25
+-  Adder:  60.0
+-  Errore Relativo: 2.040816e-02
++  Adder:  64.0
++  Errore Relativo: 4.489796e-02
+ 
+ --- Riga 113118 ---
+   FP1 (10 bit):   -2.75
+   FP2 (10 bit):   80.0
+@@ -265631,10 +265631,10 @@
+ --- Riga 113838 ---
+   FP1 (10 bit):   -3.0
+   FP2 (10 bit):   0.140625
+   Atteso (f32):   -2.859375
+-  Adder:  -2.75
+-  Errore Relativo: 3.825137e-02
++  Adder:  -3.0
++  Errore Relativo: 4.918033e-02
+ 
+ --- Riga 113841 ---
+   FP1 (10 bit):   -3.0
+   FP2 (10 bit):   0.15625
+@@ -267423,10 +267423,10 @@
+ --- Riga 114606 ---
+   FP1 (10 bit):   -3.25
+   FP2 (10 bit):   0.140625
+   Atteso (f32):   -3.109375
+-  Adder:  -3.0
+-  Errore Relativo: 3.517588e-02
++  Adder:  -3.25
++  Errore Relativo: 4.522613e-02
+ 
+ --- Riga 114609 ---
+   FP1 (10 bit):   -3.25
+   FP2 (10 bit):   0.15625
+@@ -267500,10 +267500,10 @@
+ --- Riga 114639 ---
+   FP1 (10 bit):   -3.25
+   FP2 (10 bit):   32.0
+   Atteso (f32):   28.75
+-  Adder:  28.0
+-  Errore Relativo: 2.608696e-02
++  Adder:  30.0
++  Errore Relativo: 4.347826e-02
+ 
+ --- Riga 114642 ---
+   FP1 (10 bit):   -3.25
+   FP2 (10 bit):   40.0
+@@ -269215,10 +269215,10 @@
+ --- Riga 115374 ---
+   FP1 (10 bit):   -3.5
+   FP2 (10 bit):   0.140625
+   Atteso (f32):   -3.359375
+-  Adder:  -3.25
+-  Errore Relativo: 3.255814e-02
++  Adder:  -3.5
++  Errore Relativo: 4.186046e-02
+ 
+ --- Riga 115377 ---
+   FP1 (10 bit):   -3.5
+   FP2 (10 bit):   0.15625
+@@ -271007,10 +271007,10 @@
+ --- Riga 116142 ---
+   FP1 (10 bit):   -3.75
+   FP2 (10 bit):   0.140625
+   Atteso (f32):   -3.609375
+-  Adder:  -3.5
+-  Errore Relativo: 3.030303e-02
++  Adder:  -3.75
++  Errore Relativo: 3.896104e-02
+ 
+ --- Riga 116145 ---
+   FP1 (10 bit):   -3.75
+   FP2 (10 bit):   0.15625
+@@ -273023,10 +273023,10 @@
+ --- Riga 117006 ---
+   FP1 (10 bit):   -0.5
+   FP2 (10 bit):   0.01953125
+   Atteso (f32):   -0.48046875
+-  Adder:  -0.46875
+-  Errore Relativo: 2.439024e-02
++  Adder:  -0.5
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 117009 ---
+   FP1 (10 bit):   -0.5
+   FP2 (10 bit):   0.0234375
+@@ -274479,52 +274479,52 @@
+ --- Riga 117630 ---
+   FP1 (10 bit):   -0.5625
+   FP2 (10 bit):   9.0
+   Atteso (f32):   8.4375
+-  Adder:  8.0
+-  Errore Relativo: 5.185185e-02
++  Adder:  9.0
++  Errore Relativo: 6.666667e-02
+ 
+ --- Riga 117633 ---
+   FP1 (10 bit):   -0.5625
+   FP2 (10 bit):   10.0
+   Atteso (f32):   9.4375
+-  Adder:  9.0
+-  Errore Relativo: 4.635762e-02
++  Adder:  10.0
++  Errore Relativo: 5.960265e-02
+ 
+ --- Riga 117636 ---
+   FP1 (10 bit):   -0.5625
+   FP2 (10 bit):   11.0
+   Atteso (f32):   10.4375
+-  Adder:  10.0
+-  Errore Relativo: 4.191617e-02
++  Adder:  11.0
++  Errore Relativo: 5.389221e-02
+ 
+ --- Riga 117639 ---
+   FP1 (10 bit):   -0.5625
+   FP2 (10 bit):   12.0
+   Atteso (f32):   11.4375
+-  Adder:  11.0
+-  Errore Relativo: 3.825137e-02
++  Adder:  12.0
++  Errore Relativo: 4.918033e-02
+ 
+ --- Riga 117642 ---
+   FP1 (10 bit):   -0.5625
+   FP2 (10 bit):   13.0
+   Atteso (f32):   12.4375
+-  Adder:  12.0
+-  Errore Relativo: 3.517588e-02
++  Adder:  13.0
++  Errore Relativo: 4.522613e-02
+ 
+ --- Riga 117645 ---
+   FP1 (10 bit):   -0.5625
+   FP2 (10 bit):   14.0
+   Atteso (f32):   13.4375
+-  Adder:  13.0
+-  Errore Relativo: 3.255814e-02
++  Adder:  14.0
++  Errore Relativo: 4.186046e-02
+ 
+ --- Riga 117648 ---
+   FP1 (10 bit):   -0.5625
+   FP2 (10 bit):   15.0
+   Atteso (f32):   14.4375
+-  Adder:  14.0
+-  Errore Relativo: 3.030303e-02
++  Adder:  15.0
++  Errore Relativo: 3.896104e-02
+ 
+ --- Riga 117651 ---
+   FP1 (10 bit):   -0.5625
+   FP2 (10 bit):   0.25
+@@ -274640,10 +274640,10 @@
+ --- Riga 117699 ---
+   FP1 (10 bit):   -0.5625
+   FP2 (10 bit):   16.0
+   Atteso (f32):   15.4375
+-  Adder:  15.0
+-  Errore Relativo: 2.834008e-02
++  Adder:  16.0
++  Errore Relativo: 3.643725e-02
+ 
+ --- Riga 117702 ---
+   FP1 (10 bit):   -0.5625
+   FP2 (10 bit):   20.0
+@@ -276432,10 +276432,10 @@
+ --- Riga 118467 ---
+   FP1 (10 bit):   -0.625
+   FP2 (10 bit):   16.0
+   Atteso (f32):   15.375
+-  Adder:  15.0
+-  Errore Relativo: 2.439024e-02
++  Adder:  16.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 118470 ---
+   FP1 (10 bit):   -0.625
+   FP2 (10 bit):   20.0
+@@ -278224,10 +278224,10 @@
+ --- Riga 119235 ---
+   FP1 (10 bit):   -0.6875
+   FP2 (10 bit):   16.0
+   Atteso (f32):   15.3125
+-  Adder:  15.0
+-  Errore Relativo: 2.040816e-02
++  Adder:  16.0
++  Errore Relativo: 4.489796e-02
+ 
+ --- Riga 119238 ---
+   FP1 (10 bit):   -0.6875
+   FP2 (10 bit):   20.0
+@@ -281640,10 +281640,10 @@
+ --- Riga 120699 ---
+   FP1 (10 bit):   -0.8125
+   FP2 (10 bit):   8.0
+   Atteso (f32):   7.1875
+-  Adder:  7.0
+-  Errore Relativo: 2.608696e-02
++  Adder:  7.5
++  Errore Relativo: 4.347826e-02
+ 
+ --- Riga 120702 ---
+   FP1 (10 bit):   -0.8125
+   FP2 (10 bit):   9.0
+@@ -287107,10 +287107,10 @@
+ --- Riga 123042 ---
+   FP1 (10 bit):   -4.0
+   FP2 (10 bit):   0.40625
+   Atteso (f32):   -3.59375
+-  Adder:  -3.5
+-  Errore Relativo: 2.608696e-02
++  Adder:  -3.75
++  Errore Relativo: 4.347826e-02
+ 
+ --- Riga 123045 ---
+   FP1 (10 bit):   -4.0
+   FP2 (10 bit):   0.4375
+@@ -287135,24 +287135,24 @@
+ --- Riga 123054 ---
+   FP1 (10 bit):   -4.0
+   FP2 (10 bit):   0.140625
+   Atteso (f32):   -3.859375
+-  Adder:  -3.75
+-  Errore Relativo: 2.834008e-02
++  Adder:  -4.0
++  Errore Relativo: 3.643725e-02
+ 
+ --- Riga 123057 ---
+   FP1 (10 bit):   -4.0
+   FP2 (10 bit):   0.15625
+   Atteso (f32):   -3.84375
+-  Adder:  -3.75
+-  Errore Relativo: 2.439024e-02
++  Adder:  -4.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 123060 ---
+   FP1 (10 bit):   -4.0
+   FP2 (10 bit):   0.171875
+   Atteso (f32):   -3.828125
+-  Adder:  -3.75
+-  Errore Relativo: 2.040816e-02
++  Adder:  -4.0
++  Errore Relativo: 4.489796e-02
+ 
+ --- Riga 123063 ---
+   FP1 (10 bit):   -4.0
+   FP2 (10 bit):   0.1875
+@@ -288871,10 +288871,10 @@
+ --- Riga 123798 ---
+   FP1 (10 bit):   -4.5
+   FP2 (10 bit):   0.28125
+   Atteso (f32):   -4.21875
+-  Adder:  -4.0
+-  Errore Relativo: 5.185185e-02
++  Adder:  -4.5
++  Errore Relativo: 6.666667e-02
+ 
+ --- Riga 123801 ---
+   FP1 (10 bit):   -4.5
+   FP2 (10 bit):   0.3125
+@@ -289039,31 +289039,31 @@
+ --- Riga 123870 ---
+   FP1 (10 bit):   -4.5
+   FP2 (10 bit):   80.0
+   Atteso (f32):   75.5
+-  Adder:  72.0
+-  Errore Relativo: 4.635762e-02
++  Adder:  80.0
++  Errore Relativo: 5.960265e-02
+ 
+ --- Riga 123873 ---
+   FP1 (10 bit):   -4.5
+   FP2 (10 bit):   96.0
+   Atteso (f32):   91.5
+-  Adder:  88.0
+-  Errore Relativo: 3.825137e-02
++  Adder:  96.0
++  Errore Relativo: 4.918033e-02
+ 
+ --- Riga 123876 ---
+   FP1 (10 bit):   -4.5
+   FP2 (10 bit):   112.0
+   Atteso (f32):   107.5
+-  Adder:  104.0
+-  Errore Relativo: 3.255814e-02
++  Adder:  112.0
++  Errore Relativo: 4.186046e-02
+ 
+ --- Riga 123879 ---
+   FP1 (10 bit):   -4.5
+   FP2 (10 bit):   128.0
+   Atteso (f32):   123.5
+-  Adder:  120.0
+-  Errore Relativo: 2.834008e-02
++  Adder:  128.0
++  Errore Relativo: 3.643725e-02
+ 
+ --- Riga 123882 ---
+   FP1 (10 bit):   -4.5
+   FP2 (10 bit):   160.0
+@@ -290663,10 +290663,10 @@
+ --- Riga 124566 ---
+   FP1 (10 bit):   -5.0
+   FP2 (10 bit):   0.28125
+   Atteso (f32):   -4.71875
+-  Adder:  -4.5
+-  Errore Relativo: 4.635762e-02
++  Adder:  -5.0
++  Errore Relativo: 5.960265e-02
+ 
+ --- Riga 124569 ---
+   FP1 (10 bit):   -5.0
+   FP2 (10 bit):   0.3125
+@@ -290852,10 +290852,10 @@
+ --- Riga 124647 ---
+   FP1 (10 bit):   -5.0
+   FP2 (10 bit):   128.0
+   Atteso (f32):   123.0
+-  Adder:  120.0
+-  Errore Relativo: 2.439024e-02
++  Adder:  128.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 124650 ---
+   FP1 (10 bit):   -5.0
+   FP2 (10 bit):   160.0
+@@ -292455,10 +292455,10 @@
+ --- Riga 125334 ---
+   FP1 (10 bit):   -5.5
+   FP2 (10 bit):   0.28125
+   Atteso (f32):   -5.21875
+-  Adder:  -5.0
+-  Errore Relativo: 4.191617e-02
++  Adder:  -5.5
++  Errore Relativo: 5.389221e-02
+ 
+ --- Riga 125337 ---
+   FP1 (10 bit):   -5.5
+   FP2 (10 bit):   0.3125
+@@ -292644,10 +292644,10 @@
+ --- Riga 125415 ---
+   FP1 (10 bit):   -5.5
+   FP2 (10 bit):   128.0
+   Atteso (f32):   122.5
+-  Adder:  120.0
+-  Errore Relativo: 2.040816e-02
++  Adder:  128.0
++  Errore Relativo: 4.489796e-02
+ 
+ --- Riga 125418 ---
+   FP1 (10 bit):   -5.5
+   FP2 (10 bit):   160.0
+@@ -294247,10 +294247,10 @@
+ --- Riga 126102 ---
+   FP1 (10 bit):   -6.0
+   FP2 (10 bit):   0.28125
+   Atteso (f32):   -5.71875
+-  Adder:  -5.5
+-  Errore Relativo: 3.825137e-02
++  Adder:  -6.0
++  Errore Relativo: 4.918033e-02
+ 
+ --- Riga 126105 ---
+   FP1 (10 bit):   -6.0
+   FP2 (10 bit):   0.3125
+@@ -296039,10 +296039,10 @@
+ --- Riga 126870 ---
+   FP1 (10 bit):   -6.5
+   FP2 (10 bit):   0.28125
+   Atteso (f32):   -6.21875
+-  Adder:  -6.0
+-  Errore Relativo: 3.517588e-02
++  Adder:  -6.5
++  Errore Relativo: 4.522613e-02
+ 
+ --- Riga 126873 ---
+   FP1 (10 bit):   -6.5
+   FP2 (10 bit):   0.3125
+@@ -296200,10 +296200,10 @@
+ --- Riga 126939 ---
+   FP1 (10 bit):   -6.5
+   FP2 (10 bit):   64.0
+   Atteso (f32):   57.5
+-  Adder:  56.0
+-  Errore Relativo: 2.608696e-02
++  Adder:  60.0
++  Errore Relativo: 4.347826e-02
+ 
+ --- Riga 126942 ---
+   FP1 (10 bit):   -6.5
+   FP2 (10 bit):   80.0
+@@ -297831,10 +297831,10 @@
+ --- Riga 127638 ---
+   FP1 (10 bit):   -7.0
+   FP2 (10 bit):   0.28125
+   Atteso (f32):   -6.71875
+-  Adder:  -6.5
+-  Errore Relativo: 3.255814e-02
++  Adder:  -7.0
++  Errore Relativo: 4.186046e-02
+ 
+ --- Riga 127641 ---
+   FP1 (10 bit):   -7.0
+   FP2 (10 bit):   0.3125
+@@ -299623,10 +299623,10 @@
+ --- Riga 128406 ---
+   FP1 (10 bit):   -7.5
+   FP2 (10 bit):   0.28125
+   Atteso (f32):   -7.21875
+-  Adder:  -7.0
+-  Errore Relativo: 3.030303e-02
++  Adder:  -7.5
++  Errore Relativo: 3.896104e-02
+ 
+ --- Riga 128409 ---
+   FP1 (10 bit):   -7.5
+   FP2 (10 bit):   0.3125
+@@ -301275,10 +301275,10 @@
+ --- Riga 129114 ---
+   FP1 (10 bit):   -8.0
+   FP2 (10 bit):   0.8125
+   Atteso (f32):   -7.1875
+-  Adder:  -7.0
+-  Errore Relativo: 2.608696e-02
++  Adder:  -7.5
++  Errore Relativo: 4.347826e-02
+ 
+ --- Riga 129117 ---
+   FP1 (10 bit):   -8.0
+   FP2 (10 bit):   0.875
+@@ -301415,24 +301415,24 @@
+ --- Riga 129174 ---
+   FP1 (10 bit):   -8.0
+   FP2 (10 bit):   0.28125
+   Atteso (f32):   -7.71875
+-  Adder:  -7.5
+-  Errore Relativo: 2.834008e-02
++  Adder:  -8.0
++  Errore Relativo: 3.643725e-02
+ 
+ --- Riga 129177 ---
+   FP1 (10 bit):   -8.0
+   FP2 (10 bit):   0.3125
+   Atteso (f32):   -7.6875
+-  Adder:  -7.5
+-  Errore Relativo: 2.439024e-02
++  Adder:  -8.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 129180 ---
+   FP1 (10 bit):   -8.0
+   FP2 (10 bit):   0.34375
+   Atteso (f32):   -7.65625
+-  Adder:  -7.5
+-  Errore Relativo: 2.040816e-02
++  Adder:  -8.0
++  Errore Relativo: 4.489796e-02
+ 
+ --- Riga 129183 ---
+   FP1 (10 bit):   -8.0
+   FP2 (10 bit):   0.375
+@@ -303039,10 +303039,10 @@
+ --- Riga 129870 ---
+   FP1 (10 bit):   -9.0
+   FP2 (10 bit):   0.5625
+   Atteso (f32):   -8.4375
+-  Adder:  -8.0
+-  Errore Relativo: 5.185185e-02
++  Adder:  -9.0
++  Errore Relativo: 6.666667e-02
+ 
+ --- Riga 129873 ---
+   FP1 (10 bit):   -9.0
+   FP2 (10 bit):   0.625
+@@ -303403,24 +303403,24 @@
+ --- Riga 130026 ---
+   FP1 (10 bit):   -9.0
+   FP2 (10 bit):   160.0
+   Atteso (f32):   151.0
+-  Adder:  144.0
+-  Errore Relativo: 4.635762e-02
++  Adder:  160.0
++  Errore Relativo: 5.960265e-02
+ 
+ --- Riga 130029 ---
+   FP1 (10 bit):   -9.0
+   FP2 (10 bit):   192.0
+   Atteso (f32):   183.0
+-  Adder:  176.0
+-  Errore Relativo: 3.825137e-02
++  Adder:  192.0
++  Errore Relativo: 4.918033e-02
+ 
+ --- Riga 130032 ---
+   FP1 (10 bit):   -9.0
+   FP2 (10 bit):   224.0
+   Atteso (f32):   215.0
+-  Adder:  208.0
+-  Errore Relativo: 3.255814e-02
++  Adder:  224.0
++  Errore Relativo: 4.186046e-02
+ 
+ --- Riga 130035 ---
+   FP1 (10 bit):   -9.0
+   FP2 (10 bit):   0.0625
+@@ -303536,10 +303536,10 @@
+ --- Riga 130083 ---
+   FP1 (10 bit):   -9.0
+   FP2 (10 bit):   256.0
+   Atteso (f32):   247.0
+-  Adder:  240.0
+-  Errore Relativo: 2.834008e-02
++  Adder:  256.0
++  Errore Relativo: 3.643725e-02
+ 
+ --- Riga 130086 ---
+   FP1 (10 bit):   -9.0
+   FP2 (10 bit):   384.0
+@@ -304831,10 +304831,10 @@
+ --- Riga 130638 ---
+   FP1 (10 bit):   -10.0
+   FP2 (10 bit):   0.5625
+   Atteso (f32):   -9.4375
+-  Adder:  -9.0
+-  Errore Relativo: 4.635762e-02
++  Adder:  -10.0
++  Errore Relativo: 5.960265e-02
+ 
+ --- Riga 130641 ---
+   FP1 (10 bit):   -10.0
+   FP2 (10 bit):   0.625
+@@ -305328,10 +305328,10 @@
+ --- Riga 130851 ---
+   FP1 (10 bit):   -10.0
+   FP2 (10 bit):   256.0
+   Atteso (f32):   246.0
+-  Adder:  240.0
+-  Errore Relativo: 2.439024e-02
++  Adder:  256.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 130854 ---
+   FP1 (10 bit):   -10.0
+   FP2 (10 bit):   384.0
+@@ -306623,10 +306623,10 @@
+ --- Riga 131406 ---
+   FP1 (10 bit):   -11.0
+   FP2 (10 bit):   0.5625
+   Atteso (f32):   -10.4375
+-  Adder:  -10.0
+-  Errore Relativo: 4.191617e-02
++  Adder:  -11.0
++  Errore Relativo: 5.389221e-02
+ 
+ --- Riga 131409 ---
+   FP1 (10 bit):   -11.0
+   FP2 (10 bit):   0.625
+@@ -307120,10 +307120,10 @@
+ --- Riga 131619 ---
+   FP1 (10 bit):   -11.0
+   FP2 (10 bit):   256.0
+   Atteso (f32):   245.0
+-  Adder:  240.0
+-  Errore Relativo: 2.040816e-02
++  Adder:  256.0
++  Errore Relativo: 4.489796e-02
+ 
+ --- Riga 131622 ---
+   FP1 (10 bit):   -11.0
+   FP2 (10 bit):   384.0
+@@ -308415,10 +308415,10 @@
+ --- Riga 132174 ---
+   FP1 (10 bit):   -12.0
+   FP2 (10 bit):   0.5625
+   Atteso (f32):   -11.4375
+-  Adder:  -11.0
+-  Errore Relativo: 3.825137e-02
++  Adder:  -12.0
++  Errore Relativo: 4.918033e-02
+ 
+ --- Riga 132177 ---
+   FP1 (10 bit):   -12.0
+   FP2 (10 bit):   0.625
+@@ -310207,10 +310207,10 @@
+ --- Riga 132942 ---
+   FP1 (10 bit):   -13.0
+   FP2 (10 bit):   0.5625
+   Atteso (f32):   -12.4375
+-  Adder:  -12.0
+-  Errore Relativo: 3.517588e-02
++  Adder:  -13.0
++  Errore Relativo: 4.522613e-02
+ 
+ --- Riga 132945 ---
+   FP1 (10 bit):   -13.0
+   FP2 (10 bit):   0.625
+@@ -310564,10 +310564,10 @@
+ --- Riga 133095 ---
+   FP1 (10 bit):   -13.0
+   FP2 (10 bit):   128.0
+   Atteso (f32):   115.0
+-  Adder:  112.0
+-  Errore Relativo: 2.608696e-02
++  Adder:  120.0
++  Errore Relativo: 4.347826e-02
+ 
+ --- Riga 133098 ---
+   FP1 (10 bit):   -13.0
+   FP2 (10 bit):   160.0
+@@ -311999,10 +311999,10 @@
+ --- Riga 133710 ---
+   FP1 (10 bit):   -14.0
+   FP2 (10 bit):   0.5625
+   Atteso (f32):   -13.4375
+-  Adder:  -13.0
+-  Errore Relativo: 3.255814e-02
++  Adder:  -14.0
++  Errore Relativo: 4.186046e-02
+ 
+ --- Riga 133713 ---
+   FP1 (10 bit):   -14.0
+   FP2 (10 bit):   0.625
+@@ -313791,10 +313791,10 @@
+ --- Riga 134478 ---
+   FP1 (10 bit):   -15.0
+   FP2 (10 bit):   0.5625
+   Atteso (f32):   -14.4375
+-  Adder:  -14.0
+-  Errore Relativo: 3.030303e-02
++  Adder:  -15.0
++  Errore Relativo: 3.896104e-02
+ 
+ --- Riga 134481 ---
+   FP1 (10 bit):   -15.0
+   FP2 (10 bit):   0.625
+@@ -316059,10 +316059,10 @@
+ --- Riga 135450 ---
+   FP1 (10 bit):   -0.25
+   FP2 (10 bit):   0.009765625
+   Atteso (f32):   -0.240234375
+-  Adder:  -0.234375
+-  Errore Relativo: 2.439024e-02
++  Adder:  -0.25
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 135453 ---
+   FP1 (10 bit):   -0.25
+   FP2 (10 bit):   0.01171875
+@@ -317431,59 +317431,59 @@
+ --- Riga 136038 ---
+   FP1 (10 bit):   -0.28125
+   FP2 (10 bit):   4.5
+   Atteso (f32):   4.21875
+-  Adder:  4.0
+-  Errore Relativo: 5.185185e-02
++  Adder:  4.5
++  Errore Relativo: 6.666667e-02
+ 
+ --- Riga 136041 ---
+   FP1 (10 bit):   -0.28125
+   FP2 (10 bit):   5.0
+   Atteso (f32):   4.71875
+-  Adder:  4.5
+-  Errore Relativo: 4.635762e-02
++  Adder:  5.0
++  Errore Relativo: 5.960265e-02
+ 
+ --- Riga 136044 ---
+   FP1 (10 bit):   -0.28125
+   FP2 (10 bit):   5.5
+   Atteso (f32):   5.21875
+-  Adder:  5.0
+-  Errore Relativo: 4.191617e-02
++  Adder:  5.5
++  Errore Relativo: 5.389221e-02
+ 
+ --- Riga 136047 ---
+   FP1 (10 bit):   -0.28125
+   FP2 (10 bit):   6.0
+   Atteso (f32):   5.71875
+-  Adder:  5.5
+-  Errore Relativo: 3.825137e-02
++  Adder:  6.0
++  Errore Relativo: 4.918033e-02
+ 
+ --- Riga 136050 ---
+   FP1 (10 bit):   -0.28125
+   FP2 (10 bit):   6.5
+   Atteso (f32):   6.21875
+-  Adder:  6.0
+-  Errore Relativo: 3.517588e-02
++  Adder:  6.5
++  Errore Relativo: 4.522613e-02
+ 
+ --- Riga 136053 ---
+   FP1 (10 bit):   -0.28125
+   FP2 (10 bit):   7.0
+   Atteso (f32):   6.71875
+-  Adder:  6.5
+-  Errore Relativo: 3.255814e-02
++  Adder:  7.0
++  Errore Relativo: 4.186046e-02
+ 
+ --- Riga 136056 ---
+   FP1 (10 bit):   -0.28125
+   FP2 (10 bit):   7.5
+   Atteso (f32):   7.21875
+-  Adder:  7.0
+-  Errore Relativo: 3.030303e-02
++  Adder:  7.5
++  Errore Relativo: 3.896104e-02
+ 
+ --- Riga 136059 ---
+   FP1 (10 bit):   -0.28125
+   FP2 (10 bit):   8.0
+   Atteso (f32):   7.71875
+-  Adder:  7.5
+-  Errore Relativo: 2.834008e-02
++  Adder:  8.0
++  Errore Relativo: 3.643725e-02
+ 
+ --- Riga 136062 ---
+   FP1 (10 bit):   -0.28125
+   FP2 (10 bit):   9.0
+@@ -319272,10 +319272,10 @@
+ --- Riga 136827 ---
+   FP1 (10 bit):   -0.3125
+   FP2 (10 bit):   8.0
+   Atteso (f32):   7.6875
+-  Adder:  7.5
+-  Errore Relativo: 2.439024e-02
++  Adder:  8.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 136830 ---
+   FP1 (10 bit):   -0.3125
+   FP2 (10 bit):   9.0
+@@ -321064,10 +321064,10 @@
+ --- Riga 137595 ---
+   FP1 (10 bit):   -0.34375
+   FP2 (10 bit):   8.0
+   Atteso (f32):   7.65625
+-  Adder:  7.5
+-  Errore Relativo: 2.040816e-02
++  Adder:  8.0
++  Errore Relativo: 4.489796e-02
+ 
+ --- Riga 137598 ---
+   FP1 (10 bit):   -0.34375
+   FP2 (10 bit):   9.0
+@@ -324592,10 +324592,10 @@
+ --- Riga 139107 ---
+   FP1 (10 bit):   -0.40625
+   FP2 (10 bit):   4.0
+   Atteso (f32):   3.59375
+-  Adder:  3.5
+-  Errore Relativo: 2.608696e-02
++  Adder:  3.75
++  Errore Relativo: 4.347826e-02
+ 
+ --- Riga 139110 ---
+   FP1 (10 bit):   -0.40625
+   FP2 (10 bit):   4.5
+@@ -331655,52 +331655,52 @@
+ --- Riga 142134 ---
+   FP1 (10 bit):   -0.140625
+   FP2 (10 bit):   2.25
+   Atteso (f32):   2.109375
+-  Adder:  2.0
+-  Errore Relativo: 5.185185e-02
++  Adder:  2.25
++  Errore Relativo: 6.666667e-02
+ 
+ --- Riga 142137 ---
+   FP1 (10 bit):   -0.140625
+   FP2 (10 bit):   2.5
+   Atteso (f32):   2.359375
+-  Adder:  2.25
+-  Errore Relativo: 4.635762e-02
++  Adder:  2.5
++  Errore Relativo: 5.960265e-02
+ 
+ --- Riga 142140 ---
+   FP1 (10 bit):   -0.140625
+   FP2 (10 bit):   2.75
+   Atteso (f32):   2.609375
+-  Adder:  2.5
+-  Errore Relativo: 4.191617e-02
++  Adder:  2.75
++  Errore Relativo: 5.389221e-02
+ 
+ --- Riga 142143 ---
+   FP1 (10 bit):   -0.140625
+   FP2 (10 bit):   3.0
+   Atteso (f32):   2.859375
+-  Adder:  2.75
+-  Errore Relativo: 3.825137e-02
++  Adder:  3.0
++  Errore Relativo: 4.918033e-02
+ 
+ --- Riga 142146 ---
+   FP1 (10 bit):   -0.140625
+   FP2 (10 bit):   3.25
+   Atteso (f32):   3.109375
+-  Adder:  3.0
+-  Errore Relativo: 3.517588e-02
++  Adder:  3.25
++  Errore Relativo: 4.522613e-02
+ 
+ --- Riga 142149 ---
+   FP1 (10 bit):   -0.140625
+   FP2 (10 bit):   3.5
+   Atteso (f32):   3.359375
+-  Adder:  3.25
+-  Errore Relativo: 3.255814e-02
++  Adder:  3.5
++  Errore Relativo: 4.186046e-02
+ 
+ --- Riga 142152 ---
+   FP1 (10 bit):   -0.140625
+   FP2 (10 bit):   3.75
+   Atteso (f32):   3.609375
+-  Adder:  3.5
+-  Errore Relativo: 3.030303e-02
++  Adder:  3.75
++  Errore Relativo: 3.896104e-02
+ 
+ --- Riga 142155 ---
+   FP1 (10 bit):   -0.140625
+   FP2 (10 bit):   0.5
+@@ -331760,10 +331760,10 @@
+ --- Riga 142179 ---
+   FP1 (10 bit):   -0.140625
+   FP2 (10 bit):   4.0
+   Atteso (f32):   3.859375
+-  Adder:  3.75
+-  Errore Relativo: 2.834008e-02
++  Adder:  4.0
++  Errore Relativo: 3.643725e-02
+ 
+ --- Riga 142182 ---
+   FP1 (10 bit):   -0.140625
+   FP2 (10 bit):   4.5
+@@ -333552,10 +333552,10 @@
+ --- Riga 142947 ---
+   FP1 (10 bit):   -0.15625
+   FP2 (10 bit):   4.0
+   Atteso (f32):   3.84375
+-  Adder:  3.75
+-  Errore Relativo: 2.439024e-02
++  Adder:  4.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 142950 ---
+   FP1 (10 bit):   -0.15625
+   FP2 (10 bit):   4.5
+@@ -335344,10 +335344,10 @@
+ --- Riga 143715 ---
+   FP1 (10 bit):   -0.171875
+   FP2 (10 bit):   4.0
+   Atteso (f32):   3.828125
+-  Adder:  3.75
+-  Errore Relativo: 2.040816e-02
++  Adder:  4.0
++  Errore Relativo: 4.489796e-02
+ 
+ --- Riga 143718 ---
+   FP1 (10 bit):   -0.171875
+   FP2 (10 bit):   4.5
+@@ -338816,10 +338816,10 @@
+ --- Riga 145203 ---
+   FP1 (10 bit):   -0.203125
+   FP2 (10 bit):   2.0
+   Atteso (f32):   1.796875
+-  Adder:  1.75
+-  Errore Relativo: 2.608696e-02
++  Adder:  1.875
++  Errore Relativo: 4.347826e-02
+ 
+ --- Riga 145206 ---
+   FP1 (10 bit):   -0.203125
+   FP2 (10 bit):   2.25
+@@ -344171,10 +344171,10 @@
+ --- Riga 147498 ---
+   FP1 (10 bit):   -16.0
+   FP2 (10 bit):   1.625
+   Atteso (f32):   -14.375
+-  Adder:  -14.0
+-  Errore Relativo: 2.608696e-02
++  Adder:  -15.0
++  Errore Relativo: 4.347826e-02
+ 
+ --- Riga 147501 ---
+   FP1 (10 bit):   -16.0
+   FP2 (10 bit):   1.75
+@@ -344255,24 +344255,24 @@
+ --- Riga 147534 ---
+   FP1 (10 bit):   -16.0
+   FP2 (10 bit):   0.5625
+   Atteso (f32):   -15.4375
+-  Adder:  -15.0
+-  Errore Relativo: 2.834008e-02
++  Adder:  -16.0
++  Errore Relativo: 3.643725e-02
+ 
+ --- Riga 147537 ---
+   FP1 (10 bit):   -16.0
+   FP2 (10 bit):   0.625
+   Atteso (f32):   -15.375
+-  Adder:  -15.0
+-  Errore Relativo: 2.439024e-02
++  Adder:  -16.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 147540 ---
+   FP1 (10 bit):   -16.0
+   FP2 (10 bit):   0.6875
+   Atteso (f32):   -15.3125
+-  Adder:  -15.0
+-  Errore Relativo: 2.040816e-02
++  Adder:  -16.0
++  Errore Relativo: 4.489796e-02
+ 
+ --- Riga 147543 ---
+   FP1 (10 bit):   -16.0
+   FP2 (10 bit):   0.75
+@@ -345935,10 +345935,10 @@
+ --- Riga 148254 ---
+   FP1 (10 bit):   -20.0
+   FP2 (10 bit):   1.125
+   Atteso (f32):   -18.875
+-  Adder:  -18.0
+-  Errore Relativo: 4.635762e-02
++  Adder:  -20.0
++  Errore Relativo: 5.960265e-02
+ 
+ --- Riga 148257 ---
+   FP1 (10 bit):   -20.0
+   FP2 (10 bit):   1.25
+@@ -346558,10 +346558,10 @@
+ --- Riga 148521 ---
+   FP1 (10 bit):   -20.0
+   FP2 (10 bit):   512.0
+   Atteso (f32):   492.0
+-  Adder:  480.0
+-  Errore Relativo: 2.439024e-02
++  Adder:  512.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 148524 ---
+   FP1 (10 bit):   -20.0
+   FP2 (10 bit):   768.0
+@@ -347727,10 +347727,10 @@
+ --- Riga 149022 ---
+   FP1 (10 bit):   -24.0
+   FP2 (10 bit):   1.125
+   Atteso (f32):   -22.875
+-  Adder:  -22.0
+-  Errore Relativo: 3.825137e-02
++  Adder:  -24.0
++  Errore Relativo: 4.918033e-02
+ 
+ --- Riga 149025 ---
+   FP1 (10 bit):   -24.0
+   FP2 (10 bit):   1.25
+@@ -349519,10 +349519,10 @@
+ --- Riga 149790 ---
+   FP1 (10 bit):   -28.0
+   FP2 (10 bit):   1.125
+   Atteso (f32):   -26.875
+-  Adder:  -26.0
+-  Errore Relativo: 3.255814e-02
++  Adder:  -28.0
++  Errore Relativo: 4.186046e-02
+ 
+ --- Riga 149793 ---
+   FP1 (10 bit):   -28.0
+   FP2 (10 bit):   1.25
+@@ -351311,24 +351311,24 @@
+ --- Riga 150558 ---
+   FP1 (10 bit):   -32.0
+   FP2 (10 bit):   1.125
+   Atteso (f32):   -30.875
+-  Adder:  -30.0
+-  Errore Relativo: 2.834008e-02
++  Adder:  -32.0
++  Errore Relativo: 3.643725e-02
+ 
+ --- Riga 150561 ---
+   FP1 (10 bit):   -32.0
+   FP2 (10 bit):   1.25
+   Atteso (f32):   -30.75
+-  Adder:  -30.0
+-  Errore Relativo: 2.439024e-02
++  Adder:  -32.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 150564 ---
+   FP1 (10 bit):   -32.0
+   FP2 (10 bit):   1.375
+   Atteso (f32):   -30.625
+-  Adder:  -30.0
+-  Errore Relativo: 2.040816e-02
++  Adder:  -32.0
++  Errore Relativo: 4.489796e-02
+ 
+ --- Riga 150567 ---
+   FP1 (10 bit):   -32.0
+   FP2 (10 bit):   1.5
+@@ -351395,10 +351395,10 @@
+ --- Riga 150594 ---
+   FP1 (10 bit):   -32.0
+   FP2 (10 bit):   3.25
+   Atteso (f32):   -28.75
+-  Adder:  -28.0
+-  Errore Relativo: 2.608696e-02
++  Adder:  -30.0
++  Errore Relativo: 4.347826e-02
+ 
+ --- Riga 150597 ---
+   FP1 (10 bit):   -32.0
+   FP2 (10 bit):   3.5
+@@ -353159,10 +353159,10 @@
+ --- Riga 151350 ---
+   FP1 (10 bit):   -40.0
+   FP2 (10 bit):   2.25
+   Atteso (f32):   -37.75
+-  Adder:  -36.0
+-  Errore Relativo: 4.635762e-02
++  Adder:  -40.0
++  Errore Relativo: 5.960265e-02
+ 
+ --- Riga 151353 ---
+   FP1 (10 bit):   -40.0
+   FP2 (10 bit):   2.5
+@@ -353740,10 +353740,10 @@
+ --- Riga 151599 ---
+   FP1 (10 bit):   -40.0
+   FP2 (10 bit):   1024.0
+   Atteso (f32):   984.0
+-  Adder:  960.0
+-  Errore Relativo: 2.439024e-02
++  Adder:  1024.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 151602 ---
+   FP1 (10 bit):   -40.0
+   FP2 (10 bit):   1536.0
+@@ -354951,10 +354951,10 @@
+ --- Riga 152118 ---
+   FP1 (10 bit):   -48.0
+   FP2 (10 bit):   2.25
+   Atteso (f32):   -45.75
+-  Adder:  -44.0
+-  Errore Relativo: 3.825137e-02
++  Adder:  -48.0
++  Errore Relativo: 4.918033e-02
+ 
+ --- Riga 152121 ---
+   FP1 (10 bit):   -48.0
+   FP2 (10 bit):   2.5
+@@ -356743,10 +356743,10 @@
+ --- Riga 152886 ---
+   FP1 (10 bit):   -56.0
+   FP2 (10 bit):   2.25
+   Atteso (f32):   -53.75
+-  Adder:  -52.0
+-  Errore Relativo: 3.255814e-02
++  Adder:  -56.0
++  Errore Relativo: 4.186046e-02
+ 
+ --- Riga 152889 ---
+   FP1 (10 bit):   -56.0
+   FP2 (10 bit):   2.5
+@@ -358535,24 +358535,24 @@
+ --- Riga 153654 ---
+   FP1 (10 bit):   -64.0
+   FP2 (10 bit):   2.25
+   Atteso (f32):   -61.75
+-  Adder:  -60.0
+-  Errore Relativo: 2.834008e-02
++  Adder:  -64.0
++  Errore Relativo: 3.643725e-02
+ 
+ --- Riga 153657 ---
+   FP1 (10 bit):   -64.0
+   FP2 (10 bit):   2.5
+   Atteso (f32):   -61.5
+-  Adder:  -60.0
+-  Errore Relativo: 2.439024e-02
++  Adder:  -64.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 153660 ---
+   FP1 (10 bit):   -64.0
+   FP2 (10 bit):   2.75
+   Atteso (f32):   -61.25
+-  Adder:  -60.0
+-  Errore Relativo: 2.040816e-02
++  Adder:  -64.0
++  Errore Relativo: 4.489796e-02
+ 
+ --- Riga 153663 ---
+   FP1 (10 bit):   -64.0
+   FP2 (10 bit):   3.0
+@@ -358675,10 +358675,10 @@
+ --- Riga 153714 ---
+   FP1 (10 bit):   -64.0
+   FP2 (10 bit):   6.5
+   Atteso (f32):   -57.5
+-  Adder:  -56.0
+-  Errore Relativo: 2.608696e-02
++  Adder:  -60.0
++  Errore Relativo: 4.347826e-02
+ 
+ --- Riga 153717 ---
+   FP1 (10 bit):   -64.0
+   FP2 (10 bit):   7.0
+@@ -360439,10 +360439,10 @@
+ --- Riga 154470 ---
+   FP1 (10 bit):   -80.0
+   FP2 (10 bit):   4.5
+   Atteso (f32):   -75.5
+-  Adder:  -72.0
+-  Errore Relativo: 4.635762e-02
++  Adder:  -80.0
++  Errore Relativo: 5.960265e-02
+ 
+ --- Riga 154473 ---
+   FP1 (10 bit):   -80.0
+   FP2 (10 bit):   5.0
+@@ -360922,10 +360922,10 @@
+ --- Riga 154677 ---
+   FP1 (10 bit):   -80.0
+   FP2 (10 bit):   2048.0
+   Atteso (f32):   1968.0
+-  Adder:  1920.0
+-  Errore Relativo: 2.439024e-02
++  Adder:  2048.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 154680 ---
+   FP1 (10 bit):   -80.0
+   FP2 (10 bit):   3072.0
+@@ -362231,10 +362231,10 @@
+ --- Riga 155238 ---
+   FP1 (10 bit):   -96.0
+   FP2 (10 bit):   4.5
+   Atteso (f32):   -91.5
+-  Adder:  -88.0
+-  Errore Relativo: 3.825137e-02
++  Adder:  -96.0
++  Errore Relativo: 4.918033e-02
+ 
+ --- Riga 155241 ---
+   FP1 (10 bit):   -96.0
+   FP2 (10 bit):   5.0
+@@ -364023,10 +364023,10 @@
+ --- Riga 156006 ---
+   FP1 (10 bit):   -112.0
+   FP2 (10 bit):   4.5
+   Atteso (f32):   -107.5
+-  Adder:  -104.0
+-  Errore Relativo: 3.255814e-02
++  Adder:  -112.0
++  Errore Relativo: 4.186046e-02
+ 
+ --- Riga 156009 ---
+   FP1 (10 bit):   -112.0
+   FP2 (10 bit):   5.0
+@@ -365815,24 +365815,24 @@
+ --- Riga 156774 ---
+   FP1 (10 bit):   -128.0
+   FP2 (10 bit):   4.5
+   Atteso (f32):   -123.5
+-  Adder:  -120.0
+-  Errore Relativo: 2.834008e-02
++  Adder:  -128.0
++  Errore Relativo: 3.643725e-02
+ 
+ --- Riga 156777 ---
+   FP1 (10 bit):   -128.0
+   FP2 (10 bit):   5.0
+   Atteso (f32):   -123.0
+-  Adder:  -120.0
+-  Errore Relativo: 2.439024e-02
++  Adder:  -128.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 156780 ---
+   FP1 (10 bit):   -128.0
+   FP2 (10 bit):   5.5
+   Atteso (f32):   -122.5
+-  Adder:  -120.0
+-  Errore Relativo: 2.040816e-02
++  Adder:  -128.0
++  Errore Relativo: 4.489796e-02
+ 
+ --- Riga 156783 ---
+   FP1 (10 bit):   -128.0
+   FP2 (10 bit):   6.0
+@@ -365899,10 +365899,10 @@
+ --- Riga 156810 ---
+   FP1 (10 bit):   -128.0
+   FP2 (10 bit):   13.0
+   Atteso (f32):   -115.0
+-  Adder:  -112.0
+-  Errore Relativo: 2.608696e-02
++  Adder:  -120.0
++  Errore Relativo: 4.347826e-02
+ 
+ --- Riga 156813 ---
+   FP1 (10 bit):   -128.0
+   FP2 (10 bit):   14.0
+@@ -367663,10 +367663,10 @@
+ --- Riga 157566 ---
+   FP1 (10 bit):   -160.0
+   FP2 (10 bit):   9.0
+   Atteso (f32):   -151.0
+-  Adder:  -144.0
+-  Errore Relativo: 4.635762e-02
++  Adder:  -160.0
++  Errore Relativo: 5.960265e-02
+ 
+ --- Riga 157569 ---
+   FP1 (10 bit):   -160.0
+   FP2 (10 bit):   10.0
+@@ -368104,10 +368104,10 @@
+ --- Riga 157755 ---
+   FP1 (10 bit):   -160.0
+   FP2 (10 bit):   4096.0
+   Atteso (f32):   3936.0
+-  Adder:  3840.0
+-  Errore Relativo: 2.439024e-02
++  Adder:  4096.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 157758 ---
+   FP1 (10 bit):   -160.0
+   FP2 (10 bit):   6144.0
+@@ -369455,10 +369455,10 @@
+ --- Riga 158334 ---
+   FP1 (10 bit):   -192.0
+   FP2 (10 bit):   9.0
+   Atteso (f32):   -183.0
+-  Adder:  -176.0
+-  Errore Relativo: 3.825137e-02
++  Adder:  -192.0
++  Errore Relativo: 4.918033e-02
+ 
+ --- Riga 158337 ---
+   FP1 (10 bit):   -192.0
+   FP2 (10 bit):   10.0
+@@ -371247,10 +371247,10 @@
+ --- Riga 159102 ---
+   FP1 (10 bit):   -224.0
+   FP2 (10 bit):   9.0
+   Atteso (f32):   -215.0
+-  Adder:  -208.0
+-  Errore Relativo: 3.255814e-02
++  Adder:  -224.0
++  Errore Relativo: 4.186046e-02
+ 
+ --- Riga 159105 ---
+   FP1 (10 bit):   -224.0
+   FP2 (10 bit):   10.0
+@@ -374656,10 +374656,10 @@
+ --- Riga 160563 ---
+   FP1 (10 bit):   -0.078125
+   FP2 (10 bit):   2.0
+   Atteso (f32):   1.921875
+-  Adder:  1.875
+-  Errore Relativo: 2.439024e-02
++  Adder:  2.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 160566 ---
+   FP1 (10 bit):   -0.078125
+   FP2 (10 bit):   2.25
+@@ -381768,10 +381768,10 @@
+ --- Riga 163611 ---
+   FP1 (10 bit):   -0.0390625
+   FP2 (10 bit):   1.0
+   Atteso (f32):   0.9609375
+-  Adder:  0.9375
+-  Errore Relativo: 2.439024e-02
++  Adder:  1.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 163614 ---
+   FP1 (10 bit):   -0.0390625
+   FP2 (10 bit):   1.125
+@@ -389048,10 +389048,10 @@
+ --- Riga 166731 ---
+   FP1 (10 bit):   -0.01953125
+   FP2 (10 bit):   0.5
+   Atteso (f32):   0.48046875
+-  Adder:  0.46875
+-  Errore Relativo: 2.439024e-02
++  Adder:  0.5
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 166734 ---
+   FP1 (10 bit):   -0.01953125
+   FP2 (10 bit):   0.5625
+@@ -396384,10 +396384,10 @@
+ --- Riga 169875 ---
+   FP1 (10 bit):   -0.009765625
+   FP2 (10 bit):   0.25
+   Atteso (f32):   0.240234375
+-  Adder:  0.234375
+-  Errore Relativo: 2.439024e-02
++  Adder:  0.25
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 169878 ---
+   FP1 (10 bit):   -0.009765625
+   FP2 (10 bit):   0.28125
+@@ -401711,24 +401711,24 @@
+ --- Riga 172158 ---
+   FP1 (10 bit):   -256.0
+   FP2 (10 bit):   9.0
+   Atteso (f32):   -247.0
+-  Adder:  -240.0
+-  Errore Relativo: 2.834008e-02
++  Adder:  -256.0
++  Errore Relativo: 3.643725e-02
+ 
+ --- Riga 172161 ---
+   FP1 (10 bit):   -256.0
+   FP2 (10 bit):   10.0
+   Atteso (f32):   -246.0
+-  Adder:  -240.0
+-  Errore Relativo: 2.439024e-02
++  Adder:  -256.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 172164 ---
+   FP1 (10 bit):   -256.0
+   FP2 (10 bit):   11.0
+   Atteso (f32):   -245.0
+-  Adder:  -240.0
+-  Errore Relativo: 2.040816e-02
++  Adder:  -256.0
++  Errore Relativo: 4.489796e-02
+ 
+ --- Riga 172167 ---
+   FP1 (10 bit):   -256.0
+   FP2 (10 bit):   12.0
+@@ -405463,10 +405463,10 @@
+ --- Riga 173766 ---
+   FP1 (10 bit):   -512.0
+   FP2 (10 bit):   20.0
+   Atteso (f32):   -492.0
+-  Adder:  -480.0
+-  Errore Relativo: 2.439024e-02
++  Adder:  -512.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 173769 ---
+   FP1 (10 bit):   -512.0
+   FP2 (10 bit):   24.0
+@@ -409075,10 +409075,10 @@
+ --- Riga 175314 ---
+   FP1 (10 bit):   -1024.0
+   FP2 (10 bit):   40.0
+   Atteso (f32):   -984.0
+-  Adder:  -960.0
+-  Errore Relativo: 2.439024e-02
++  Adder:  -1024.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 175317 ---
+   FP1 (10 bit):   -1024.0
+   FP2 (10 bit):   48.0
+@@ -412687,10 +412687,10 @@
+ --- Riga 176862 ---
+   FP1 (10 bit):   -2048.0
+   FP2 (10 bit):   80.0
+   Atteso (f32):   -1968.0
+-  Adder:  -1920.0
+-  Errore Relativo: 2.439024e-02
++  Adder:  -2048.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 176865 ---
+   FP1 (10 bit):   -2048.0
+   FP2 (10 bit):   96.0
+@@ -416299,10 +416299,10 @@
+ --- Riga 178410 ---
+   FP1 (10 bit):   -4096.0
+   FP2 (10 bit):   160.0
+   Atteso (f32):   -3936.0
+-  Adder:  -3840.0
+-  Errore Relativo: 2.439024e-02
++  Adder:  -4096.0
++  Errore Relativo: 4.065040e-02
+ 
+ --- Riga 178413 ---
+   FP1 (10 bit):   -4096.0
+   FP2 (10 bit):   192.0

@@ -35,7 +35,7 @@ def decode_fp(fp_str):
 
 pattern = re.compile(r'([01]{10})\s*\+\s*([01]{10})\s*=\s*([01]{10})')
 
-file_path = "sum_results.txt"
+file_path = "sum_results_origin.txt"
 output_file_path = "check_results.txt"
 
 indici_riga = []
