@@ -1,0 +1,79 @@
+if {[file exists work]} {
+    vdel -lib work -all
+}
+
+
+vlib work
+
+# compilazione
+vlog src/HiFloat8_to_FP_converter.v
+vlog src/FP_to_HiFloat8_converter.v
+
+
+# ======== MAX_SHIFT=4 ===========
+
+#        NO_ROUNDING
+# vlog src/max_shift_4/noRounding/AdderHiF8_maxShift4_noRounding.v
+# vlog tb/max_shift_4/noRounding/tb_adder_hif8.v
+
+#        ROUNDING
+###################
+###################
+
+
+
+
+
+# ======== MAX_SHIFT=5 ===========
+
+#        NO_ROUNDING
+# vlog src/max_shift_5/noRounding/AdderHiF8_maxShift5_noRounding.v
+# vlog tb/max_shift_5/noRounding/tb_adder_hif8.v
+
+#        ROUNDING
+# vlog src/max_shift_5/withRounding/AdderHiF8_maxShift5_withRounding.v
+# vlog tb/max_shift_5/withRounding/tb_adder_hif8.v
+
+
+
+
+
+# ======== MAX_SHIFT=6 ===========
+
+#        NO_ROUNDING
+# vlog src/max_shift_6/noRounding/AdderHiF8_maxShift6_noRounding.v
+# vlog tb/max_shift_6/noRounding/tb_adder_hif8.v
+
+#        ROUNDING
+# vlog src/max_shift_6/withRounding/AdderHiF8_maxShift6_withRounding.v
+# vlog tb/max_shift_6/withRounding/tb_adder_hif8.v
+
+
+
+
+
+# ======== MAX_SHIFT=7 ===========
+
+#        NO_ROUNDING
+vlog src/max_shift_7/noRounding/AdderHiF8_maxShift7_noRounding.v
+vlog tb/max_shift_7/noRounding/tb_adder_hif8.v
+
+#        ROUNDING
+# vlog src/max_shift_7/withRounding/AdderHiF8_maxShift7_withRounding.v
+# vlog tb/max_shift_7/withRounding/tb_adder_hif8.v
+
+
+
+
+
+# avvia simulazione 
+vsim -voptargs="+acc" work.tb_adder_HiF8
+
+# segnali
+# add wave -position insertpoint sim:/...
+
+# esegui simulazione
+run -all
+
+# zoom sui segnali
+# wave zoom full

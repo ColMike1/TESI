@@ -1,0 +1,148 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+!s11f vlog 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dC:/Users/miche/Desktop/GitRepositories/TESI/HiFloat8/AdderHif8
+T_opt
+!s110 1795457988
+V`Q^IRlTb`nIoKC^E]BV`d1
+Z2 04 13 4 work tb_adder_HiF8 fast 0
+=1-9828a63ea430-6b0483c3-60-2e00
+Z3 !s124 OEM10U5 
+Z4 o-quiet -auto_acc_if_foreign -work work +acc
+Z5 tCvgOpt 0
+n@_opt
+Z6 OL;O;2021.2;73
+R1
+T_opt1
+!s110 1795510318
+VRVXZGH_H9YzCYBnBa^o6D1
+R2
+=1-9828a63ea430-6b05502d-ff-17a0
+R3
+R4
+R5
+n@_opt1
+R6
+R1
+vadder_HiF8
+Z7 !s110 1795544024
+!i10b 1
+!s100 0T>8hkTUG00Yd=g?jAIXn0
+IcY[bhKWBDzoAkMeH38Tbi3
+R1
+w1795543946
+8src/max_shift_7/noRounding/AdderHiF8_maxShift7_noRounding.v
+Fsrc/max_shift_7/noRounding/AdderHiF8_maxShift7_noRounding.v
+!i122 2
+L0 22 176
+Z8 VDg1SIo80bB@j0V0VzS_@n1
+Z9 OL;L;2021.2;73
+r1
+!s85 0
+31
+Z10 !s108 1795544024.000000
+!s107 src/max_shift_7/noRounding/AdderHiF8_maxShift7_noRounding.v|
+!s90 -reportprogress|300|src/max_shift_7/noRounding/AdderHiF8_maxShift7_noRounding.v|
+!i113 0
+Z11 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R5
+nadder_@hi@f8
+vFP_to_HiFloat8_converter
+R7
+!i10b 1
+!s100 XBTR:@Q:O5>7c;@KLObSc0
+IXlU;4nkozY;Om:`Winf_<1
+R1
+w1795087985
+8src/FP_to_HiFloat8_converter.v
+Fsrc/FP_to_HiFloat8_converter.v
+!i122 1
+L0 32 141
+R8
+R9
+r1
+!s85 0
+31
+R10
+!s107 src/FP_to_HiFloat8_converter.v|
+!s90 -reportprogress|300|src/FP_to_HiFloat8_converter.v|
+!i113 0
+R11
+R5
+n@f@p_to_@hi@float8_converter
+vHiFloat8_to_FP_converter
+!s110 1795544023
+!i10b 1
+!s100 KeNTm>bU5E]l8H^HDjXkY3
+I:BzQh?>[KYW@a3O<40;?I1
+R1
+w1794390060
+8src/HiFloat8_to_FP_converter.v
+Fsrc/HiFloat8_to_FP_converter.v
+!i122 0
+L0 47 117
+R8
+R9
+r1
+!s85 0
+31
+!s108 1795544023.000000
+!s107 src/HiFloat8_to_FP_converter.v|
+!s90 -reportprogress|300|src/HiFloat8_to_FP_converter.v|
+!i113 0
+R11
+R5
+n@hi@float8_to_@f@p_converter
+vtb_adder_HiF8
+R7
+!i10b 1
+!s100 LTKBdk<mHj:cF2_N3Fe`S2
+Il=8`0O4bUImANZ1Oa0@OR0
+R1
+w1795543994
+8tb/max_shift_7/noRounding/tb_adder_hif8.v
+Ftb/max_shift_7/noRounding/tb_adder_hif8.v
+!i122 3
+L0 3 68
+R8
+R9
+r1
+!s85 0
+31
+R10
+!s107 tb/max_shift_7/noRounding/tb_adder_hif8.v|
+!s90 -reportprogress|300|tb/max_shift_7/noRounding/tb_adder_hif8.v|
+!i113 0
+R11
+R5
+ntb_adder_@hi@f8
