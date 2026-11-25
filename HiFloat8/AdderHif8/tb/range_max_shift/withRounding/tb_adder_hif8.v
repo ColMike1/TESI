@@ -124,7 +124,7 @@ module tb_adder_HiF8 #(
         #5;
 
         $display("Simulazione completata per MAX_SHIFT da %0d a %0d.", SHIFT_START, SHIFT_END);
-        $finish;
+       
     end
 
 endmodule
