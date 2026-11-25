@@ -12,1007 +12,482 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
+pwd
+# C:/Users/miche/Desktop/GitRepositories/TESI/HiFloat8/AdderHif8
 do run.do
 # ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is miche@LAPTOP-F03A0V96.
 # ** Warning: (vdel-134) Unable to remove locked optimized design "_opt1".  Locker is miche@LAPTOP-F03A0V96.
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt2".  Locker is miche@LAPTOP-F03A0V96.
 # ** Warning: (vlib-34) Library already exists at "work".
 # Errors: 0, Warnings: 1
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 12:06:46 on Nov 24,2026
+# Start time: 21:31:08 on Nov 25,2026
 # vlog -reportprogress 300 src/HiFloat8_to_FP_converter.v 
 # -- Compiling module HiFloat8_to_FP_converter
 # 
 # Top level modules:
 # 	HiFloat8_to_FP_converter
-# End time: 12:06:47 on Nov 24,2026, Elapsed time: 0:00:01
+# End time: 21:31:09 on Nov 25,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 12:06:47 on Nov 24,2026
+# Start time: 21:31:09 on Nov 25,2026
 # vlog -reportprogress 300 src/FP_to_HiFloat8_converter.v 
 # -- Compiling module FP_to_HiFloat8_converter
 # 
 # Top level modules:
 # 	FP_to_HiFloat8_converter
-# End time: 12:06:47 on Nov 24,2026, Elapsed time: 0:00:00
+# End time: 21:31:09 on Nov 25,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 12:06:47 on Nov 24,2026
-# vlog -reportprogress 300 src/max_shift_6/noRounding/AdderHiF8_maxShift6_noRounding.v 
+# Start time: 21:31:09 on Nov 25,2026
+# vlog -reportprogress 300 src/range_max_shift/noRounding/AdderHiF8_rms_noRounding.v 
 # -- Compiling module adder_HiF8
-# ** Warning: src/max_shift_6/noRounding/AdderHiF8_maxShift6_noRounding.v(111): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# ** Error: src/max_shift_6/noRounding/AdderHiF8_maxShift6_noRounding.v(194): (vlog-13282) 'HF8b_to_FP' already declared in this scope.
-# End time: 12:06:47 on Nov 24,2026, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 1
+# 
+# Top level modules:
+# 	adder_HiF8
+# End time: 21:31:10 on Nov 25,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:31:10 on Nov 25,2026
+# vlog -reportprogress 300 tb/range_max_shift/noRounding/tb_adder_hif8.v 
+# -- Compiling module tb_adder_HiF8
+# 
+# Top level modules:
+# 	tb_adder_HiF8
+# End time: 21:31:10 on Nov 25,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" work.tb_adder_HiF8 
+# Start time: 21:31:10 on Nov 25,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.tb_adder_HiF8(fast)
+# Loading work.adder_HiF8(fast)
+# Loading work.HiFloat8_to_FP_converter(fast)
+# Loading work.FP_to_HiFloat8_converter(fast)
+# Loading work.adder_HiF8(fast__1)
+# Loading work.adder_HiF8(fast__2)
+# Loading work.adder_HiF8(fast__3)
+# Loading work.adder_HiF8(fast__4)
+# Loading work.adder_HiF8(fast__5)
+# Loading work.adder_HiF8(fast__6)
+# Loading work.adder_HiF8(fast__7)
+# Loading work.adder_HiF8(fast__8)
+# Loading work.adder_HiF8(fast__9)
+# Loading work.adder_HiF8(fast__10)
+# Loading work.adder_HiF8(fast__11)
+# Inizio della simulazione per tutte le 65.536 combinazioni (MAX_SHIFT 4..15)...
+# Simulazione completata per MAX_SHIFT da 4 a 15.
+# ** Note: $finish    : tb/range_max_shift/noRounding/tb_adder_hif8.v(169)
+#    Time: 655360 ns  Iteration: 0  Instance: /tb_adder_HiF8
+# 1
+# Break in Module tb_adder_HiF8 at tb/range_max_shift/noRounding/tb_adder_hif8.v line 169
+do run.do
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is miche@LAPTOP-F03A0V96.
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt1".  Locker is miche@LAPTOP-F03A0V96.
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt2".  Locker is miche@LAPTOP-F03A0V96.
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt3".  Locker is miche@LAPTOP-F03A0V96.
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:18:14 on Nov 25,2026
+# vlog -reportprogress 300 src/HiFloat8_to_FP_converter.v 
+# -- Compiling module HiFloat8_to_FP_converter
+# 
+# Top level modules:
+# 	HiFloat8_to_FP_converter
+# End time: 22:18:14 on Nov 25,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:18:14 on Nov 25,2026
+# vlog -reportprogress 300 src/FP_to_HiFloat8_converter.v 
+# -- Compiling module FP_to_HiFloat8_converter
+# 
+# Top level modules:
+# 	FP_to_HiFloat8_converter
+# End time: 22:18:14 on Nov 25,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:18:14 on Nov 25,2026
+# vlog -reportprogress 300 src/range_max_shift/withRounding/AdderHiF8_rms_withRounding.v 
+# -- Compiling module adder_HiF8
+# ** Error: (vlog-13069) src/range_max_shift/withRounding/AdderHiF8_rms_withRounding.v(203): near "assign": syntax error, unexpected assign, expecting ';' or ','.
+# End time: 22:18:14 on Nov 25,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
 # ** Error: C:/intelFPGA/21.1/questa_fse/win64/vlog failed.
-# Error in macro ./run.do line 44
+# Error in macro ./run.do line 172
 # C:/intelFPGA/21.1/questa_fse/win64/vlog failed.
 #     while executing
-# "vlog src/max_shift_6/noRounding/AdderHiF8_maxShift6_noRounding.v"
-do run.do
-# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is miche@LAPTOP-F03A0V96.
-# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt1".  Locker is miche@LAPTOP-F03A0V96.
-# ** Warning: (vlib-34) Library already exists at "work".
-# Errors: 0, Warnings: 1
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 12:09:17 on Nov 24,2026
-# vlog -reportprogress 300 src/HiFloat8_to_FP_converter.v 
-# -- Compiling module HiFloat8_to_FP_converter
-# 
-# Top level modules:
-# 	HiFloat8_to_FP_converter
-# End time: 12:09:17 on Nov 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 12:09:17 on Nov 24,2026
-# vlog -reportprogress 300 src/FP_to_HiFloat8_converter.v 
-# -- Compiling module FP_to_HiFloat8_converter
-# 
-# Top level modules:
-# 	FP_to_HiFloat8_converter
-# End time: 12:09:17 on Nov 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 12:09:17 on Nov 24,2026
-# vlog -reportprogress 300 src/max_shift_6/noRounding/AdderHiF8_maxShift6_noRounding.v 
-# -- Compiling module adder_HiF8
-# 
-# Top level modules:
-# 	adder_HiF8
-# End time: 12:09:17 on Nov 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 12:09:18 on Nov 24,2026
-# vlog -reportprogress 300 tb/max_shift_6/noRounding/tb_adder_hif8.v 
-# -- Compiling module tb_adder_HiF8
-# 
-# Top level modules:
-# 	tb_adder_HiF8
-# End time: 12:09:18 on Nov 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 12:09:18 on Nov 24,2026
-# vlog -reportprogress 300 src/max_shift_6/withRounding/AdderHiF8_maxShift6_withRounding.v 
-# -- Compiling module adder_HiF8
-# ** Warning: src/max_shift_6/withRounding/AdderHiF8_maxShift6_withRounding.v(112): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# ** Warning: src/max_shift_6/withRounding/AdderHiF8_maxShift6_withRounding.v(164): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# 
-# Top level modules:
-# 	adder_HiF8
-# End time: 12:09:18 on Nov 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 2
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 12:09:18 on Nov 24,2026
-# vlog -reportprogress 300 tb/max_shift_6/withRounding/tb_adder_hif8.v 
-# -- Compiling module tb_adder_HiF8
-# 
-# Top level modules:
-# 	tb_adder_HiF8
-# End time: 12:09:18 on Nov 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim -voptargs=""+acc"" work.tb_adder_HiF8 
-# Start time: 12:09:18 on Nov 24,2026
-# ** Note: (vsim-3812) Design is being optimized...
-# Loading work.tb_adder_HiF8(fast)
-# Loading work.adder_HiF8(fast)
-# Loading work.HiFloat8_to_FP_converter(fast)
-# Loading work.FP_to_HiFloat8_converter(fast)
-# Inizio della simulazione per tutte le 65.536 combinazioni...
-pwn
-# invalid command name "pwn"
-cd .
-# Cannot change directory while a simulation is in progress.
-# Use the "quit -sim" command to unload the design first.
-vsim stop
-# End time: 12:10:45 on Nov 24,2026, Elapsed time: 0:01:27
-# Errors: 0, Warnings: 0
-# vsim stop 
-# Start time: 12:10:45 on Nov 24,2026
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Error: (vopt-13130) Failed to find design unit stop.
-#         Searched libraries:
-#             work
-# Optimization failed
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
-# Error loading design
-# End time: 12:10:46 on Nov 24,2026, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 0
-pwn
-# invalid command name "pwn"
-cd .
-pwd
-# C:/Users/miche/Desktop/GitRepositories/TESI/HiFloat8/AdderHif8
-ls
-# results  run.do  src  tb  transcript  work      
-do run.do
-# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is miche@LAPTOP-F03A0V96.
-# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt1".  Locker is miche@LAPTOP-F03A0V96.
-# ** Warning: (vlib-34) Library already exists at "work".
-# Errors: 0, Warnings: 1
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 12:17:07 on Nov 24,2026
-# vlog -reportprogress 300 src/HiFloat8_to_FP_converter.v 
-# -- Compiling module HiFloat8_to_FP_converter
-# 
-# Top level modules:
-# 	HiFloat8_to_FP_converter
-# End time: 12:17:07 on Nov 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 12:17:07 on Nov 24,2026
-# vlog -reportprogress 300 src/FP_to_HiFloat8_converter.v 
-# -- Compiling module FP_to_HiFloat8_converter
-# 
-# Top level modules:
-# 	FP_to_HiFloat8_converter
-# End time: 12:17:07 on Nov 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 12:17:07 on Nov 24,2026
-# vlog -reportprogress 300 src/max_shift_6/noRounding/AdderHiF8_maxShift6_noRounding.v 
-# -- Compiling module adder_HiF8
-# 
-# Top level modules:
-# 	adder_HiF8
-# End time: 12:17:08 on Nov 24,2026, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 12:17:08 on Nov 24,2026
-# vlog -reportprogress 300 tb/max_shift_6/noRounding/tb_adder_hif8.v 
-# -- Compiling module tb_adder_HiF8
-# 
-# Top level modules:
-# 	tb_adder_HiF8
-# End time: 12:17:08 on Nov 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 12:17:08 on Nov 24,2026
-# vlog -reportprogress 300 src/max_shift_6/withRounding/AdderHiF8_maxShift6_withRounding.v 
-# -- Compiling module adder_HiF8
-# ** Warning: src/max_shift_6/withRounding/AdderHiF8_maxShift6_withRounding.v(112): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# ** Warning: src/max_shift_6/withRounding/AdderHiF8_maxShift6_withRounding.v(164): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# 
-# Top level modules:
-# 	adder_HiF8
-# End time: 12:17:08 on Nov 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 2
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 12:17:08 on Nov 24,2026
-# vlog -reportprogress 300 tb/max_shift_6/withRounding/tb_adder_hif8.v 
-# -- Compiling module tb_adder_HiF8
-# 
-# Top level modules:
-# 	tb_adder_HiF8
-# End time: 12:17:08 on Nov 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim -voptargs=""+acc"" work.tb_adder_HiF8 
-# Start time: 12:17:08 on Nov 24,2026
-# ** Note: (vsim-3812) Design is being optimized...
-# Loading work.tb_adder_HiF8(fast)
-# Loading work.adder_HiF8(fast)
-# Loading work.HiFloat8_to_FP_converter(fast)
-# Loading work.FP_to_HiFloat8_converter(fast)
-# Inizio della simulazione per tutte le 65.536 combinazioni...
+# "vlog src/range_max_shift/withRounding/AdderHiF8_rms_withRounding.v"
 do run.do
 # ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is miche@LAPTOP-F03A0V96.
 # ** Warning: (vdel-134) Unable to remove locked optimized design "_opt1".  Locker is miche@LAPTOP-F03A0V96.
 # ** Warning: (vdel-134) Unable to remove locked optimized design "_opt2".  Locker is miche@LAPTOP-F03A0V96.
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt3".  Locker is miche@LAPTOP-F03A0V96.
 # ** Warning: (vlib-34) Library already exists at "work".
 # Errors: 0, Warnings: 1
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 12:17:55 on Nov 24,2026
+# Start time: 22:18:27 on Nov 25,2026
 # vlog -reportprogress 300 src/HiFloat8_to_FP_converter.v 
 # -- Compiling module HiFloat8_to_FP_converter
 # 
 # Top level modules:
 # 	HiFloat8_to_FP_converter
-# End time: 12:17:55 on Nov 24,2026, Elapsed time: 0:00:00
+# End time: 22:18:27 on Nov 25,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 12:17:55 on Nov 24,2026
+# Start time: 22:18:27 on Nov 25,2026
 # vlog -reportprogress 300 src/FP_to_HiFloat8_converter.v 
 # -- Compiling module FP_to_HiFloat8_converter
 # 
 # Top level modules:
 # 	FP_to_HiFloat8_converter
-# End time: 12:17:55 on Nov 24,2026, Elapsed time: 0:00:00
+# End time: 22:18:27 on Nov 25,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 12:17:55 on Nov 24,2026
-# vlog -reportprogress 300 src/max_shift_6/noRounding/AdderHiF8_maxShift6_noRounding.v 
+# Start time: 22:18:27 on Nov 25,2026
+# vlog -reportprogress 300 src/range_max_shift/withRounding/AdderHiF8_rms_withRounding.v 
 # -- Compiling module adder_HiF8
 # 
 # Top level modules:
 # 	adder_HiF8
-# End time: 12:17:55 on Nov 24,2026, Elapsed time: 0:00:00
+# End time: 22:18:28 on Nov 25,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 12:17:55 on Nov 24,2026
-# vlog -reportprogress 300 tb/max_shift_6/noRounding/tb_adder_hif8.v 
+# Start time: 22:18:28 on Nov 25,2026
+# vlog -reportprogress 300 tb/range_max_shift/withRounding/tb_adder_hif8.v 
 # -- Compiling module tb_adder_HiF8
 # 
 # Top level modules:
 # 	tb_adder_HiF8
-# End time: 12:17:55 on Nov 24,2026, Elapsed time: 0:00:00
+# End time: 22:18:28 on Nov 25,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# End time: 12:17:56 on Nov 24,2026, Elapsed time: 0:00:48
-# Errors: 0, Warnings: 0
+# End time: 22:18:29 on Nov 25,2026, Elapsed time: 0:47:19
+# Errors: 1, Warnings: 0
 # vsim -voptargs=""+acc"" work.tb_adder_HiF8 
-# Start time: 12:17:56 on Nov 24,2026
+# Start time: 22:18:29 on Nov 25,2026
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Error (suppressible): tb/max_shift_6/noRounding/tb_adder_hif8.v(55): (vopt-7063) Failed to find 'result_exp_aprx' in hierarchical name 'uut.result_exp_aprx'.
-#         Region: tb_adder_HiF8
+# ** Error (suppressible): src/range_max_shift/withRounding/AdderHiF8_rms_withRounding.v(196): (vopt-8607) Negative replication multiplier (-1).
 # Optimization failed
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
+# ** Error: (vopt-2064) Compiler back-end code generation process terminated with code 12.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=2, Warnings=0.
 # Error loading design
 # Error: Error loading design
 #        Pausing macro execution
-# MACRO ./run.do PAUSED at line 70
+# MACRO ./run.do PAUSED at line 178
 do run.do
 # ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is miche@LAPTOP-F03A0V96.
 # ** Warning: (vdel-134) Unable to remove locked optimized design "_opt1".  Locker is miche@LAPTOP-F03A0V96.
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt2".  Locker is miche@LAPTOP-F03A0V96.
 # ** Warning: (vlib-34) Library already exists at "work".
 # Errors: 0, Warnings: 1
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 12:18:48 on Nov 24,2026
+# Start time: 22:22:34 on Nov 25,2026
 # vlog -reportprogress 300 src/HiFloat8_to_FP_converter.v 
 # -- Compiling module HiFloat8_to_FP_converter
 # 
 # Top level modules:
 # 	HiFloat8_to_FP_converter
-# End time: 12:18:48 on Nov 24,2026, Elapsed time: 0:00:00
+# End time: 22:22:34 on Nov 25,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 12:18:48 on Nov 24,2026
+# Start time: 22:22:35 on Nov 25,2026
 # vlog -reportprogress 300 src/FP_to_HiFloat8_converter.v 
 # -- Compiling module FP_to_HiFloat8_converter
 # 
 # Top level modules:
 # 	FP_to_HiFloat8_converter
-# End time: 12:18:48 on Nov 24,2026, Elapsed time: 0:00:00
+# End time: 22:22:35 on Nov 25,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 12:18:49 on Nov 24,2026
-# vlog -reportprogress 300 src/max_shift_6/noRounding/AdderHiF8_maxShift6_noRounding.v 
+# Start time: 22:22:35 on Nov 25,2026
+# vlog -reportprogress 300 src/range_max_shift/withRounding/AdderHiF8_rms_withRounding.v 
 # -- Compiling module adder_HiF8
 # 
 # Top level modules:
 # 	adder_HiF8
-# End time: 12:18:49 on Nov 24,2026, Elapsed time: 0:00:00
+# End time: 22:22:35 on Nov 25,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 12:18:49 on Nov 24,2026
-# vlog -reportprogress 300 tb/max_shift_6/noRounding/tb_adder_hif8.v 
+# Start time: 22:22:35 on Nov 25,2026
+# vlog -reportprogress 300 tb/range_max_shift/withRounding/tb_adder_hif8.v 
 # -- Compiling module tb_adder_HiF8
 # 
 # Top level modules:
 # 	tb_adder_HiF8
-# End time: 12:18:49 on Nov 24,2026, Elapsed time: 0:00:00
+# End time: 22:22:35 on Nov 25,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -voptargs=""+acc"" work.tb_adder_HiF8 
-# Start time: 12:17:56 on Nov 24,2026
+# Start time: 22:18:29 on Nov 25,2026
 # ** Note: (vsim-3812) Design is being optimized...
-# Loading work.tb_adder_HiF8(fast)
-# Loading work.adder_HiF8(fast)
-# Loading work.HiFloat8_to_FP_converter(fast)
-# Loading work.FP_to_HiFloat8_converter(fast)
-# Inizio della simulazione per tutte le 65.536 combinazioni...
-do run.do
-# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is miche@LAPTOP-F03A0V96.
-# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt1".  Locker is miche@LAPTOP-F03A0V96.
-# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt2".  Locker is miche@LAPTOP-F03A0V96.
-# ** Warning: (vlib-34) Library already exists at "work".
-# Errors: 0, Warnings: 1
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 12:42:56 on Nov 24,2026
-# vlog -reportprogress 300 src/HiFloat8_to_FP_converter.v 
-# -- Compiling module HiFloat8_to_FP_converter
-# 
-# Top level modules:
-# 	HiFloat8_to_FP_converter
-# End time: 12:42:57 on Nov 24,2026, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 12:42:57 on Nov 24,2026
-# vlog -reportprogress 300 src/FP_to_HiFloat8_converter.v 
-# -- Compiling module FP_to_HiFloat8_converter
-# 
-# Top level modules:
-# 	FP_to_HiFloat8_converter
-# End time: 12:42:57 on Nov 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 12:42:57 on Nov 24,2026
-# vlog -reportprogress 300 src/max_shift_6/withRounding/AdderHiF8_maxShift6_withRounding.v 
-# -- Compiling module adder_HiF8
-# ** Warning: src/max_shift_6/withRounding/AdderHiF8_maxShift6_withRounding.v(112): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# ** Warning: src/max_shift_6/withRounding/AdderHiF8_maxShift6_withRounding.v(164): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# 
-# Top level modules:
-# 	adder_HiF8
-# End time: 12:42:57 on Nov 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 2
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 12:42:57 on Nov 24,2026
-# vlog -reportprogress 300 tb/max_shift_6/withRounding/tb_adder_hif8.v 
-# -- Compiling module tb_adder_HiF8
-# 
-# Top level modules:
-# 	tb_adder_HiF8
-# End time: 12:42:57 on Nov 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 12:42:58 on Nov 24,2026, Elapsed time: 0:25:02
-# Errors: 1, Warnings: 0
-# vsim -voptargs=""+acc"" work.tb_adder_HiF8 
-# Start time: 12:42:58 on Nov 24,2026
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.tb_adder_HiF8(fast)
-# Loading work.adder_HiF8(fast)
-# Loading work.HiFloat8_to_FP_converter(fast)
-# Loading work.FP_to_HiFloat8_converter(fast)
-# Inizio della simulazione per tutte le 65.536 combinazioni...
-do run.do
-# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is miche@LAPTOP-F03A0V96.
-# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt1".  Locker is miche@LAPTOP-F03A0V96.
-# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt2".  Locker is miche@LAPTOP-F03A0V96.
-# ** Warning: (vlib-34) Library already exists at "work".
-# Errors: 0, Warnings: 1
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 12:49:42 on Nov 24,2026
-# vlog -reportprogress 300 src/HiFloat8_to_FP_converter.v 
-# -- Compiling module HiFloat8_to_FP_converter
-# 
-# Top level modules:
-# 	HiFloat8_to_FP_converter
-# End time: 12:49:42 on Nov 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 12:49:42 on Nov 24,2026
-# vlog -reportprogress 300 src/FP_to_HiFloat8_converter.v 
-# -- Compiling module FP_to_HiFloat8_converter
-# 
-# Top level modules:
-# 	FP_to_HiFloat8_converter
-# End time: 12:49:42 on Nov 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 12:49:42 on Nov 24,2026
-# vlog -reportprogress 300 src/max_shift_6/withRounding/AdderHiF8_maxShift6_withRounding.v 
-# -- Compiling module adder_HiF8
-# 
-# Top level modules:
-# 	adder_HiF8
-# End time: 12:49:42 on Nov 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 12:49:42 on Nov 24,2026
-# vlog -reportprogress 300 tb/max_shift_6/withRounding/tb_adder_hif8.v 
-# -- Compiling module tb_adder_HiF8
-# 
-# Top level modules:
-# 	tb_adder_HiF8
-# End time: 12:49:42 on Nov 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 12:49:43 on Nov 24,2026, Elapsed time: 0:06:45
-# Errors: 0, Warnings: 0
-# vsim -voptargs=""+acc"" work.tb_adder_HiF8 
-# Start time: 12:49:44 on Nov 24,2026
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.tb_adder_HiF8(fast)
-# Loading work.adder_HiF8(fast)
-# Loading work.HiFloat8_to_FP_converter(fast)
-# Loading work.FP_to_HiFloat8_converter(fast)
-# Inizio della simulazione per tutte le 65.536 combinazioni...
-do run.do
-# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is miche@LAPTOP-F03A0V96.
-# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt1".  Locker is miche@LAPTOP-F03A0V96.
-# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt2".  Locker is miche@LAPTOP-F03A0V96.
-# ** Warning: (vlib-34) Library already exists at "work".
-# Errors: 0, Warnings: 1
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 13:05:07 on Nov 24,2026
-# vlog -reportprogress 300 src/HiFloat8_to_FP_converter.v 
-# -- Compiling module HiFloat8_to_FP_converter
-# 
-# Top level modules:
-# 	HiFloat8_to_FP_converter
-# End time: 13:05:07 on Nov 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 13:05:07 on Nov 24,2026
-# vlog -reportprogress 300 src/FP_to_HiFloat8_converter.v 
-# -- Compiling module FP_to_HiFloat8_converter
-# 
-# Top level modules:
-# 	FP_to_HiFloat8_converter
-# End time: 13:05:07 on Nov 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 13:05:07 on Nov 24,2026
-# vlog -reportprogress 300 src/max_shift_6/withRounding/AdderHiF8_maxShift6_withRounding.v 
-# -- Compiling module adder_HiF8
-# 
-# Top level modules:
-# 	adder_HiF8
-# End time: 13:05:07 on Nov 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 13:05:07 on Nov 24,2026
-# vlog -reportprogress 300 tb/max_shift_6/withRounding/tb_adder_hif8.v 
-# -- Compiling module tb_adder_HiF8
-# 
-# Top level modules:
-# 	tb_adder_HiF8
-# End time: 13:05:07 on Nov 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 13:05:08 on Nov 24,2026, Elapsed time: 0:15:24
-# Errors: 0, Warnings: 0
-# vsim -voptargs=""+acc"" work.tb_adder_HiF8 
-# Start time: 13:05:08 on Nov 24,2026
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.tb_adder_HiF8(fast)
-# Loading work.adder_HiF8(fast)
-# Loading work.HiFloat8_to_FP_converter(fast)
-# Loading work.FP_to_HiFloat8_converter(fast)
-# Inizio della simulazione per tutte le 65.536 combinazioni...
-pwd
-# C:/Users/miche/Desktop/GitRepositories/TESI/HiFloat8/AdderHif8
-ls
-# check_results.txt  run.do      src  transcript  
-# results            run.do.bak  tb   work        
-do run.do
-# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is miche@LAPTOP-F03A0V96.
-# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt1".  Locker is miche@LAPTOP-F03A0V96.
-# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt2".  Locker is miche@LAPTOP-F03A0V96.
-# ** Warning: (vlib-34) Library already exists at "work".
-# Errors: 0, Warnings: 1
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 14:40:54 on Nov 24,2026
-# vlog -reportprogress 300 src/HiFloat8_to_FP_converter.v 
-# -- Compiling module HiFloat8_to_FP_converter
-# 
-# Top level modules:
-# 	HiFloat8_to_FP_converter
-# End time: 14:40:55 on Nov 24,2026, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 14:40:55 on Nov 24,2026
-# vlog -reportprogress 300 src/FP_to_HiFloat8_converter.v 
-# -- Compiling module FP_to_HiFloat8_converter
-# 
-# Top level modules:
-# 	FP_to_HiFloat8_converter
-# End time: 14:40:55 on Nov 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 14:40:55 on Nov 24,2026
-# vlog -reportprogress 300 src/max_shift_6/withRounding/AdderHiF8_maxShift6_withRounding.v 
-# -- Compiling module adder_HiF8
-# 
-# Top level modules:
-# 	adder_HiF8
-# End time: 14:40:55 on Nov 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 14:40:55 on Nov 24,2026
-# vlog -reportprogress 300 tb/max_shift_6/withRounding/tb_adder_hif8.v 
-# -- Compiling module tb_adder_HiF8
-# 
-# Top level modules:
-# 	tb_adder_HiF8
-# End time: 14:40:55 on Nov 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 14:40:56 on Nov 24,2026, Elapsed time: 1:35:48
-# Errors: 0, Warnings: 0
-# vsim -voptargs=""+acc"" work.tb_adder_HiF8 
-# Start time: 14:40:56 on Nov 24,2026
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.tb_adder_HiF8(fast)
-# Loading work.adder_HiF8(fast)
-# Loading work.HiFloat8_to_FP_converter(fast)
-# Loading work.FP_to_HiFloat8_converter(fast)
-# Inizio della simulazione per tutte le 65.536 combinazioni...
-do run.do
-# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is miche@LAPTOP-F03A0V96.
-# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt1".  Locker is miche@LAPTOP-F03A0V96.
-# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt2".  Locker is miche@LAPTOP-F03A0V96.
-# ** Warning: (vlib-34) Library already exists at "work".
-# Errors: 0, Warnings: 1
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 14:44:44 on Nov 24,2026
-# vlog -reportprogress 300 src/HiFloat8_to_FP_converter.v 
-# -- Compiling module HiFloat8_to_FP_converter
-# 
-# Top level modules:
-# 	HiFloat8_to_FP_converter
-# End time: 14:44:44 on Nov 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 14:44:44 on Nov 24,2026
-# vlog -reportprogress 300 src/FP_to_HiFloat8_converter.v 
-# -- Compiling module FP_to_HiFloat8_converter
-# 
-# Top level modules:
-# 	FP_to_HiFloat8_converter
-# End time: 14:44:44 on Nov 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 14:44:44 on Nov 24,2026
-# vlog -reportprogress 300 src/max_shift_6/withRounding/AdderHiF8_maxShift6_withRounding.v 
-# -- Compiling module adder_HiF8
-# 
-# Top level modules:
-# 	adder_HiF8
-# End time: 14:44:45 on Nov 24,2026, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 14:44:45 on Nov 24,2026
-# vlog -reportprogress 300 tb/max_shift_6/withRounding/tb_adder_hif8.v 
-# -- Compiling module tb_adder_HiF8
-# 
-# Top level modules:
-# 	tb_adder_HiF8
-# End time: 14:44:45 on Nov 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 14:44:46 on Nov 24,2026, Elapsed time: 0:03:50
-# Errors: 0, Warnings: 0
-# vsim -voptargs=""+acc"" work.tb_adder_HiF8 
-# Start time: 14:44:46 on Nov 24,2026
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.tb_adder_HiF8(fast)
-# Loading work.adder_HiF8(fast)
-# Loading work.HiFloat8_to_FP_converter(fast)
-# Loading work.FP_to_HiFloat8_converter(fast)
-# Inizio della simulazione per tutte le 65.536 combinazioni...
-do run.do
-# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is miche@LAPTOP-F03A0V96.
-# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt1".  Locker is miche@LAPTOP-F03A0V96.
-# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt2".  Locker is miche@LAPTOP-F03A0V96.
-# ** Warning: (vlib-34) Library already exists at "work".
-# Errors: 0, Warnings: 1
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 15:16:51 on Nov 24,2026
-# vlog -reportprogress 300 src/HiFloat8_to_FP_converter.v 
-# -- Compiling module HiFloat8_to_FP_converter
-# 
-# Top level modules:
-# 	HiFloat8_to_FP_converter
-# End time: 15:16:52 on Nov 24,2026, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 15:16:52 on Nov 24,2026
-# vlog -reportprogress 300 src/FP_to_HiFloat8_converter.v 
-# -- Compiling module FP_to_HiFloat8_converter
-# 
-# Top level modules:
-# 	FP_to_HiFloat8_converter
-# End time: 15:16:52 on Nov 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 15:16:52 on Nov 24,2026
-# vlog -reportprogress 300 src/max_shift_6/withRounding/AdderHiF8_maxShift6_withRounding.v 
-# -- Compiling module adder_HiF8
-# 
-# Top level modules:
-# 	adder_HiF8
-# End time: 15:16:52 on Nov 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 15:16:52 on Nov 24,2026
-# vlog -reportprogress 300 tb/max_shift_6/withRounding/tb_adder_hif8.v 
-# -- Compiling module tb_adder_HiF8
-# 
-# Top level modules:
-# 	tb_adder_HiF8
-# End time: 15:16:52 on Nov 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 15:16:53 on Nov 24,2026, Elapsed time: 0:32:07
-# Errors: 0, Warnings: 0
-# vsim -voptargs=""+acc"" work.tb_adder_HiF8 
-# Start time: 15:16:53 on Nov 24,2026
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.tb_adder_HiF8(fast)
-# Loading work.adder_HiF8(fast)
-# Loading work.HiFloat8_to_FP_converter(fast)
-# Loading work.FP_to_HiFloat8_converter(fast)
-# Inizio della simulazione per tutte le 65.536 combinazioni...
-do run.do
-# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is miche@LAPTOP-F03A0V96.
-# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt1".  Locker is miche@LAPTOP-F03A0V96.
-# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt2".  Locker is miche@LAPTOP-F03A0V96.
-# ** Warning: (vlib-34) Library already exists at "work".
-# Errors: 0, Warnings: 1
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 16:46:14 on Nov 24,2026
-# vlog -reportprogress 300 src/HiFloat8_to_FP_converter.v 
-# -- Compiling module HiFloat8_to_FP_converter
-# 
-# Top level modules:
-# 	HiFloat8_to_FP_converter
-# End time: 16:46:14 on Nov 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 16:46:14 on Nov 24,2026
-# vlog -reportprogress 300 src/FP_to_HiFloat8_converter.v 
-# -- Compiling module FP_to_HiFloat8_converter
-# 
-# Top level modules:
-# 	FP_to_HiFloat8_converter
-# End time: 16:46:14 on Nov 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 16:46:14 on Nov 24,2026
-# vlog -reportprogress 300 src/max_shift_6/noRounding/AdderHiF8_maxShift6_noRounding.v 
-# -- Compiling module adder_HiF8
-# 
-# Top level modules:
-# 	adder_HiF8
-# End time: 16:46:14 on Nov 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 16:46:14 on Nov 24,2026
-# vlog -reportprogress 300 tb/max_shift_6/noRounding/tb_adder_hif8.v 
-# -- Compiling module tb_adder_HiF8
-# 
-# Top level modules:
-# 	tb_adder_HiF8
-# End time: 16:46:14 on Nov 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 16:46:16 on Nov 24,2026, Elapsed time: 1:29:23
-# Errors: 0, Warnings: 0
-# vsim -voptargs=""+acc"" work.tb_adder_HiF8 
-# Start time: 16:46:16 on Nov 24,2026
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.tb_adder_HiF8(fast)
-# Loading work.adder_HiF8(fast)
-# Loading work.HiFloat8_to_FP_converter(fast)
-# Loading work.FP_to_HiFloat8_converter(fast)
-# Inizio della simulazione per tutte le 65.536 combinazioni...
-do run.do
-# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is miche@LAPTOP-F03A0V96.
-# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt1".  Locker is miche@LAPTOP-F03A0V96.
-# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt2".  Locker is miche@LAPTOP-F03A0V96.
-# ** Warning: (vlib-34) Library already exists at "work".
-# Errors: 0, Warnings: 1
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 16:47:44 on Nov 24,2026
-# vlog -reportprogress 300 src/HiFloat8_to_FP_converter.v 
-# -- Compiling module HiFloat8_to_FP_converter
-# 
-# Top level modules:
-# 	HiFloat8_to_FP_converter
-# End time: 16:47:44 on Nov 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 16:47:45 on Nov 24,2026
-# vlog -reportprogress 300 src/FP_to_HiFloat8_converter.v 
-# -- Compiling module FP_to_HiFloat8_converter
-# 
-# Top level modules:
-# 	FP_to_HiFloat8_converter
-# End time: 16:47:45 on Nov 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 16:47:45 on Nov 24,2026
-# vlog -reportprogress 300 src/max_shift_6/noRounding/AdderHiF8_maxShift6_noRounding.v 
-# -- Compiling module adder_HiF8
-# 
-# Top level modules:
-# 	adder_HiF8
-# End time: 16:47:45 on Nov 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 16:47:45 on Nov 24,2026
-# vlog -reportprogress 300 tb/max_shift_6/noRounding/tb_adder_hif8.v 
-# -- Compiling module tb_adder_HiF8
-# 
-# Top level modules:
-# 	tb_adder_HiF8
-# End time: 16:47:45 on Nov 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 16:47:46 on Nov 24,2026, Elapsed time: 0:01:30
-# Errors: 0, Warnings: 0
-# vsim -voptargs=""+acc"" work.tb_adder_HiF8 
-# Start time: 16:47:46 on Nov 24,2026
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Error (suppressible): tb/max_shift_6/noRounding/tb_adder_hif8.v(57): (vopt-7063) Failed to find 'result_exp_aprx' in hierarchical name 'uut.result_exp_aprx'.
-#         Region: tb_adder_HiF8
+# ** Error (suppressible): src/range_max_shift/withRounding/AdderHiF8_rms_withRounding.v(196): (vopt-8607) Negative replication multiplier (-1).
 # Optimization failed
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
+# ** Error: (vopt-2064) Compiler back-end code generation process terminated with code 12.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=4, Warnings=0.
 # Error loading design
 # Error: Error loading design
 #        Pausing macro execution
-# MACRO ./run.do PAUSED at line 70
+# MACRO ./run.do PAUSED at line 178
 do run.do
 # ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is miche@LAPTOP-F03A0V96.
 # ** Warning: (vdel-134) Unable to remove locked optimized design "_opt1".  Locker is miche@LAPTOP-F03A0V96.
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt2".  Locker is miche@LAPTOP-F03A0V96.
 # ** Warning: (vlib-34) Library already exists at "work".
 # Errors: 0, Warnings: 1
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 16:48:48 on Nov 24,2026
+# Start time: 22:27:32 on Nov 25,2026
 # vlog -reportprogress 300 src/HiFloat8_to_FP_converter.v 
 # -- Compiling module HiFloat8_to_FP_converter
 # 
 # Top level modules:
 # 	HiFloat8_to_FP_converter
-# End time: 16:48:48 on Nov 24,2026, Elapsed time: 0:00:00
+# End time: 22:27:32 on Nov 25,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 16:48:48 on Nov 24,2026
+# Start time: 22:27:32 on Nov 25,2026
 # vlog -reportprogress 300 src/FP_to_HiFloat8_converter.v 
 # -- Compiling module FP_to_HiFloat8_converter
 # 
 # Top level modules:
 # 	FP_to_HiFloat8_converter
-# End time: 16:48:48 on Nov 24,2026, Elapsed time: 0:00:00
+# End time: 22:27:33 on Nov 25,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 16:48:48 on Nov 24,2026
-# vlog -reportprogress 300 src/max_shift_6/noRounding/AdderHiF8_maxShift6_noRounding.v 
+# Start time: 22:27:33 on Nov 25,2026
+# vlog -reportprogress 300 src/range_max_shift/withRounding/AdderHiF8_rms_withRounding.v 
 # -- Compiling module adder_HiF8
 # 
 # Top level modules:
 # 	adder_HiF8
-# End time: 16:48:48 on Nov 24,2026, Elapsed time: 0:00:00
+# End time: 22:27:33 on Nov 25,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 16:48:48 on Nov 24,2026
-# vlog -reportprogress 300 tb/max_shift_6/noRounding/tb_adder_hif8.v 
+# Start time: 22:27:33 on Nov 25,2026
+# vlog -reportprogress 300 tb/range_max_shift/withRounding/tb_adder_hif8.v 
 # -- Compiling module tb_adder_HiF8
 # 
 # Top level modules:
 # 	tb_adder_HiF8
-# End time: 16:48:48 on Nov 24,2026, Elapsed time: 0:00:00
+# End time: 22:27:33 on Nov 25,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -voptargs=""+acc"" work.tb_adder_HiF8 
-# Start time: 16:47:46 on Nov 24,2026
+# Start time: 22:18:29 on Nov 25,2026
 # ** Note: (vsim-3812) Design is being optimized...
 # Loading work.tb_adder_HiF8(fast)
 # Loading work.adder_HiF8(fast)
 # Loading work.HiFloat8_to_FP_converter(fast)
 # Loading work.FP_to_HiFloat8_converter(fast)
-# Inizio della simulazione per tutte le 65.536 combinazioni...
+# Loading work.adder_HiF8(fast__1)
+# Loading work.adder_HiF8(fast__2)
+# Loading work.adder_HiF8(fast__3)
+# Loading work.adder_HiF8(fast__4)
+# Loading work.adder_HiF8(fast__5)
+# Loading work.adder_HiF8(fast__6)
+# Loading work.adder_HiF8(fast__7)
+# Loading work.adder_HiF8(fast__8)
+# Loading work.adder_HiF8(fast__9)
+# Loading work.adder_HiF8(fast__10)
+# Inizio della simulazione per tutte le 65.536 combinazioni (MAX_SHIFT 5..15)...
+# Simulazione completata per MAX_SHIFT da 4 a 15.
+# ** Note: $finish    : tb/range_max_shift/withRounding/tb_adder_hif8.v(160)
+#    Time: 655360 ns  Iteration: 0  Instance: /tb_adder_HiF8
+# 1
+# Break in Module tb_adder_HiF8 at tb/range_max_shift/withRounding/tb_adder_hif8.v line 160
 do run.do
 # ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is miche@LAPTOP-F03A0V96.
 # ** Warning: (vdel-134) Unable to remove locked optimized design "_opt1".  Locker is miche@LAPTOP-F03A0V96.
 # ** Warning: (vdel-134) Unable to remove locked optimized design "_opt2".  Locker is miche@LAPTOP-F03A0V96.
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt3".  Locker is miche@LAPTOP-F03A0V96.
 # ** Warning: (vlib-34) Library already exists at "work".
 # Errors: 0, Warnings: 1
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 17:02:21 on Nov 24,2026
+# Start time: 22:46:43 on Nov 25,2026
 # vlog -reportprogress 300 src/HiFloat8_to_FP_converter.v 
 # -- Compiling module HiFloat8_to_FP_converter
 # 
 # Top level modules:
 # 	HiFloat8_to_FP_converter
-# End time: 17:02:21 on Nov 24,2026, Elapsed time: 0:00:00
+# End time: 22:46:44 on Nov 25,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 17:02:21 on Nov 24,2026
+# Start time: 22:46:44 on Nov 25,2026
 # vlog -reportprogress 300 src/FP_to_HiFloat8_converter.v 
 # -- Compiling module FP_to_HiFloat8_converter
 # 
 # Top level modules:
 # 	FP_to_HiFloat8_converter
-# End time: 17:02:21 on Nov 24,2026, Elapsed time: 0:00:00
+# End time: 22:46:44 on Nov 25,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 17:02:21 on Nov 24,2026
-# vlog -reportprogress 300 src/max_shift_6/noRounding/AdderHiF8_maxShift6_noRounding.v 
+# Start time: 22:46:44 on Nov 25,2026
+# vlog -reportprogress 300 src/range_max_shift/withRounding/AdderHiF8_rms_withRounding.v 
 # -- Compiling module adder_HiF8
 # 
 # Top level modules:
 # 	adder_HiF8
-# End time: 17:02:22 on Nov 24,2026, Elapsed time: 0:00:01
+# End time: 22:46:44 on Nov 25,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 17:02:22 on Nov 24,2026
-# vlog -reportprogress 300 tb/max_shift_6/noRounding/tb_adder_hif8.v 
+# Start time: 22:46:44 on Nov 25,2026
+# vlog -reportprogress 300 tb/range_max_shift/withRounding/tb_adder_hif8.v 
 # -- Compiling module tb_adder_HiF8
-# 
-# Top level modules:
-# 	tb_adder_HiF8
-# End time: 17:02:22 on Nov 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 17:02:23 on Nov 24,2026, Elapsed time: 0:14:37
-# Errors: 1, Warnings: 0
-# vsim -voptargs=""+acc"" work.tb_adder_HiF8 
-# Start time: 17:02:23 on Nov 24,2026
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.tb_adder_HiF8(fast)
-# Loading work.adder_HiF8(fast)
-# Loading work.HiFloat8_to_FP_converter(fast)
-# Loading work.FP_to_HiFloat8_converter(fast)
-# Inizio della simulazione per tutte le 65.536 combinazioni...
+# ** Error: tb/range_max_shift/withRounding/tb_adder_hif8.v(64): Index value in hierarchical path is not constant
+# ** Error: tb/range_max_shift/withRounding/tb_adder_hif8.v(65): Index value in hierarchical path is not constant
+# ** Error: tb/range_max_shift/withRounding/tb_adder_hif8.v(66): Index value in hierarchical path is not constant
+# ** Error: tb/range_max_shift/withRounding/tb_adder_hif8.v(67): Index value in hierarchical path is not constant
+# ** Error: tb/range_max_shift/withRounding/tb_adder_hif8.v(68): Index value in hierarchical path is not constant
+# ** Error: tb/range_max_shift/withRounding/tb_adder_hif8.v(69): Index value in hierarchical path is not constant
+# ** Error: tb/range_max_shift/withRounding/tb_adder_hif8.v(70): Index value in hierarchical path is not constant
+# ** Error: tb/range_max_shift/withRounding/tb_adder_hif8.v(71): Index value in hierarchical path is not constant
+# ** Error: tb/range_max_shift/withRounding/tb_adder_hif8.v(72): Index value in hierarchical path is not constant
+# ** Error: tb/range_max_shift/withRounding/tb_adder_hif8.v(73): Index value in hierarchical path is not constant
+# ** Error: tb/range_max_shift/withRounding/tb_adder_hif8.v(74): Index value in hierarchical path is not constant
+# ** Error: tb/range_max_shift/withRounding/tb_adder_hif8.v(75): Index value in hierarchical path is not constant
+# ** Error: tb/range_max_shift/withRounding/tb_adder_hif8.v(76): Index value in hierarchical path is not constant
+# ** Error: tb/range_max_shift/withRounding/tb_adder_hif8.v(77): Index value in hierarchical path is not constant
+# ** Error: tb/range_max_shift/withRounding/tb_adder_hif8.v(78): Index value in hierarchical path is not constant
+# ** Error: tb/range_max_shift/withRounding/tb_adder_hif8.v(79): Index value in hierarchical path is not constant
+# ** Error: tb/range_max_shift/withRounding/tb_adder_hif8.v(80): Index value in hierarchical path is not constant
+# ** Error: tb/range_max_shift/withRounding/tb_adder_hif8.v(82): Index value in hierarchical path is not constant
+# End time: 22:46:44 on Nov 25,2026, Elapsed time: 0:00:00
+# Errors: 18, Warnings: 0
+# ** Error: C:/intelFPGA/21.1/questa_fse/win64/vlog failed.
+# Error in macro ./run.do line 21
+# C:/intelFPGA/21.1/questa_fse/win64/vlog failed.
+#     while executing
+# "vlog tb/range_max_shift/withRounding/tb_adder_hif8.v"
 do run.do
 # ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is miche@LAPTOP-F03A0V96.
 # ** Warning: (vdel-134) Unable to remove locked optimized design "_opt1".  Locker is miche@LAPTOP-F03A0V96.
 # ** Warning: (vdel-134) Unable to remove locked optimized design "_opt2".  Locker is miche@LAPTOP-F03A0V96.
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt3".  Locker is miche@LAPTOP-F03A0V96.
 # ** Warning: (vlib-34) Library already exists at "work".
 # Errors: 0, Warnings: 1
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 17:49:24 on Nov 24,2026
+# Start time: 22:48:48 on Nov 25,2026
 # vlog -reportprogress 300 src/HiFloat8_to_FP_converter.v 
 # -- Compiling module HiFloat8_to_FP_converter
 # 
 # Top level modules:
 # 	HiFloat8_to_FP_converter
-# End time: 17:49:25 on Nov 24,2026, Elapsed time: 0:00:01
+# End time: 22:48:48 on Nov 25,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 17:49:25 on Nov 24,2026
+# Start time: 22:48:48 on Nov 25,2026
 # vlog -reportprogress 300 src/FP_to_HiFloat8_converter.v 
 # -- Compiling module FP_to_HiFloat8_converter
 # 
 # Top level modules:
 # 	FP_to_HiFloat8_converter
-# End time: 17:49:25 on Nov 24,2026, Elapsed time: 0:00:00
+# End time: 22:48:48 on Nov 25,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 17:49:25 on Nov 24,2026
-# vlog -reportprogress 300 src/max_shift_7/withRounding/AdderHiF8_maxShift7_withRounding.v 
+# Start time: 22:48:48 on Nov 25,2026
+# vlog -reportprogress 300 src/range_max_shift/withRounding/AdderHiF8_rms_withRounding.v 
 # -- Compiling module adder_HiF8
 # 
 # Top level modules:
 # 	adder_HiF8
-# End time: 17:49:25 on Nov 24,2026, Elapsed time: 0:00:00
+# End time: 22:48:48 on Nov 25,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 17:49:25 on Nov 24,2026
-# vlog -reportprogress 300 tb/max_shift_7/withRounding/tb_adder_hif8.v 
+# Start time: 22:48:48 on Nov 25,2026
+# vlog -reportprogress 300 tb/range_max_shift/withRounding/tb_adder_hif8.v 
 # -- Compiling module tb_adder_HiF8
 # 
 # Top level modules:
 # 	tb_adder_HiF8
-# End time: 17:49:25 on Nov 24,2026, Elapsed time: 0:00:00
+# End time: 22:48:48 on Nov 25,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# End time: 17:49:26 on Nov 24,2026, Elapsed time: 0:47:03
-# Errors: 0, Warnings: 0
+# End time: 22:48:49 on Nov 25,2026, Elapsed time: 0:30:20
+# Errors: 5, Warnings: 0
 # vsim -voptargs=""+acc"" work.tb_adder_HiF8 
-# Start time: 17:49:26 on Nov 24,2026
+# Start time: 22:48:49 on Nov 25,2026
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # Loading work.tb_adder_HiF8(fast)
 # Loading work.adder_HiF8(fast)
 # Loading work.HiFloat8_to_FP_converter(fast)
 # Loading work.FP_to_HiFloat8_converter(fast)
-# Inizio della simulazione per tutte le 65.536 combinazioni...
+# Loading work.adder_HiF8(fast__1)
+# Loading work.adder_HiF8(fast__2)
+# Loading work.adder_HiF8(fast__3)
+# Loading work.adder_HiF8(fast__4)
+# Loading work.adder_HiF8(fast__5)
+# Loading work.adder_HiF8(fast__6)
+# Loading work.adder_HiF8(fast__7)
+# Loading work.adder_HiF8(fast__8)
+# Loading work.adder_HiF8(fast__9)
+# Loading work.adder_HiF8(fast__10)
+# Inizio della simulazione per tutte le 65.536 combinazioni (MAX_SHIFT 5..15)...
+# Simulazione completata per MAX_SHIFT da 5 a 15.
+# ** Note: $finish    : tb/range_max_shift/withRounding/tb_adder_hif8.v(127)
+#    Time: 720903 ns  Iteration: 0  Instance: /tb_adder_HiF8
+# 1
+# Break in Module tb_adder_HiF8 at tb/range_max_shift/withRounding/tb_adder_hif8.v line 127
 do run.do
 # ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is miche@LAPTOP-F03A0V96.
 # ** Warning: (vdel-134) Unable to remove locked optimized design "_opt1".  Locker is miche@LAPTOP-F03A0V96.
 # ** Warning: (vdel-134) Unable to remove locked optimized design "_opt2".  Locker is miche@LAPTOP-F03A0V96.
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt3".  Locker is miche@LAPTOP-F03A0V96.
 # ** Warning: (vlib-34) Library already exists at "work".
 # Errors: 0, Warnings: 1
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 19:05:35 on Nov 24,2026
+# Start time: 22:51:22 on Nov 25,2026
 # vlog -reportprogress 300 src/HiFloat8_to_FP_converter.v 
 # -- Compiling module HiFloat8_to_FP_converter
 # 
 # Top level modules:
 # 	HiFloat8_to_FP_converter
-# End time: 19:05:35 on Nov 24,2026, Elapsed time: 0:00:00
+# End time: 22:51:23 on Nov 25,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 19:05:35 on Nov 24,2026
+# Start time: 22:51:23 on Nov 25,2026
 # vlog -reportprogress 300 src/FP_to_HiFloat8_converter.v 
 # -- Compiling module FP_to_HiFloat8_converter
 # 
 # Top level modules:
 # 	FP_to_HiFloat8_converter
-# End time: 19:05:35 on Nov 24,2026, Elapsed time: 0:00:00
+# End time: 22:51:23 on Nov 25,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 19:05:35 on Nov 24,2026
-# vlog -reportprogress 300 src/max_shift_7/withRounding/AdderHiF8_maxShift7_withRounding.v 
+# Start time: 22:51:23 on Nov 25,2026
+# vlog -reportprogress 300 src/range_max_shift/noRounding/AdderHiF8_rms_noRounding.v 
 # -- Compiling module adder_HiF8
 # 
 # Top level modules:
 # 	adder_HiF8
-# End time: 19:05:35 on Nov 24,2026, Elapsed time: 0:00:00
+# End time: 22:51:23 on Nov 25,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 19:05:35 on Nov 24,2026
-# vlog -reportprogress 300 tb/max_shift_7/withRounding/tb_adder_hif8.v 
+# Start time: 22:51:23 on Nov 25,2026
+# vlog -reportprogress 300 tb/range_max_shift/noRounding/tb_adder_hif8.v 
 # -- Compiling module tb_adder_HiF8
 # 
 # Top level modules:
 # 	tb_adder_HiF8
-# End time: 19:05:36 on Nov 24,2026, Elapsed time: 0:00:01
+# End time: 22:51:23 on Nov 25,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# End time: 19:05:37 on Nov 24,2026, Elapsed time: 1:16:11
+# End time: 22:51:25 on Nov 25,2026, Elapsed time: 0:02:36
 # Errors: 0, Warnings: 0
 # vsim -voptargs=""+acc"" work.tb_adder_HiF8 
-# Start time: 19:05:37 on Nov 24,2026
+# Start time: 22:51:25 on Nov 25,2026
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # Loading work.tb_adder_HiF8(fast)
 # Loading work.adder_HiF8(fast)
 # Loading work.HiFloat8_to_FP_converter(fast)
 # Loading work.FP_to_HiFloat8_converter(fast)
-# Inizio della simulazione per tutte le 65.536 combinazioni...
-do run.do
-# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is miche@LAPTOP-F03A0V96.
-# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt1".  Locker is miche@LAPTOP-F03A0V96.
-# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt2".  Locker is miche@LAPTOP-F03A0V96.
-# ** Warning: (vlib-34) Library already exists at "work".
-# Errors: 0, Warnings: 1
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 19:13:43 on Nov 24,2026
-# vlog -reportprogress 300 src/HiFloat8_to_FP_converter.v 
-# -- Compiling module HiFloat8_to_FP_converter
-# 
-# Top level modules:
-# 	HiFloat8_to_FP_converter
-# End time: 19:13:43 on Nov 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 19:13:44 on Nov 24,2026
-# vlog -reportprogress 300 src/FP_to_HiFloat8_converter.v 
-# -- Compiling module FP_to_HiFloat8_converter
-# 
-# Top level modules:
-# 	FP_to_HiFloat8_converter
-# End time: 19:13:44 on Nov 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 19:13:44 on Nov 24,2026
-# vlog -reportprogress 300 src/max_shift_7/noRounding/AdderHiF8_maxShift7_noRounding.v 
-# -- Compiling module adder_HiF8
-# 
-# Top level modules:
-# 	adder_HiF8
-# End time: 19:13:44 on Nov 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 19:13:44 on Nov 24,2026
-# vlog -reportprogress 300 tb/max_shift_7/noRounding/tb_adder_hif8.v 
-# -- Compiling module tb_adder_HiF8
-# 
-# Top level modules:
-# 	tb_adder_HiF8
-# End time: 19:13:44 on Nov 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 19:13:45 on Nov 24,2026, Elapsed time: 0:08:08
-# Errors: 0, Warnings: 0
-# vsim -voptargs=""+acc"" work.tb_adder_HiF8 
-# Start time: 19:13:45 on Nov 24,2026
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.tb_adder_HiF8(fast)
-# Loading work.adder_HiF8(fast)
-# Loading work.HiFloat8_to_FP_converter(fast)
-# Loading work.FP_to_HiFloat8_converter(fast)
-# Inizio della simulazione per tutte le 65.536 combinazioni...
-vsim stop
-# End time: 20:05:16 on Nov 24,2026, Elapsed time: 0:51:31
-# Errors: 0, Warnings: 0
-# vsim stop 
-# Start time: 20:05:16 on Nov 24,2026
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Error: (vopt-13130) Failed to find design unit stop.
-#         Searched libraries:
-#             work
-# Optimization failed
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./run.do PAUSED at line 70
-# End time: 20:05:19 on Nov 24,2026, Elapsed time: 0:00:03
-# Errors: 1, Warnings: 0
+# Loading work.adder_HiF8(fast__1)
+# Loading work.adder_HiF8(fast__2)
+# Loading work.adder_HiF8(fast__3)
+# Loading work.adder_HiF8(fast__4)
+# Loading work.adder_HiF8(fast__5)
+# Loading work.adder_HiF8(fast__6)
+# Loading work.adder_HiF8(fast__7)
+# Loading work.adder_HiF8(fast__8)
+# Loading work.adder_HiF8(fast__9)
+# Loading work.adder_HiF8(fast__10)
+# Loading work.adder_HiF8(fast__11)
+# Inizio della simulazione per tutte le 65.536 combinazioni (MAX_SHIFT 4..15)...
+# Simulazione completata per MAX_SHIFT da 4 a 15.
+# ** Note: $finish    : tb/range_max_shift/noRounding/tb_adder_hif8.v(127)
+#    Time: 720903 ns  Iteration: 0  Instance: /tb_adder_HiF8
+# 1
+# Break in Module tb_adder_HiF8 at tb/range_max_shift/noRounding/tb_adder_hif8.v line 127
