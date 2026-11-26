@@ -57,7 +57,7 @@ module tb_adder_HiF8 #(
             always @(log_event) begin
                 if (fh != 0) begin
                     $fdisplay(fh, "\n| FP1        | FP2        | FP_RES     |");
-                    $fdisplay(fh, "| %b + %b = %b | A_IS_ZERO=%b | B_IS_ZERO=%b | EXP_DIFF=%b | SHIFT_AMT=%b | MANT_A_SHF=%b | MANT_B_SHF=%b | RES_MANT_TMP=%b | SIGN=%b | DIR=%b | LOD_ZERO=%b | LOD_SHF=%b | SHF_MANT_TMP=%b | EXP=%b | MANT=%b | HIF8_RES=%b | HIF8RES_TO_FP=%b",
+                    $fdisplay(fh, "| %b + %b = %b | A_IS_ZERO=%b | B_IS_ZERO=%b | EXP_DIFF=%b | SHIFT_AMT=%b | MANT_A_SHF=%b | MANT_B_SHF=%b | RES_MANT_TMP=%b | SIGN=%b | DIR=%b | LOD_ZERO=%b | LOD_SHF=%b | EXP_APRX=%b | SHF_MANT_TMP=%b | SHF_MANT_TMP_RNDED=%b |EXP=%b | MANT=%b | HIF8_RES=%b | HIF8RES_TO_FP=%b",
                               uut.fp_from_hif8_a,
                               uut.fp_from_hif8_b,
                               uut.sum_result_in_FP,
@@ -72,7 +72,9 @@ module tb_adder_HiF8 #(
                               uut.direction,
                               uut.lod_zero,
                               uut.lod_shift_amt,
+                              uut.result_exp_aprx,
                               uut.shifted_result_mant_temp,
+                              uut.shifted_result_mant_temp_rounded,
                               uut.result_exp,
                               uut.result_mant,
                               hif8_res_out[s],

@@ -207,7 +207,7 @@ assign result_exp_aprx = direction ? ($signed(result_exp_tmp) + lod_shift_amt) :
 assign shifted_result_mant_temp = direction ? (result_mant_temp >> 1'b1) : (result_mant_temp << lod_shift_amt);
 
 assign shifted_result_mant_temp_rounded = shifted_result_mant_temp + add_1;
-assign result_mant = shifted_result_mant_temp_rounded[MAX_SHIFT] == 1'b1 ? shifted_result_mant_temp_rounded[(MAX_SHIFT-2):(MAX_SHIFT-4)] : shifted_result_mant_temp_rounded[(MAX_SHIFT-1):(MAX_SHIFT-3)];
+assign result_mant = shifted_result_mant_temp_rounded[MAX_SHIFT] == 1'b1 ? shifted_result_mant_temp_rounded[(MAX_SHIFT-1):(MAX_SHIFT-3)] : shifted_result_mant_temp_rounded[(MAX_SHIFT-2):(MAX_SHIFT-4)];
 assign result_exp  = shifted_result_mant_temp_rounded[MAX_SHIFT] == 1'b1 ? result_exp_aprx + 6'b000_001 : result_exp_aprx;
 
 
